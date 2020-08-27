@@ -2,7 +2,8 @@
 
 
 CustomADC::CustomADC(uint16_t* adcChannels, uint8_t pinsUsed, 
-                     bool EnableADCInterrupts, CustomPIO pio)
+                     bool EnableADCInterrupts, CustomPIO pio,
+                     CustomPMC pmc)
 {
   //Gets the pins corresponding to each channel
   uint32_t adcPins[pinsUsed];
@@ -15,12 +16,12 @@ CustomADC::CustomADC(uint16_t* adcChannels, uint8_t pinsUsed,
   //register
   pio.ActivatePeripheralControl(adcPins, pinsUsed, pinGroups);
 
-  EnablePeripheralClock(ADC_ID);
+  pmc.EnablePeripheralClock(ADC_ID);
   
   //Starts the ADC and sets its trigger to fire whenever the PWM event line
   //sends a pulse if the interrupts are enabled
-  ADCControl(1, 0);
-  ADCConfig(EnableADCInterrupts);
+  Control(1, 0);
+  Config(EnableADCInterrupts);
   
   //Enables the specified channels and then disables the unused ones 
   EnableChannels(adcChannels, pinsUsed);  
@@ -38,7 +39,7 @@ CustomADC::~CustomADC()
 {
 }
 
-void CustomADC::ADCConfig(bool PWMConfig, uint8_t hardwareTriggers, 
+void CustomADC::Config(bool PWMConfig, uint8_t hardwareTriggers, 
                           uint8_t trigger, uint8_t lowRes, uint8_t sleepMode, 
                           uint8_t fastWKUP, uint8_t freeRun)
 {
@@ -57,12 +58,12 @@ void CustomADC::ADCConfig(bool PWMConfig, uint8_t hardwareTriggers,
   }
 }
 
-void CustomADC::ADCControl(uint8_t reset, uint8_t start)
+void CustomADC::Control(uint8_t reset, uint8_t start)
 {
   ADC->ADC_CR = (start << 1) + reset;
 }
 
-void CustomADC::ADCWriteProtect(uint8_t enable)
+void CustomADC::WriteProtect(uint8_t enable)
 {
   ADC->ADC_WPMR = 0x04144430 | enable;
 }

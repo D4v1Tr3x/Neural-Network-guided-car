@@ -1,7 +1,7 @@
 #include "pwm.h"
 
 CustomPWM::CustomPWM(uint16_t* channels, uint8_t len, bool EnableComparison, 
-                     uint8_t clockFreq, CustomPIO pio)
+                     uint8_t clockFreq, CustomPIO pio, CustomPMC pmc)
 { 
   //Calculates the degree of precision that the PWM will have based on the
   //desired frecuency that we want as clock for all the channels.
@@ -20,8 +20,8 @@ CustomPWM::CustomPWM(uint16_t* channels, uint8_t len, bool EnableComparison,
   pio.ChangePeripheral(pins, len, pinGroups);
   
   //Enables the PWM to work on the designated channels
-  EnablePeripheralClock(PWM_ID);
-  EnablePWMChannels(channels, len);
+  pmc.EnablePeripheralClock(PWM_ID);
+  EnableChannels(channels, len);
    
   for(uint8_t i = 0; i < len; i++)
   {
@@ -69,22 +69,22 @@ void CustomPWM::SetDuty(float d, uint8_t channel)
   } 
 }
 
-void CustomPWM::PWMClockGenerator(uint8_t divA, uint8_t preA, uint8_t divB, 
+void CustomPWM::ClockGenerator(uint8_t divA, uint8_t preA, uint8_t divB, 
                                   uint8_t preB)
 {
   PWM->PWM_CLK = (preB << 24) + (divB << 16) + (preA << 8) + divA;
 }
 
-void CustomPWM::EnablePWMChannels(uint16_t* channels, uint8_t len)
+void CustomPWM::EnableChannels(uint16_t* channels, uint8_t len)
 {
   for(uint8_t i = 0; i < len; i++)
   {
     PWM->PWM_ENA |= channels[i];
   }
-  DisableUnusedPWMChannels();
+  DisableUnusedChannels();
 }
 
-void CustomPWM::DisableUnusedPWMChannels()
+void CustomPWM::DisableUnusedChannels()
 {
   PWM->PWM_DIS = !PWM->PWM_SR;
 };

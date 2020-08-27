@@ -1,8 +1,9 @@
 #include "tests.h"
 
+CustomPMC pmc;
 CustomPIO pio(MotorPins, nMotors*2, MotorPinGroups);
-CustomADC adc(sensors, sensorsUsed, EnableInterrupts, pio);
-CustomPWM pwm(pwmMotors, nMotors, EnableInterrupts, PWMFreq, pio);
+CustomADC adc(sensors, sensorsUsed, EnableInterrupts, pio, pmc);
+CustomPWM pwm(pwmMotors, nMotors, EnableInterrupts, PWMFreq, pio, pmc);
 NN myNN(nLayers, nInputs, nOutputs, weights, biases, actFuncs);
 
 void ADC_Handler()

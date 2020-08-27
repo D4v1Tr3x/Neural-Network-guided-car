@@ -11,17 +11,17 @@ class CustomADC
   public:
   
     CustomADC(uint16_t* adcChannels, uint8_t pinsUsed, 
-              bool EnableADCInterrupts, CustomPIO pio);
+              bool EnableADCInterrupts, CustomPIO pio, CustomPMC pmc);
     
     ~CustomADC(void);
 
-    void ADCConfig(bool PWMConfig, uint8_t hardwareTriggers=0, 
+    void Config(bool PWMConfig, uint8_t hardwareTriggers=0, 
                    uint8_t trigger=0, uint8_t lowRes=0, uint8_t sleepMode=0, 
                    uint8_t fastWKUP=0, uint8_t freeRun=0);
 
-    void ADCControl(uint8_t reset, uint8_t start);
+    void Control(uint8_t reset, uint8_t start);
 
-    void ADCWriteProtect(uint8_t enable);
+    void WriteProtect(uint8_t enable);
 
     void EnableChannels(uint16_t* channel, uint8_t len);
 

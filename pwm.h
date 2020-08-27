@@ -10,7 +10,7 @@ class CustomPWM
 {
   public:
     CustomPWM(uint16_t* channels, uint8_t len, bool EnableComparison, 
-              uint8_t clockFreq, CustomPIO pio);
+              uint8_t clockFreq, CustomPIO pio, CustomPMC pmc);
 
     ~CustomPWM(void);
 
@@ -20,12 +20,12 @@ class CustomPWM
     
     void SetCPRD(uint16_t CPRD, uint8_t channel);
 
-    void PWMClockGenerator(uint8_t divA, uint8_t preA, uint8_t divB=0,
+    void ClockGenerator(uint8_t divA, uint8_t preA, uint8_t divB=0,
                        uint8_t preB=0);
 
-    void EnablePWMChannels(uint16_t* channel, uint8_t len);
+    void EnableChannels(uint16_t* channel, uint8_t len);
 
-    void DisableUnusedPWMChannels();
+    void DisableUnusedChannels();
 
     void SetupChannelMode(uint8_t channel, uint8_t CPRE, uint8_t CALG, 
                       uint8_t CPOL, uint8_t CES, uint8_t DTE, 

@@ -1,11 +1,15 @@
 #include "pmc.h"
 
-void PMCWriteProtection(uint8_t enable)
+CustomPMC::CustomPMC(){}
+
+CustomPMC::~CustomPMC(){}
+
+void CustomPMC::WriteProtection(uint8_t enable)
 {
   REG_PMC_WPMR = 0x504D4300 | enable;
 }
 
-void EnablePeripheralClock(uint8_t ID)
+void CustomPMC::EnablePeripheralClock(uint8_t ID)
 {
   if(ID < 31)
   {
@@ -17,7 +21,7 @@ void EnablePeripheralClock(uint8_t ID)
   }
 }
 
-void ConfigMainOSC(uint8_t OSC, uint8_t failDetection, uint8_t bypass,
+void CustomPMC::ConfigMainOSC(uint8_t OSC, uint8_t failDetection, uint8_t bypass,
                    uint8_t RCFreq, uint8_t OSCXStartTime)
 {
   uint32_t reg;
