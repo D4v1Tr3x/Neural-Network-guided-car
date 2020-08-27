@@ -6,7 +6,7 @@ const uint8_t nLayers = 3;
 uint8_t nInputs[]  = {3, 5, 3};
 uint8_t nOutputs[] = {5, 3, 1};
 
-actFunc_t actFuncs[] = {ReLU, ReLU, Identity};
+extern actFunc_t actFuncs[] = {ReLU, ReLU, Identity};
 
 float w1[] = {-0.34, -0.06,  1.53, -0.34, -0.35,
                0.39, -0.05,  0.28, -1.03,  0.64,

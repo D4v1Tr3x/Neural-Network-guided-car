@@ -3,7 +3,7 @@
 void PMCWriteProtection(uint8_t enable)
 {
   REG_PMC_WPMR = 0x504D4300 | enable;
-};
+}
 
 void EnablePeripheralClock(uint8_t ID)
 {
@@ -15,7 +15,7 @@ void EnablePeripheralClock(uint8_t ID)
   {
     REG_PMC_PCER1 |= 1 << (ID-32);
   }
-};
+}
 
 void ConfigMainOSC(uint8_t OSC, uint8_t failDetection, uint8_t bypass,
                    uint8_t RCFreq, uint8_t OSCXStartTime)
@@ -46,4 +46,4 @@ void ConfigMainOSC(uint8_t OSC, uint8_t failDetection, uint8_t bypass,
       REG_PMC_WPMR = reg;
       break;
   }
-};
+}

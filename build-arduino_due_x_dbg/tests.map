@@ -96,8 +96,12 @@ build-arduino_due_x_dbg/libcore.a(wdt.c.o)
                               build-arduino_due_x_dbg/actfunctions.cpp.o (__aeabi_fcmpgt)
 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/libgcc.a(_arm_fixunssfsi.o)
                               build-arduino_due_x_dbg/pwm.cpp.o (__aeabi_f2uiz)
+/home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-aeabi_atexit.o)
+                              build-arduino_due_x_dbg/tests.ino.o (__aeabi_atexit)
 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-assert.o)
                               build-arduino_due_x_dbg/libcore.a(tc.c.o) (__assert_func)
+/home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-cxa_atexit.o)
+                              /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-aeabi_atexit.o) (__cxa_atexit)
 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-errno.o)
                               /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-w_exp.o) (__errno)
 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-exit.o)
@@ -118,6 +122,8 @@ build-arduino_due_x_dbg/libcore.a(wdt.c.o)
                               /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fiprintf.o) (_vfiprintf_r)
 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-wsetup.o)
                               /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-vfiprintf.o) (__swsetup_r)
+/home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
+                              /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-cxa_atexit.o) (__register_exitproc)
 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
                               /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-exit.o) (__call_exitprocs)
 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-abort.o)
@@ -172,8 +178,6 @@ build-arduino_due_x_dbg/libcore.a(wdt.c.o)
                               /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-wcrtomb.o) (__wctomb)
 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-writer.o)
                               /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-stdio.o) (_write_r)
-/home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
-                              /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o) (__register_exitproc)
 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-closer.o)
                               /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-stdio.o) (_close_r)
 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fclose.o)
@@ -209,7 +213,6 @@ Discarded input sections
  .text          0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crti.o
  .data          0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crti.o
  .bss           0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crti.o
- .data          0x0000000000000000        0x4 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
  .text          0x0000000000000000       0x74 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
  .data          0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
  .bss           0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
@@ -220,16 +223,22 @@ Discarded input sections
  .text          0x0000000000000000        0x0 build-arduino_due_x_dbg/adc.cpp.o
  .data          0x0000000000000000        0x0 build-arduino_due_x_dbg/adc.cpp.o
  .bss           0x0000000000000000        0x0 build-arduino_due_x_dbg/adc.cpp.o
- .text._Z10ADC_Configbhhhhhh
+ .text._ZN9CustomADC9ADCConfigEbhhhhhh
                 0x0000000000000000       0x10 build-arduino_due_x_dbg/adc.cpp.o
- .text._Z11ADC_Controlhh
+ .text._ZN9CustomADC10ADCControlEhh
                 0x0000000000000000       0x10 build-arduino_due_x_dbg/adc.cpp.o
- .text._Z15ADCWriteProtecth
+ .text._ZN9CustomADC15ADCWriteProtectEh
                 0x0000000000000000       0x14 build-arduino_due_x_dbg/adc.cpp.o
- .text._Z17LastConvertedDatav
+ .text._ZN9CustomADC17LastConvertedDataEv
                 0x0000000000000000        0xc build-arduino_due_x_dbg/adc.cpp.o
- .text._Z20DisableEOCInterruptsPth
+ .text._ZN9CustomADC20DisableEOCInterruptsEPth
                 0x0000000000000000       0x20 build-arduino_due_x_dbg/adc.cpp.o
+ .text          0x0000000000000000        0x0 build-arduino_due_x_dbg/movements.cpp.o
+ .data          0x0000000000000000        0x0 build-arduino_due_x_dbg/movements.cpp.o
+ .bss           0x0000000000000000        0x0 build-arduino_due_x_dbg/movements.cpp.o
+ .comment       0x0000000000000000       0x81 build-arduino_due_x_dbg/movements.cpp.o
+ .ARM.attributes
+                0x0000000000000000       0x33 build-arduino_due_x_dbg/movements.cpp.o
  .text          0x0000000000000000        0x0 build-arduino_due_x_dbg/layer.cpp.o
  .data          0x0000000000000000        0x0 build-arduino_due_x_dbg/layer.cpp.o
  .bss           0x0000000000000000        0x0 build-arduino_due_x_dbg/layer.cpp.o
@@ -254,11 +263,11 @@ Discarded input sections
  .text          0x0000000000000000        0x0 build-arduino_due_x_dbg/pios.cpp.o
  .data          0x0000000000000000        0x0 build-arduino_due_x_dbg/pios.cpp.o
  .bss           0x0000000000000000        0x0 build-arduino_due_x_dbg/pios.cpp.o
- .text._Z14SetOutputsHighmP3Pio
+ .text._ZN9CustomPIO14SetOutputsHighEmP3Pio
                 0x0000000000000000        0x4 build-arduino_due_x_dbg/pios.cpp.o
- .text._Z13SetOutputsLowmP3Pio
+ .text._ZN9CustomPIO13SetOutputsLowEmP3Pio
                 0x0000000000000000        0x4 build-arduino_due_x_dbg/pios.cpp.o
- .text._Z21EnableWriteProtectionhP3Pio
+ .text._ZN9CustomPIO21EnableWriteProtectionEhP3Pio
                 0x0000000000000000       0x10 build-arduino_due_x_dbg/pios.cpp.o
  .text          0x0000000000000000        0x0 build-arduino_due_x_dbg/pmc.cpp.o
  .data          0x0000000000000000        0x0 build-arduino_due_x_dbg/pmc.cpp.o
@@ -270,29 +279,23 @@ Discarded input sections
  .text          0x0000000000000000        0x0 build-arduino_due_x_dbg/pwm.cpp.o
  .data          0x0000000000000000        0x0 build-arduino_due_x_dbg/pwm.cpp.o
  .bss           0x0000000000000000        0x0 build-arduino_due_x_dbg/pwm.cpp.o
- .text._Z23CheckWriteProtectStatush
+ .text._ZN9CustomPWM23CheckWriteProtectStatusEh
                 0x0000000000000000       0x28 build-arduino_due_x_dbg/pwm.cpp.o
- .text._Z7SetCPRDth
+ .text._ZN9CustomPWM7SetCPRDEth
                 0x0000000000000000       0x10 build-arduino_due_x_dbg/pwm.cpp.o
- .text._Z7SetDutyfh
-                0x0000000000000000       0x3a build-arduino_due_x_dbg/pwm.cpp.o
- .text._Z17PWMClockGeneratorhhhh
-                0x0000000000000000       0x18 build-arduino_due_x_dbg/pwm.cpp.o
- .text._Z16SetupChannelModehhhhhhhh
-                0x0000000000000000       0x38 build-arduino_due_x_dbg/pwm.cpp.o
- .text._Z22EnableComparisonOnLinehh
+ .text._ZN9CustomPWM7SetDutyEfh
+                0x0000000000000000       0x36 build-arduino_due_x_dbg/pwm.cpp.o
+ .text._ZN9CustomPWM17PWMClockGeneratorEhhhh
+                0x0000000000000000       0x1c build-arduino_due_x_dbg/pwm.cpp.o
+ .text._ZN9CustomPWM16SetupChannelModeEhhhhhhhh
+                0x0000000000000000       0x3c build-arduino_due_x_dbg/pwm.cpp.o
+ .text._ZN9CustomPWM22EnableComparisonOnLineEhh
                 0x0000000000000000        0xc build-arduino_due_x_dbg/pwm.cpp.o
- .text._Z14ComparisonModemh
+ .text._ZN9CustomPWM14ComparisonModeEmh
                 0x0000000000000000       0x10 build-arduino_due_x_dbg/pwm.cpp.o
  .text          0x0000000000000000        0x0 build-arduino_due_x_dbg/tests.ino.o
  .data          0x0000000000000000        0x0 build-arduino_due_x_dbg/tests.ino.o
  .bss           0x0000000000000000        0x0 build-arduino_due_x_dbg/tests.ino.o
- .text._Z3OffhhP3PioS0_
-                0x0000000000000000       0x18 build-arduino_due_x_dbg/tests.ino.o
- .text._Z13MoveClockwisehhP3PioS0_
-                0x0000000000000000       0x18 build-arduino_due_x_dbg/tests.ino.o
- .text._Z20MoveCounterClockwisehhP3PioS0_
-                0x0000000000000000       0x1a build-arduino_due_x_dbg/tests.ino.o
  .text          0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/variants/arduino_due_x/libsam_sam3x8e_gcc_rel.a(startup_sam3xa.o)
  .data          0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/variants/arduino_due_x/libsam_sam3x8e_gcc_rel.a(startup_sam3xa.o)
  .bss           0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/variants/arduino_due_x/libsam_sam3x8e_gcc_rel.a(startup_sam3xa.o)
@@ -990,6 +993,9 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/libgcc.a(_arm_fixunssfsi.o)
  .ARM.attributes
                 0x0000000000000000       0x1d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/libgcc.a(_arm_fixunssfsi.o)
+ .text          0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-aeabi_atexit.o)
+ .data          0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-aeabi_atexit.o)
+ .bss           0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-aeabi_atexit.o)
  .text          0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-assert.o)
  .data          0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-assert.o)
  .bss           0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-assert.o)
@@ -1002,6 +1008,9 @@ Discarded input sections
  .ARM.attributes
                 0x0000000000000000       0x2d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-assert.o)
  .debug_frame   0x0000000000000000       0x40 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-assert.o)
+ .text          0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-cxa_atexit.o)
+ .data          0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-cxa_atexit.o)
+ .bss           0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-cxa_atexit.o)
  .text          0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-errno.o)
  .data          0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-errno.o)
  .bss           0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-errno.o)
@@ -1071,6 +1080,9 @@ Discarded input sections
  .ARM.attributes
                 0x0000000000000000       0x2d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-wsetup.o)
  .debug_frame   0x0000000000000000       0x2c /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-wsetup.o)
+ .text          0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
+ .data          0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
+ .bss           0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
  .text          0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
  .data          0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
  .bss           0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
@@ -1358,9 +1370,6 @@ Discarded input sections
  .ARM.attributes
                 0x0000000000000000       0x2d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-writer.o)
  .debug_frame   0x0000000000000000       0x2c /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-writer.o)
- .text          0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
- .data          0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
- .bss           0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
  .text          0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-closer.o)
  .data          0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-closer.o)
  .bss           0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-closer.o)
@@ -1474,6 +1483,7 @@ LOAD /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q
 LOAD /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
 LOAD /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
 LOAD build-arduino_due_x_dbg/adc.cpp.o
+LOAD build-arduino_due_x_dbg/movements.cpp.o
 LOAD build-arduino_due_x_dbg/layer.cpp.o
 LOAD build-arduino_due_x_dbg/actfunctions.cpp.o
 LOAD build-arduino_due_x_dbg/NN.cpp.o
@@ -1493,7 +1503,7 @@ END GROUP
 LOAD /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtend.o
 LOAD /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtn.o
 
-.text           0x0000000000080000     0x3c18
+.text           0x0000000000080000     0x3c60
                 0x0000000000080000                . = ALIGN (0x4)
                 0x0000000000080000                _sfixed = .
  *(.vectors .vectors.*)
@@ -1501,943 +1511,945 @@ LOAD /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q
                 0x0000000000080000                exception_table
  *(.text .text.* .gnu.linkonce.t.*)
  .text          0x00000000000800f4       0x54 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
- .text._Z21DisableUnusedChannelsv
-                0x0000000000080148       0x14 build-arduino_due_x_dbg/adc.cpp.o
-                0x0000000000080148                DisableUnusedChannels()
- .text._Z14EnableChannelsPth
-                0x000000000008015c       0x28 build-arduino_due_x_dbg/adc.cpp.o
-                0x000000000008015c                EnableChannels(unsigned short*, unsigned char)
- .text._Z15LastChannelDatah
-                0x0000000000080184       0x10 build-arduino_due_x_dbg/adc.cpp.o
-                0x0000000000080184                LastChannelData(unsigned char)
- .text._Z19EnableEOCInterruptsPth
-                0x0000000000080194       0x20 build-arduino_due_x_dbg/adc.cpp.o
-                0x0000000000080194                EnableEOCInterrupts(unsigned short*, unsigned char)
- .text._Z6GetPintRmRP3Pio
-                0x00000000000801b4       0x3c build-arduino_due_x_dbg/adc.cpp.o
-                0x00000000000801b4                GetPin(unsigned short, unsigned long&, Pio*&)
- .text._Z9adc_setupPthb
-                0x00000000000801f0       0x8c build-arduino_due_x_dbg/adc.cpp.o
-                0x00000000000801f0                adc_setup(unsigned short*, unsigned char, bool)
+ .text._ZN9CustomADCD2Ev
+                0x0000000000080148        0x2 build-arduino_due_x_dbg/adc.cpp.o
+                0x0000000000080148                CustomADC::~CustomADC()
+                0x0000000000080148                CustomADC::~CustomADC()
+ *fill*         0x000000000008014a        0x2 
+ .text._ZN9CustomADC21DisableUnusedChannelsEv
+                0x000000000008014c       0x14 build-arduino_due_x_dbg/adc.cpp.o
+                0x000000000008014c                CustomADC::DisableUnusedChannels()
+ .text._ZN9CustomADC14EnableChannelsEPth
+                0x0000000000080160       0x28 build-arduino_due_x_dbg/adc.cpp.o
+                0x0000000000080160                CustomADC::EnableChannels(unsigned short*, unsigned char)
+ .text._ZN9CustomADC15LastChannelDataEh
+                0x0000000000080188       0x10 build-arduino_due_x_dbg/adc.cpp.o
+                0x0000000000080188                CustomADC::LastChannelData(unsigned char)
+ .text._ZN9CustomADC19EnableEOCInterruptsEPth
+                0x0000000000080198       0x20 build-arduino_due_x_dbg/adc.cpp.o
+                0x0000000000080198                CustomADC::EnableEOCInterrupts(unsigned short*, unsigned char)
+ .text._ZN9CustomADC6GetPinEtRmRP3Pio
+                0x00000000000801b8       0x3c build-arduino_due_x_dbg/adc.cpp.o
+                0x00000000000801b8                CustomADC::GetPin(unsigned short, unsigned long&, Pio*&)
+ .text._ZN9CustomADCC2EPthb9CustomPIO
+                0x00000000000801f4       0x98 build-arduino_due_x_dbg/adc.cpp.o
+                0x00000000000801f4                CustomADC::CustomADC(unsigned short*, unsigned char, bool, CustomPIO)
+                0x00000000000801f4                CustomADC::CustomADC(unsigned short*, unsigned char, bool, CustomPIO)
  .text._ZN5LayerC2Ev
-                0x000000000008027c        0x2 build-arduino_due_x_dbg/layer.cpp.o
-                0x000000000008027c                Layer::Layer()
-                0x000000000008027c                Layer::Layer()
+                0x000000000008028c        0x2 build-arduino_due_x_dbg/layer.cpp.o
+                0x000000000008028c                Layer::Layer()
+                0x000000000008028c                Layer::Layer()
  .text._ZN5LayerD2Ev
-                0x000000000008027e        0x2 build-arduino_due_x_dbg/layer.cpp.o
-                0x000000000008027e                Layer::~Layer()
-                0x000000000008027e                Layer::~Layer()
+                0x000000000008028e        0x2 build-arduino_due_x_dbg/layer.cpp.o
+                0x000000000008028e                Layer::~Layer()
+                0x000000000008028e                Layer::~Layer()
  .text._ZN5Layer4InitEhhPfS0_PFffE
-                0x0000000000080280       0x10 build-arduino_due_x_dbg/layer.cpp.o
-                0x0000000000080280                Layer::Init(unsigned char, unsigned char, float*, float*, float (*)(float))
+                0x0000000000080290       0x10 build-arduino_due_x_dbg/layer.cpp.o
+                0x0000000000080290                Layer::Init(unsigned char, unsigned char, float*, float*, float (*)(float))
  .text._Z4ReLUf
-                0x0000000000080290       0x14 build-arduino_due_x_dbg/actfunctions.cpp.o
-                0x0000000000080290                ReLU(float)
+                0x00000000000802a0       0x14 build-arduino_due_x_dbg/actfunctions.cpp.o
+                0x00000000000802a0                ReLU(float)
  .text._Z8Identityf
-                0x00000000000802a4        0x2 build-arduino_due_x_dbg/actfunctions.cpp.o
-                0x00000000000802a4                Identity(float)
+                0x00000000000802b4        0x2 build-arduino_due_x_dbg/actfunctions.cpp.o
+                0x00000000000802b4                Identity(float)
  .text._ZN2NNC2EhPhS0_PPfS2_PPFffE
-                0x00000000000802a6       0x8c build-arduino_due_x_dbg/NN.cpp.o
-                0x00000000000802a6                NN::NN(unsigned char, unsigned char*, unsigned char*, float**, float**, float (**)(float))
-                0x00000000000802a6                NN::NN(unsigned char, unsigned char*, unsigned char*, float**, float**, float (**)(float))
+                0x00000000000802b6       0x8c build-arduino_due_x_dbg/NN.cpp.o
+                0x00000000000802b6                NN::NN(unsigned char, unsigned char*, unsigned char*, float**, float**, float (**)(float))
+                0x00000000000802b6                NN::NN(unsigned char, unsigned char*, unsigned char*, float**, float**, float (**)(float))
  .text._ZN2NND2Ev
-                0x0000000000080332        0x2 build-arduino_due_x_dbg/NN.cpp.o
-                0x0000000000080332                NN::~NN()
-                0x0000000000080332                NN::~NN()
- .text._Z27DeactivatePeripheralControlPmhPP3Pio
-                0x0000000000080334       0x1e build-arduino_due_x_dbg/pios.cpp.o
-                0x0000000000080334                DeactivatePeripheralControl(unsigned long*, unsigned char, Pio**)
- .text._Z25ActivatePeripheralControlPmhPP3Pio
-                0x0000000000080352       0x1e build-arduino_due_x_dbg/pios.cpp.o
-                0x0000000000080352                ActivatePeripheralControl(unsigned long*, unsigned char, Pio**)
- .text._Z13SetOutputPinsPmhPP3Pio
-                0x0000000000080370       0x1e build-arduino_due_x_dbg/pios.cpp.o
-                0x0000000000080370                SetOutputPins(unsigned long*, unsigned char, Pio**)
- .text._Z9pio_setupPmhPP3Pio
-                0x000000000008038e       0x1a build-arduino_due_x_dbg/pios.cpp.o
-                0x000000000008038e                pio_setup(unsigned long*, unsigned char, Pio**)
- .text._Z16ChangePeripheralPmhPP3Pio
-                0x00000000000803a8       0x1e build-arduino_due_x_dbg/pios.cpp.o
-                0x00000000000803a8                ChangePeripheral(unsigned long*, unsigned char, Pio**)
- *fill*         0x00000000000803c6        0x2 
+                0x0000000000080342        0x2 build-arduino_due_x_dbg/NN.cpp.o
+                0x0000000000080342                NN::~NN()
+                0x0000000000080342                NN::~NN()
+ .text._ZN9CustomPIOD2Ev
+                0x0000000000080344        0x2 build-arduino_due_x_dbg/pios.cpp.o
+                0x0000000000080344                CustomPIO::~CustomPIO()
+                0x0000000000080344                CustomPIO::~CustomPIO()
+ .text._ZN9CustomPIO27DeactivatePeripheralControlEPmhPP3Pio
+                0x0000000000080346       0x1e build-arduino_due_x_dbg/pios.cpp.o
+                0x0000000000080346                CustomPIO::DeactivatePeripheralControl(unsigned long*, unsigned char, Pio**)
+ .text._ZN9CustomPIO25ActivatePeripheralControlEPmhPP3Pio
+                0x0000000000080364       0x1e build-arduino_due_x_dbg/pios.cpp.o
+                0x0000000000080364                CustomPIO::ActivatePeripheralControl(unsigned long*, unsigned char, Pio**)
+ .text._ZN9CustomPIO13SetOutputPinsEPmhPP3Pio
+                0x0000000000080382       0x1e build-arduino_due_x_dbg/pios.cpp.o
+                0x0000000000080382                CustomPIO::SetOutputPins(unsigned long*, unsigned char, Pio**)
+ .text._ZN9CustomPIOC2EPmhPP3Pio
+                0x00000000000803a0       0x1e build-arduino_due_x_dbg/pios.cpp.o
+                0x00000000000803a0                CustomPIO::CustomPIO(unsigned long*, unsigned char, Pio**)
+                0x00000000000803a0                CustomPIO::CustomPIO(unsigned long*, unsigned char, Pio**)
+ .text._ZN9CustomPIO16ChangePeripheralEPmhPP3Pio
+                0x00000000000803be       0x1e build-arduino_due_x_dbg/pios.cpp.o
+                0x00000000000803be                CustomPIO::ChangePeripheral(unsigned long*, unsigned char, Pio**)
  .text._Z21EnablePeripheralClockh
-                0x00000000000803c8       0x24 build-arduino_due_x_dbg/pmc.cpp.o
-                0x00000000000803c8                EnablePeripheralClock(unsigned char)
- .text._Z24DisableUnusedPWMChannelsv
-                0x00000000000803ec       0x14 build-arduino_due_x_dbg/pwm.cpp.o
-                0x00000000000803ec                DisableUnusedPWMChannels()
- .text._Z17EnablePWMChannelsPth
-                0x0000000000080400       0x28 build-arduino_due_x_dbg/pwm.cpp.o
-                0x0000000000080400                EnablePWMChannels(unsigned short*, unsigned char)
- .text._Z6GetPinhRmRP3Pio
-                0x0000000000080428       0x1c build-arduino_due_x_dbg/pwm.cpp.o
-                0x0000000000080428                GetPin(unsigned char, unsigned long&, Pio*&)
- *fill*         0x0000000000080444        0x4 
- .text._Z9pwm_setupPthbh
-                0x0000000000080448       0xd0 build-arduino_due_x_dbg/pwm.cpp.o
-                0x0000000000080448                pwm_setup(unsigned short*, unsigned char, bool, unsigned char)
+                0x00000000000803dc       0x24 build-arduino_due_x_dbg/pmc.cpp.o
+                0x00000000000803dc                EnablePeripheralClock(unsigned char)
+ .text._ZN9CustomPWMD2Ev
+                0x0000000000080400        0x2 build-arduino_due_x_dbg/pwm.cpp.o
+                0x0000000000080400                CustomPWM::~CustomPWM()
+                0x0000000000080400                CustomPWM::~CustomPWM()
+ *fill*         0x0000000000080402        0x2 
+ .text._ZN9CustomPWM24DisableUnusedPWMChannelsEv
+                0x0000000000080404       0x14 build-arduino_due_x_dbg/pwm.cpp.o
+                0x0000000000080404                CustomPWM::DisableUnusedPWMChannels()
+ .text._ZN9CustomPWM17EnablePWMChannelsEPth
+                0x0000000000080418       0x28 build-arduino_due_x_dbg/pwm.cpp.o
+                0x0000000000080418                CustomPWM::EnablePWMChannels(unsigned short*, unsigned char)
+ .text._ZN9CustomPWM6GetPinEhRmRP3Pio
+                0x0000000000080440       0x1c build-arduino_due_x_dbg/pwm.cpp.o
+                0x0000000000080440                CustomPWM::GetPin(unsigned char, unsigned long&, Pio*&)
+ *fill*         0x000000000008045c        0x4 
+ .text._ZN9CustomPWMC2EPthbh9CustomPIO
+                0x0000000000080460       0xe8 build-arduino_due_x_dbg/pwm.cpp.o
+                0x0000000000080460                CustomPWM::CustomPWM(unsigned short*, unsigned char, bool, unsigned char, CustomPIO)
+                0x0000000000080460                CustomPWM::CustomPWM(unsigned short*, unsigned char, bool, unsigned char, CustomPIO)
  .text.ADC_Handler
-                0x0000000000080518       0x4c build-arduino_due_x_dbg/tests.ino.o
-                0x0000000000080518                ADC_Handler
- .text.loop     0x0000000000080564        0x2 build-arduino_due_x_dbg/tests.ino.o
-                0x0000000000080564                loop
- *fill*         0x0000000000080566        0x2 
- .text.startup._GLOBAL__sub_I_sensor2
-                0x0000000000080568       0x70 build-arduino_due_x_dbg/tests.ino.o
- .text.setup    0x00000000000805d8       0x84 build-arduino_due_x_dbg/tests.ino.o
-                0x00000000000805d8                setup
+                0x0000000000080548       0x4c build-arduino_due_x_dbg/tests.ino.o
+                0x0000000000080548                ADC_Handler
+ .text.loop     0x0000000000080594        0x2 build-arduino_due_x_dbg/tests.ino.o
+                0x0000000000080594                loop
+ *fill*         0x0000000000080596        0x2 
+ .text.startup._GLOBAL__sub_I_sensors
+                0x0000000000080598       0xa0 build-arduino_due_x_dbg/tests.ino.o
+ .text.setup    0x0000000000080638       0x48 build-arduino_due_x_dbg/tests.ino.o
+                0x0000000000080638                setup
  .text.Reset_Handler
-                0x000000000008065c       0x78 /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/variants/arduino_due_x/libsam_sam3x8e_gcc_rel.a(startup_sam3xa.o)
-                0x000000000008065c                Reset_Handler
+                0x0000000000080680       0x78 /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/variants/arduino_due_x/libsam_sam3x8e_gcc_rel.a(startup_sam3xa.o)
+                0x0000000000080680                Reset_Handler
  .text.UOTGHS_Handler
-                0x00000000000806d4       0x10 /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/variants/arduino_due_x/libsam_sam3x8e_gcc_rel.a(uotghs.o)
-                0x00000000000806d4                UOTGHS_Handler
+                0x00000000000806f8       0x10 /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/variants/arduino_due_x/libsam_sam3x8e_gcc_rel.a(uotghs.o)
+                0x00000000000806f8                UOTGHS_Handler
  .text._Z11serialEventv
-                0x00000000000806e4        0x2 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
-                0x00000000000806e4                serialEvent()
- *fill*         0x00000000000806e6        0x2 
+                0x0000000000080708        0x2 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
+                0x0000000000080708                serialEvent()
+ *fill*         0x000000000008070a        0x2 
  .text.UART_Handler
-                0x00000000000806e8        0xc build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
-                0x00000000000806e8                UART_Handler
+                0x000000000008070c        0xc build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
+                0x000000000008070c                UART_Handler
  .text._Z12serialEvent1v
-                0x00000000000806f4        0x2 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
-                0x00000000000806f4                serialEvent1()
+                0x0000000000080718        0x2 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
+                0x0000000000080718                serialEvent1()
  .text._Z12serialEvent2v
-                0x00000000000806f6        0x2 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
-                0x00000000000806f6                serialEvent2()
+                0x000000000008071a        0x2 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
+                0x000000000008071a                serialEvent2()
  .text._Z12serialEvent3v
-                0x00000000000806f8        0x2 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
-                0x00000000000806f8                serialEvent3()
- *fill*         0x00000000000806fa        0x2 
+                0x000000000008071c        0x2 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
+                0x000000000008071c                serialEvent3()
+ *fill*         0x000000000008071e        0x2 
  .text.USART0_Handler
-                0x00000000000806fc        0xc build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
-                0x00000000000806fc                USART0_Handler
+                0x0000000000080720        0xc build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
+                0x0000000000080720                USART0_Handler
  .text.USART1_Handler
-                0x0000000000080708        0xc build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
-                0x0000000000080708                USART1_Handler
+                0x000000000008072c        0xc build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
+                0x000000000008072c                USART1_Handler
  .text.USART3_Handler
-                0x0000000000080714        0xc build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
-                0x0000000000080714                USART3_Handler
- .text.init     0x0000000000080720      0x128 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
-                0x0000000000080720                init
+                0x0000000000080738        0xc build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
+                0x0000000000080738                USART3_Handler
+ .text.init     0x0000000000080744      0x128 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
+                0x0000000000080744                init
  .text.startup._GLOBAL__sub_I_g_APinDescription
-                0x0000000000080848       0xd4 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
+                0x000000000008086c       0xd4 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
  .text._Z14serialEventRunv
-                0x000000000008091c       0x44 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
-                0x000000000008091c                serialEventRun()
+                0x0000000000080940       0x44 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
+                0x0000000000080940                serialEventRun()
  .text.pmc_enable_upll_clock
-                0x0000000000080960       0x14 build-arduino_due_x_dbg/libcore.a(pmc.c.o)
-                0x0000000000080960                pmc_enable_upll_clock
+                0x0000000000080984       0x14 build-arduino_due_x_dbg/libcore.a(pmc.c.o)
+                0x0000000000080984                pmc_enable_upll_clock
  .text.pmc_enable_periph_clk
-                0x0000000000080974       0x44 build-arduino_due_x_dbg/libcore.a(pmc.c.o)
-                0x0000000000080974                pmc_enable_periph_clk
+                0x0000000000080998       0x44 build-arduino_due_x_dbg/libcore.a(pmc.c.o)
+                0x0000000000080998                pmc_enable_periph_clk
  .text.pmc_disable_periph_clk
-                0x00000000000809b8       0x40 build-arduino_due_x_dbg/libcore.a(pmc.c.o)
-                0x00000000000809b8                pmc_disable_periph_clk
+                0x00000000000809dc       0x40 build-arduino_due_x_dbg/libcore.a(pmc.c.o)
+                0x00000000000809dc                pmc_disable_periph_clk
  .text.pmc_switch_udpck_to_upllck
-                0x00000000000809f8       0x14 build-arduino_due_x_dbg/libcore.a(pmc.c.o)
-                0x00000000000809f8                pmc_switch_udpck_to_upllck
+                0x0000000000080a1c       0x14 build-arduino_due_x_dbg/libcore.a(pmc.c.o)
+                0x0000000000080a1c                pmc_switch_udpck_to_upllck
  .text.pmc_enable_udpck
-                0x0000000000080a0c        0xc build-arduino_due_x_dbg/libcore.a(pmc.c.o)
-                0x0000000000080a0c                pmc_enable_udpck
+                0x0000000000080a30        0xc build-arduino_due_x_dbg/libcore.a(pmc.c.o)
+                0x0000000000080a30                pmc_enable_udpck
  .text.PIO_PullUp
-                0x0000000000080a18        0xa build-arduino_due_x_dbg/libcore.a(pio.c.o)
-                0x0000000000080a18                PIO_PullUp
+                0x0000000000080a3c        0xa build-arduino_due_x_dbg/libcore.a(pio.c.o)
+                0x0000000000080a3c                PIO_PullUp
  .text.PIO_SetPeripheral
-                0x0000000000080a22       0x26 build-arduino_due_x_dbg/libcore.a(pio.c.o)
-                0x0000000000080a22                PIO_SetPeripheral
+                0x0000000000080a46       0x26 build-arduino_due_x_dbg/libcore.a(pio.c.o)
+                0x0000000000080a46                PIO_SetPeripheral
  .text.PIO_SetInput
-                0x0000000000080a48       0x26 build-arduino_due_x_dbg/libcore.a(pio.c.o)
-                0x0000000000080a48                PIO_SetInput
+                0x0000000000080a6c       0x26 build-arduino_due_x_dbg/libcore.a(pio.c.o)
+                0x0000000000080a6c                PIO_SetInput
  .text.PIO_SetOutput
-                0x0000000000080a6e       0x24 build-arduino_due_x_dbg/libcore.a(pio.c.o)
-                0x0000000000080a6e                PIO_SetOutput
+                0x0000000000080a92       0x24 build-arduino_due_x_dbg/libcore.a(pio.c.o)
+                0x0000000000080a92                PIO_SetOutput
  .text.PIO_Configure
-                0x0000000000080a92       0x56 build-arduino_due_x_dbg/libcore.a(pio.c.o)
-                0x0000000000080a92                PIO_Configure
+                0x0000000000080ab6       0x56 build-arduino_due_x_dbg/libcore.a(pio.c.o)
+                0x0000000000080ab6                PIO_Configure
  .text.PIO_GetOutputDataStatus
-                0x0000000000080ae8       0x14 build-arduino_due_x_dbg/libcore.a(pio.c.o)
-                0x0000000000080ae8                PIO_GetOutputDataStatus
+                0x0000000000080b0c       0x14 build-arduino_due_x_dbg/libcore.a(pio.c.o)
+                0x0000000000080b0c                PIO_GetOutputDataStatus
  .text.adc_init
-                0x0000000000080afc       0x98 build-arduino_due_x_dbg/libcore.a(adc.c.o)
-                0x0000000000080afc                adc_init
+                0x0000000000080b20       0x98 build-arduino_due_x_dbg/libcore.a(adc.c.o)
+                0x0000000000080b20                adc_init
  .text.adc_configure_trigger
-                0x0000000000080b94       0x2a build-arduino_due_x_dbg/libcore.a(adc.c.o)
-                0x0000000000080b94                adc_configure_trigger
+                0x0000000000080bb8       0x2a build-arduino_due_x_dbg/libcore.a(adc.c.o)
+                0x0000000000080bb8                adc_configure_trigger
  .text.adc_configure_timing
-                0x0000000000080bbe       0x1a build-arduino_due_x_dbg/libcore.a(adc.c.o)
-                0x0000000000080bbe                adc_configure_timing
+                0x0000000000080be2       0x1a build-arduino_due_x_dbg/libcore.a(adc.c.o)
+                0x0000000000080be2                adc_configure_timing
  .text.adc_disable_channel
-                0x0000000000080bd8        0xa build-arduino_due_x_dbg/libcore.a(adc.c.o)
-                0x0000000000080bd8                adc_disable_channel
+                0x0000000000080bfc        0xa build-arduino_due_x_dbg/libcore.a(adc.c.o)
+                0x0000000000080bfc                adc_disable_channel
  .text.adc_disable_all_channel
-                0x0000000000080be2        0x8 build-arduino_due_x_dbg/libcore.a(adc.c.o)
-                0x0000000000080be2                adc_disable_all_channel
+                0x0000000000080c06        0x8 build-arduino_due_x_dbg/libcore.a(adc.c.o)
+                0x0000000000080c06                adc_disable_all_channel
  .text.adc_disable_interrupt
-                0x0000000000080bea        0x4 build-arduino_due_x_dbg/libcore.a(adc.c.o)
-                0x0000000000080bea                adc_disable_interrupt
- *fill*         0x0000000000080bee        0x2 
+                0x0000000000080c0e        0x4 build-arduino_due_x_dbg/libcore.a(adc.c.o)
+                0x0000000000080c0e                adc_disable_interrupt
+ *fill*         0x0000000000080c12        0x2 
  .text.SystemInit
-                0x0000000000080bf0       0x88 build-arduino_due_x_dbg/libcore.a(system_sam3xa.c.o)
-                0x0000000000080bf0                SystemInit
+                0x0000000000080c14       0x88 build-arduino_due_x_dbg/libcore.a(system_sam3xa.c.o)
+                0x0000000000080c14                SystemInit
  .text.PIOA_Handler
-                0x0000000000080c78       0x38 build-arduino_due_x_dbg/libcore.a(WInterrupts.c.o)
-                0x0000000000080c78                PIOA_Handler
+                0x0000000000080c9c       0x38 build-arduino_due_x_dbg/libcore.a(WInterrupts.c.o)
+                0x0000000000080c9c                PIOA_Handler
  .text.PIOB_Handler
-                0x0000000000080cb0       0x38 build-arduino_due_x_dbg/libcore.a(WInterrupts.c.o)
-                0x0000000000080cb0                PIOB_Handler
+                0x0000000000080cd4       0x38 build-arduino_due_x_dbg/libcore.a(WInterrupts.c.o)
+                0x0000000000080cd4                PIOB_Handler
  .text.PIOC_Handler
-                0x0000000000080ce8       0x38 build-arduino_due_x_dbg/libcore.a(WInterrupts.c.o)
-                0x0000000000080ce8                PIOC_Handler
+                0x0000000000080d0c       0x38 build-arduino_due_x_dbg/libcore.a(WInterrupts.c.o)
+                0x0000000000080d0c                PIOC_Handler
  .text.PIOD_Handler
-                0x0000000000080d20       0x38 build-arduino_due_x_dbg/libcore.a(WInterrupts.c.o)
-                0x0000000000080d20                PIOD_Handler
- .text.pinMode  0x0000000000080d58      0x108 build-arduino_due_x_dbg/libcore.a(wiring_digital.c.o)
-                0x0000000000080d58                pinMode
+                0x0000000000080d44       0x38 build-arduino_due_x_dbg/libcore.a(WInterrupts.c.o)
+                0x0000000000080d44                PIOD_Handler
+ .text.pinMode  0x0000000000080d7c      0x108 build-arduino_due_x_dbg/libcore.a(wiring_digital.c.o)
+                0x0000000000080d7c                pinMode
  .text.digitalWrite
-                0x0000000000080e60       0x70 build-arduino_due_x_dbg/libcore.a(wiring_digital.c.o)
-                0x0000000000080e60                digitalWrite
- .text._sbrk    0x0000000000080ed0       0x1c build-arduino_due_x_dbg/libcore.a(syscalls_sam3.c.o)
-                0x0000000000080ed0                _sbrk
- .text.link     0x0000000000080eec        0x6 build-arduino_due_x_dbg/libcore.a(syscalls_sam3.c.o)
-                0x0000000000080eec                link
- .text._close   0x0000000000080ef2        0x6 build-arduino_due_x_dbg/libcore.a(syscalls_sam3.c.o)
-                0x0000000000080ef2                _close
- .text._fstat   0x0000000000080ef8        0xa build-arduino_due_x_dbg/libcore.a(syscalls_sam3.c.o)
-                0x0000000000080ef8                _fstat
- .text._isatty  0x0000000000080f02        0x4 build-arduino_due_x_dbg/libcore.a(syscalls_sam3.c.o)
-                0x0000000000080f02                _isatty
- .text._lseek   0x0000000000080f06        0x4 build-arduino_due_x_dbg/libcore.a(syscalls_sam3.c.o)
-                0x0000000000080f06                _lseek
- .text._read    0x0000000000080f0a        0x4 build-arduino_due_x_dbg/libcore.a(syscalls_sam3.c.o)
-                0x0000000000080f0a                _read
- *fill*         0x0000000000080f0e        0x2 
- .text._write   0x0000000000080f10       0x24 build-arduino_due_x_dbg/libcore.a(syscalls_sam3.c.o)
-                0x0000000000080f10                _write
- .text._exit    0x0000000000080f34        0x2 build-arduino_due_x_dbg/libcore.a(syscalls_sam3.c.o)
-                0x0000000000080f34                _exit
- .text._kill    0x0000000000080f36        0x2 build-arduino_due_x_dbg/libcore.a(syscalls_sam3.c.o)
-                0x0000000000080f36                _kill
- .text._getpid  0x0000000000080f38        0x6 build-arduino_due_x_dbg/libcore.a(syscalls_sam3.c.o)
-                0x0000000000080f38                _getpid
+                0x0000000000080e84       0x70 build-arduino_due_x_dbg/libcore.a(wiring_digital.c.o)
+                0x0000000000080e84                digitalWrite
+ .text._sbrk    0x0000000000080ef4       0x1c build-arduino_due_x_dbg/libcore.a(syscalls_sam3.c.o)
+                0x0000000000080ef4                _sbrk
+ .text.link     0x0000000000080f10        0x6 build-arduino_due_x_dbg/libcore.a(syscalls_sam3.c.o)
+                0x0000000000080f10                link
+ .text._close   0x0000000000080f16        0x6 build-arduino_due_x_dbg/libcore.a(syscalls_sam3.c.o)
+                0x0000000000080f16                _close
+ .text._fstat   0x0000000000080f1c        0xa build-arduino_due_x_dbg/libcore.a(syscalls_sam3.c.o)
+                0x0000000000080f1c                _fstat
+ .text._isatty  0x0000000000080f26        0x4 build-arduino_due_x_dbg/libcore.a(syscalls_sam3.c.o)
+                0x0000000000080f26                _isatty
+ .text._lseek   0x0000000000080f2a        0x4 build-arduino_due_x_dbg/libcore.a(syscalls_sam3.c.o)
+                0x0000000000080f2a                _lseek
+ .text._read    0x0000000000080f2e        0x4 build-arduino_due_x_dbg/libcore.a(syscalls_sam3.c.o)
+                0x0000000000080f2e                _read
+ *fill*         0x0000000000080f32        0x2 
+ .text._write   0x0000000000080f34       0x24 build-arduino_due_x_dbg/libcore.a(syscalls_sam3.c.o)
+                0x0000000000080f34                _write
+ .text._exit    0x0000000000080f58        0x2 build-arduino_due_x_dbg/libcore.a(syscalls_sam3.c.o)
+                0x0000000000080f58                _exit
+ .text._kill    0x0000000000080f5a        0x2 build-arduino_due_x_dbg/libcore.a(syscalls_sam3.c.o)
+                0x0000000000080f5a                _kill
+ .text._getpid  0x0000000000080f5c        0x6 build-arduino_due_x_dbg/libcore.a(syscalls_sam3.c.o)
+                0x0000000000080f5c                _getpid
  .text.analogOutputInit
-                0x0000000000080f3e        0x2 build-arduino_due_x_dbg/libcore.a(wiring_analog.c.o)
-                0x0000000000080f3e                analogOutputInit
- .text.__halt   0x0000000000080f40        0x2 build-arduino_due_x_dbg/libcore.a(cortex_handlers.c.o)
-                0x0000000000080f40                DACC_Handler
-                0x0000000000080f40                DebugMon_Handler
-                0x0000000000080f40                DMAC_Handler
-                0x0000000000080f40                TRNG_Handler
-                0x0000000000080f40                HardFault_Handler
-                0x0000000000080f40                TC2_Handler
-                0x0000000000080f40                TWI1_Handler
-                0x0000000000080f40                NMI_Handler
-                0x0000000000080f40                TC7_Handler
-                0x0000000000080f40                SMC_Handler
-                0x0000000000080f40                RTT_Handler
-                0x0000000000080f40                EFC1_Handler
-                0x0000000000080f40                RTC_Handler
-                0x0000000000080f40                UsageFault_Handler
-                0x0000000000080f40                TC6_Handler
-                0x0000000000080f40                WDT_Handler
-                0x0000000000080f40                CAN0_Handler
-                0x0000000000080f40                TC4_Handler
-                0x0000000000080f40                TC1_Handler
-                0x0000000000080f40                HSMCI_Handler
-                0x0000000000080f40                TC3_Handler
-                0x0000000000080f40                TWI0_Handler
-                0x0000000000080f40                SSC_Handler
-                0x0000000000080f40                EFC0_Handler
-                0x0000000000080f40                PMC_Handler
-                0x0000000000080f40                PWM_Handler
-                0x0000000000080f40                CAN1_Handler
-                0x0000000000080f40                MemManage_Handler
-                0x0000000000080f40                SUPC_Handler
-                0x0000000000080f40                TC8_Handler
-                0x0000000000080f40                USART2_Handler
-                0x0000000000080f40                EMAC_Handler
-                0x0000000000080f40                BusFault_Handler
-                0x0000000000080f40                RSTC_Handler
-                0x0000000000080f40                TC0_Handler
-                0x0000000000080f40                TC5_Handler
-                0x0000000000080f40                SPI0_Handler
+                0x0000000000080f62        0x2 build-arduino_due_x_dbg/libcore.a(wiring_analog.c.o)
+                0x0000000000080f62                analogOutputInit
+ .text.__halt   0x0000000000080f64        0x2 build-arduino_due_x_dbg/libcore.a(cortex_handlers.c.o)
+                0x0000000000080f64                DACC_Handler
+                0x0000000000080f64                DebugMon_Handler
+                0x0000000000080f64                DMAC_Handler
+                0x0000000000080f64                TRNG_Handler
+                0x0000000000080f64                HardFault_Handler
+                0x0000000000080f64                TC2_Handler
+                0x0000000000080f64                TWI1_Handler
+                0x0000000000080f64                NMI_Handler
+                0x0000000000080f64                TC7_Handler
+                0x0000000000080f64                SMC_Handler
+                0x0000000000080f64                RTT_Handler
+                0x0000000000080f64                EFC1_Handler
+                0x0000000000080f64                RTC_Handler
+                0x0000000000080f64                UsageFault_Handler
+                0x0000000000080f64                TC6_Handler
+                0x0000000000080f64                WDT_Handler
+                0x0000000000080f64                CAN0_Handler
+                0x0000000000080f64                TC4_Handler
+                0x0000000000080f64                TC1_Handler
+                0x0000000000080f64                HSMCI_Handler
+                0x0000000000080f64                TC3_Handler
+                0x0000000000080f64                TWI0_Handler
+                0x0000000000080f64                SSC_Handler
+                0x0000000000080f64                EFC0_Handler
+                0x0000000000080f64                PMC_Handler
+                0x0000000000080f64                PWM_Handler
+                0x0000000000080f64                CAN1_Handler
+                0x0000000000080f64                MemManage_Handler
+                0x0000000000080f64                SUPC_Handler
+                0x0000000000080f64                TC8_Handler
+                0x0000000000080f64                USART2_Handler
+                0x0000000000080f64                EMAC_Handler
+                0x0000000000080f64                BusFault_Handler
+                0x0000000000080f64                RSTC_Handler
+                0x0000000000080f64                TC0_Handler
+                0x0000000000080f64                TC5_Handler
+                0x0000000000080f64                SPI0_Handler
  .text.SVC_Handler
-                0x0000000000080f42        0x4 build-arduino_due_x_dbg/libcore.a(cortex_handlers.c.o)
-                0x0000000000080f42                SVC_Handler
+                0x0000000000080f66        0x4 build-arduino_due_x_dbg/libcore.a(cortex_handlers.c.o)
+                0x0000000000080f66                SVC_Handler
  .text.PendSV_Handler
-                0x0000000000080f46        0x4 build-arduino_due_x_dbg/libcore.a(cortex_handlers.c.o)
-                0x0000000000080f46                PendSV_Handler
+                0x0000000000080f6a        0x4 build-arduino_due_x_dbg/libcore.a(cortex_handlers.c.o)
+                0x0000000000080f6a                PendSV_Handler
  .text.SysTick_Handler
-                0x0000000000080f4a       0x16 build-arduino_due_x_dbg/libcore.a(cortex_handlers.c.o)
-                0x0000000000080f4a                SysTick_Handler
+                0x0000000000080f6e       0x16 build-arduino_due_x_dbg/libcore.a(cortex_handlers.c.o)
+                0x0000000000080f6e                SysTick_Handler
  .text.initiateReset
-                0x0000000000080f60        0xc build-arduino_due_x_dbg/libcore.a(Reset.cpp.o)
-                0x0000000000080f60                initiateReset
+                0x0000000000080f84        0xc build-arduino_due_x_dbg/libcore.a(Reset.cpp.o)
+                0x0000000000080f84                initiateReset
  .text.cancelReset
-                0x0000000000080f6c       0x10 build-arduino_due_x_dbg/libcore.a(Reset.cpp.o)
-                0x0000000000080f6c                cancelReset
+                0x0000000000080f90       0x10 build-arduino_due_x_dbg/libcore.a(Reset.cpp.o)
+                0x0000000000080f90                cancelReset
  .text.tickReset
-                0x0000000000080f7c       0x20 build-arduino_due_x_dbg/libcore.a(Reset.cpp.o)
-                0x0000000000080f7c                tickReset
+                0x0000000000080fa0       0x20 build-arduino_due_x_dbg/libcore.a(Reset.cpp.o)
+                0x0000000000080fa0                tickReset
  .text._ZN9UARTClasscvbEv
-                0x0000000000080f9c        0x4 build-arduino_due_x_dbg/libcore.a(USARTClass.cpp.o)
-                0x0000000000080f9c                UARTClass::operator bool()
+                0x0000000000080fc0        0x4 build-arduino_due_x_dbg/libcore.a(USARTClass.cpp.o)
+                0x0000000000080fc0                UARTClass::operator bool()
  .text._ZN10USARTClass5beginEm
-                0x0000000000080fa0        0x8 build-arduino_due_x_dbg/libcore.a(USARTClass.cpp.o)
-                0x0000000000080fa0                USARTClass::begin(unsigned long)
+                0x0000000000080fc4        0x8 build-arduino_due_x_dbg/libcore.a(USARTClass.cpp.o)
+                0x0000000000080fc4                USARTClass::begin(unsigned long)
  .text._ZN10USARTClassC2EP5Usart4IRQnmP10RingBufferS4_
-                0x0000000000080fa8       0x24 build-arduino_due_x_dbg/libcore.a(USARTClass.cpp.o)
-                0x0000000000080fa8                USARTClass::USARTClass(Usart*, IRQn, unsigned long, RingBuffer*, RingBuffer*)
-                0x0000000000080fa8                USARTClass::USARTClass(Usart*, IRQn, unsigned long, RingBuffer*, RingBuffer*)
+                0x0000000000080fcc       0x24 build-arduino_due_x_dbg/libcore.a(USARTClass.cpp.o)
+                0x0000000000080fcc                USARTClass::USARTClass(Usart*, IRQn, unsigned long, RingBuffer*, RingBuffer*)
+                0x0000000000080fcc                USARTClass::USARTClass(Usart*, IRQn, unsigned long, RingBuffer*, RingBuffer*)
  .text._ZN10RingBufferC2Ev
-                0x0000000000080fcc       0x1a build-arduino_due_x_dbg/libcore.a(RingBuffer.cpp.o)
-                0x0000000000080fcc                RingBuffer::RingBuffer()
-                0x0000000000080fcc                RingBuffer::RingBuffer()
+                0x0000000000080ff0       0x1a build-arduino_due_x_dbg/libcore.a(RingBuffer.cpp.o)
+                0x0000000000080ff0                RingBuffer::RingBuffer()
+                0x0000000000080ff0                RingBuffer::RingBuffer()
  .text._ZN10RingBuffer10store_charEh
-                0x0000000000080fe6       0x1e build-arduino_due_x_dbg/libcore.a(RingBuffer.cpp.o)
-                0x0000000000080fe6                RingBuffer::store_char(unsigned char)
+                0x000000000008100a       0x1e build-arduino_due_x_dbg/libcore.a(RingBuffer.cpp.o)
+                0x000000000008100a                RingBuffer::store_char(unsigned char)
  .text._ZN9UARTClass9availableEv
-                0x0000000000081004       0x12 build-arduino_due_x_dbg/libcore.a(UARTClass.cpp.o)
-                0x0000000000081004                UARTClass::available()
+                0x0000000000081028       0x12 build-arduino_due_x_dbg/libcore.a(UARTClass.cpp.o)
+                0x0000000000081028                UARTClass::available()
  .text._ZN9UARTClass4peekEv
-                0x0000000000081016       0x1c build-arduino_due_x_dbg/libcore.a(UARTClass.cpp.o)
-                0x0000000000081016                UARTClass::peek()
+                0x000000000008103a       0x1c build-arduino_due_x_dbg/libcore.a(UARTClass.cpp.o)
+                0x000000000008103a                UARTClass::peek()
  .text._ZN9UARTClass4readEv
-                0x0000000000081032       0x2a build-arduino_due_x_dbg/libcore.a(UARTClass.cpp.o)
-                0x0000000000081032                UARTClass::read()
+                0x0000000000081056       0x2a build-arduino_due_x_dbg/libcore.a(UARTClass.cpp.o)
+                0x0000000000081056                UARTClass::read()
  .text._ZN9UARTClass5flushEv
-                0x000000000008105c       0x18 build-arduino_due_x_dbg/libcore.a(UARTClass.cpp.o)
-                0x000000000008105c                UARTClass::flush()
+                0x0000000000081080       0x18 build-arduino_due_x_dbg/libcore.a(UARTClass.cpp.o)
+                0x0000000000081080                UARTClass::flush()
  .text._ZN9UARTClass5writeEh
-                0x0000000000081074       0x54 build-arduino_due_x_dbg/libcore.a(UARTClass.cpp.o)
-                0x0000000000081074                UARTClass::write(unsigned char)
+                0x0000000000081098       0x54 build-arduino_due_x_dbg/libcore.a(UARTClass.cpp.o)
+                0x0000000000081098                UARTClass::write(unsigned char)
  .text._ZN9UARTClass3endEv
-                0x00000000000810c8       0x3c build-arduino_due_x_dbg/libcore.a(UARTClass.cpp.o)
-                0x00000000000810c8                UARTClass::end()
+                0x00000000000810ec       0x3c build-arduino_due_x_dbg/libcore.a(UARTClass.cpp.o)
+                0x00000000000810ec                UARTClass::end()
  .text._ZN9UARTClassC2EP4Uart4IRQnmP10RingBufferS4_
-                0x0000000000081104       0x24 build-arduino_due_x_dbg/libcore.a(UARTClass.cpp.o)
-                0x0000000000081104                UARTClass::UARTClass(Uart*, IRQn, unsigned long, RingBuffer*, RingBuffer*)
-                0x0000000000081104                UARTClass::UARTClass(Uart*, IRQn, unsigned long, RingBuffer*, RingBuffer*)
+                0x0000000000081128       0x24 build-arduino_due_x_dbg/libcore.a(UARTClass.cpp.o)
+                0x0000000000081128                UARTClass::UARTClass(Uart*, IRQn, unsigned long, RingBuffer*, RingBuffer*)
+                0x0000000000081128                UARTClass::UARTClass(Uart*, IRQn, unsigned long, RingBuffer*, RingBuffer*)
  .text._ZN9UARTClass4initEmm
-                0x0000000000081128       0x70 build-arduino_due_x_dbg/libcore.a(UARTClass.cpp.o)
-                0x0000000000081128                UARTClass::init(unsigned long, unsigned long)
+                0x000000000008114c       0x70 build-arduino_due_x_dbg/libcore.a(UARTClass.cpp.o)
+                0x000000000008114c                UARTClass::init(unsigned long, unsigned long)
  .text._ZN9UARTClass5beginEm
-                0x0000000000081198        0x8 build-arduino_due_x_dbg/libcore.a(UARTClass.cpp.o)
-                0x0000000000081198                UARTClass::begin(unsigned long)
+                0x00000000000811bc        0x8 build-arduino_due_x_dbg/libcore.a(UARTClass.cpp.o)
+                0x00000000000811bc                UARTClass::begin(unsigned long)
  .text._ZN9UARTClass10IrqHandlerEv
-                0x00000000000811a0       0x5a build-arduino_due_x_dbg/libcore.a(UARTClass.cpp.o)
-                0x00000000000811a0                UARTClass::IrqHandler()
+                0x00000000000811c4       0x5a build-arduino_due_x_dbg/libcore.a(UARTClass.cpp.o)
+                0x00000000000811c4                UARTClass::IrqHandler()
  .text.initVariant
-                0x00000000000811fa        0x2 build-arduino_due_x_dbg/libcore.a(main.cpp.o)
-                0x00000000000811fa                initVariant
+                0x000000000008121e        0x2 build-arduino_due_x_dbg/libcore.a(main.cpp.o)
+                0x000000000008121e                initVariant
  .text.startup.main
-                0x00000000000811fc       0x38 build-arduino_due_x_dbg/libcore.a(main.cpp.o)
-                0x00000000000811fc                main
+                0x0000000000081220       0x38 build-arduino_due_x_dbg/libcore.a(main.cpp.o)
+                0x0000000000081220                main
  .text.unlikely._ZL11USB_SendZlpv
-                0x0000000000081234       0x20 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x0000000000081258       0x20 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
  .text._Z14USBD_Availablem
-                0x0000000000081254       0x2c build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
-                0x0000000000081254                USBD_Available(unsigned long)
+                0x0000000000081278       0x2c build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x0000000000081278                USBD_Available(unsigned long)
  .text._Z9USBD_RecvmPvm
-                0x0000000000081280       0x7c build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
-                0x0000000000081280                USBD_Recv(unsigned long, void*, unsigned long)
+                0x00000000000812a4       0x7c build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x00000000000812a4                USBD_Recv(unsigned long, void*, unsigned long)
  .text._Z9USBD_Recvm
-                0x00000000000812fc       0x22 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
-                0x00000000000812fc                USBD_Recv(unsigned long)
- *fill*         0x000000000008131e        0x2 
+                0x0000000000081320       0x22 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x0000000000081320                USBD_Recv(unsigned long)
+ *fill*         0x0000000000081342        0x2 
  .text._Z9USBD_SendmPKvm
-                0x0000000000081320       0x4c build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
-                0x0000000000081320                USBD_Send(unsigned long, void const*, unsigned long)
+                0x0000000000081344       0x4c build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x0000000000081344                USBD_Send(unsigned long, void const*, unsigned long)
  .text._Z16USBD_SendControlhPKvm
-                0x000000000008136c       0x40 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
-                0x000000000008136c                USBD_SendControl(unsigned char, void const*, unsigned long)
+                0x0000000000081390       0x40 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x0000000000081390                USBD_SendControl(unsigned char, void const*, unsigned long)
  .text.unlikely._ZL24USB_SendStringDescriptorPKhi
-                0x00000000000813ac       0x64 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x00000000000813d0       0x64 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
  .text._Z16USBD_RecvControlPvm
-                0x0000000000081410       0x1c build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
-                0x0000000000081410                USBD_RecvControl(void*, unsigned long)
+                0x0000000000081434       0x1c build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x0000000000081434                USBD_RecvControl(void*, unsigned long)
  .text._Z26USBD_ClassInterfaceRequestR8USBSetup
-                0x000000000008142c       0x1e build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
-                0x000000000008142c                USBD_ClassInterfaceRequest(USBSetup&)
+                0x0000000000081450       0x1e build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x0000000000081450                USBD_ClassInterfaceRequest(USBSetup&)
  .text._Z19USBD_SendInterfacesv
-                0x000000000008144a       0x22 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
-                0x000000000008144a                USBD_SendInterfaces()
+                0x000000000008146e       0x22 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x000000000008146e                USBD_SendInterfaces()
  .text._Z24USBD_SendOtherInterfacesv
-                0x000000000008146c       0x22 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
-                0x000000000008146c                USBD_SendOtherInterfaces()
+                0x0000000000081490       0x22 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x0000000000081490                USBD_SendOtherInterfaces()
  .text._Z10USBD_Flushm
-                0x000000000008148e       0x16 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
-                0x000000000008148e                USBD_Flush(unsigned long)
+                0x00000000000814b2       0x16 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x00000000000814b2                USBD_Flush(unsigned long)
  .text._ZN10USBDevice_C2Ev
-                0x00000000000814a4       0x24 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
-                0x00000000000814a4                USBDevice_::USBDevice_()
-                0x00000000000814a4                USBDevice_::USBDevice_()
+                0x00000000000814c8       0x24 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x00000000000814c8                USBDevice_::USBDevice_()
+                0x00000000000814c8                USBDevice_::USBDevice_()
  .text._ZN10USBDevice_6attachEv
-                0x00000000000814c8       0x20 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
-                0x00000000000814c8                USBDevice_::attach()
+                0x00000000000814ec       0x20 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x00000000000814ec                USBDevice_::attach()
  .text.startup._GLOBAL__sub_I_EndPoints
-                0x00000000000814e8        0xc build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x000000000008150c        0xc build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
  .text._ZL7USB_ISRv
-                0x00000000000814f4      0x454 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x0000000000081518      0x454 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
  .text._ZN13PluggableUSB_12getInterfaceEPh
-                0x0000000000081948       0x28 build-arduino_due_x_dbg/libcore.a(PluggableUSB.cpp.o)
-                0x0000000000081948                PluggableUSB_::getInterface(unsigned char*)
+                0x000000000008196c       0x28 build-arduino_due_x_dbg/libcore.a(PluggableUSB.cpp.o)
+                0x000000000008196c                PluggableUSB_::getInterface(unsigned char*)
  .text._ZN13PluggableUSB_13getDescriptorER8USBSetup
-                0x0000000000081970       0x1c build-arduino_due_x_dbg/libcore.a(PluggableUSB.cpp.o)
-                0x0000000000081970                PluggableUSB_::getDescriptor(USBSetup&)
+                0x0000000000081994       0x1c build-arduino_due_x_dbg/libcore.a(PluggableUSB.cpp.o)
+                0x0000000000081994                PluggableUSB_::getDescriptor(USBSetup&)
  .text._ZN13PluggableUSB_12getShortNameEPc
-                0x000000000008198c       0x1c build-arduino_due_x_dbg/libcore.a(PluggableUSB.cpp.o)
-                0x000000000008198c                PluggableUSB_::getShortName(char*)
+                0x00000000000819b0       0x1c build-arduino_due_x_dbg/libcore.a(PluggableUSB.cpp.o)
+                0x00000000000819b0                PluggableUSB_::getShortName(char*)
  .text._ZN13PluggableUSB_5setupER8USBSetup
-                0x00000000000819a8       0x20 build-arduino_due_x_dbg/libcore.a(PluggableUSB.cpp.o)
-                0x00000000000819a8                PluggableUSB_::setup(USBSetup&)
+                0x00000000000819cc       0x20 build-arduino_due_x_dbg/libcore.a(PluggableUSB.cpp.o)
+                0x00000000000819cc                PluggableUSB_::setup(USBSetup&)
  .text._Z12PluggableUSBv
-                0x00000000000819c8       0x28 build-arduino_due_x_dbg/libcore.a(PluggableUSB.cpp.o)
-                0x00000000000819c8                PluggableUSB()
+                0x00000000000819ec       0x28 build-arduino_due_x_dbg/libcore.a(PluggableUSB.cpp.o)
+                0x00000000000819ec                PluggableUSB()
  .text._ZN7Serial_9availableEv
-                0x00000000000819f0       0x18 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
-                0x00000000000819f0                Serial_::available()
+                0x0000000000081a14       0x18 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
+                0x0000000000081a14                Serial_::available()
  .text._ZN7Serial_17availableForWriteEv
-                0x0000000000081a08        0x6 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
-                0x0000000000081a08                Serial_::availableForWrite()
- *fill*         0x0000000000081a0e        0x2 
+                0x0000000000081a2c        0x6 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
+                0x0000000000081a2c                Serial_::availableForWrite()
+ *fill*         0x0000000000081a32        0x2 
  .text._ZN7Serial_4peekEv
-                0x0000000000081a10       0x20 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
-                0x0000000000081a10                Serial_::peek()
+                0x0000000000081a34       0x20 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
+                0x0000000000081a34                Serial_::peek()
  .text._ZN7Serial_5writeEh
-                0x0000000000081a30       0x16 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
-                0x0000000000081a30                Serial_::write(unsigned char)
- *fill*         0x0000000000081a46        0x2 
+                0x0000000000081a54       0x16 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
+                0x0000000000081a54                Serial_::write(unsigned char)
+ *fill*         0x0000000000081a6a        0x2 
  .text._ZN7Serial_4readEv
-                0x0000000000081a48       0x44 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
-                0x0000000000081a48                Serial_::read()
+                0x0000000000081a6c       0x44 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
+                0x0000000000081a6c                Serial_::read()
  .text._ZN7Serial_5flushEv
-                0x0000000000081a8c        0x6 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
-                0x0000000000081a8c                Serial_::flush()
- *fill*         0x0000000000081a92        0x2 
+                0x0000000000081ab0        0x6 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
+                0x0000000000081ab0                Serial_::flush()
+ *fill*         0x0000000000081ab6        0x2 
  .text._ZN7Serial_6acceptEv
-                0x0000000000081a94       0x70 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
-                0x0000000000081a94                Serial_::accept()
+                0x0000000000081ab8       0x70 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
+                0x0000000000081ab8                Serial_::accept()
  .text._ZN7Serial_5writeEPKhj
-                0x0000000000081b04       0x2c build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
-                0x0000000000081b04                Serial_::write(unsigned char const*, unsigned int)
+                0x0000000000081b28       0x2c build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
+                0x0000000000081b28                Serial_::write(unsigned char const*, unsigned int)
  .text._Z16CDC_GetInterfacePh
-                0x0000000000081b30       0x14 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
-                0x0000000000081b30                CDC_GetInterface(unsigned char*)
+                0x0000000000081b54       0x14 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
+                0x0000000000081b54                CDC_GetInterface(unsigned char*)
  .text._Z21CDC_GetOtherInterfacePh
-                0x0000000000081b44       0x14 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
-                0x0000000000081b44                CDC_GetOtherInterface(unsigned char*)
+                0x0000000000081b68       0x14 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
+                0x0000000000081b68                CDC_GetOtherInterface(unsigned char*)
  .text._Z9CDC_SetupR8USBSetup
-                0x0000000000081b58       0x78 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
-                0x0000000000081b58                CDC_Setup(USBSetup&)
+                0x0000000000081b7c       0x78 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
+                0x0000000000081b7c                CDC_Setup(USBSetup&)
  .text.startup._GLOBAL__sub_I_cdc_rx_buffer
-                0x0000000000081bd0       0x1c build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
+                0x0000000000081bf4       0x1c build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
  .text.UDD_SetStack
-                0x0000000000081bec        0xc build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
-                0x0000000000081bec                UDD_SetStack
+                0x0000000000081c10        0xc build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
+                0x0000000000081c10                UDD_SetStack
  .text.UDD_Init
-                0x0000000000081bf8       0xc0 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
-                0x0000000000081bf8                UDD_Init
+                0x0000000000081c1c       0xc0 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
+                0x0000000000081c1c                UDD_Init
  .text.UDD_Attach
-                0x0000000000081cb8       0x50 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
-                0x0000000000081cb8                UDD_Attach
+                0x0000000000081cdc       0x50 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
+                0x0000000000081cdc                UDD_Attach
  .text.UDD_InitEP
-                0x0000000000081d08       0x2c build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
-                0x0000000000081d08                UDD_InitEP
+                0x0000000000081d2c       0x2c build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
+                0x0000000000081d2c                UDD_InitEP
  .text.UDD_InitEndpoints
-                0x0000000000081d34       0x3c build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
-                0x0000000000081d34                UDD_InitEndpoints
+                0x0000000000081d58       0x3c build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
+                0x0000000000081d58                UDD_InitEndpoints
  .text.UDD_WaitIN
-                0x0000000000081d70       0x10 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
-                0x0000000000081d70                UDD_WaitIN
+                0x0000000000081d94       0x10 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
+                0x0000000000081d94                UDD_WaitIN
  .text.UDD_WaitOUT
-                0x0000000000081d80       0x10 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
-                0x0000000000081d80                UDD_WaitOUT
+                0x0000000000081da4       0x10 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
+                0x0000000000081da4                UDD_WaitOUT
  .text.UDD_ClearIN
-                0x0000000000081d90       0x18 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
-                0x0000000000081d90                UDD_ClearIN
+                0x0000000000081db4       0x18 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
+                0x0000000000081db4                UDD_ClearIN
  .text.UDD_ClearOUT
-                0x0000000000081da8       0x18 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
-                0x0000000000081da8                UDD_ClearOUT
+                0x0000000000081dcc       0x18 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
+                0x0000000000081dcc                UDD_ClearOUT
  .text.UDD_ReceivedSetupInt
-                0x0000000000081dc0       0x10 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
-                0x0000000000081dc0                UDD_ReceivedSetupInt
+                0x0000000000081de4       0x10 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
+                0x0000000000081de4                UDD_ReceivedSetupInt
  .text.UDD_ClearSetupInt
-                0x0000000000081dd0       0x10 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
-                0x0000000000081dd0                UDD_ClearSetupInt
+                0x0000000000081df4       0x10 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
+                0x0000000000081df4                UDD_ClearSetupInt
  .text.UDD_Send
-                0x0000000000081de0       0x84 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
-                0x0000000000081de0                UDD_Send
+                0x0000000000081e04       0x84 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
+                0x0000000000081e04                UDD_Send
  .text.UDD_Send8
-                0x0000000000081e64       0x24 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
-                0x0000000000081e64                UDD_Send8
+                0x0000000000081e88       0x24 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
+                0x0000000000081e88                UDD_Send8
  .text.UDD_Recv8
-                0x0000000000081e88       0x28 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
-                0x0000000000081e88                UDD_Recv8
+                0x0000000000081eac       0x28 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
+                0x0000000000081eac                UDD_Recv8
  .text.UDD_Recv
-                0x0000000000081eb0       0x34 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
-                0x0000000000081eb0                UDD_Recv
+                0x0000000000081ed4       0x34 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
+                0x0000000000081ed4                UDD_Recv
  .text.UDD_Stall
-                0x0000000000081ee4       0x14 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
-                0x0000000000081ee4                UDD_Stall
+                0x0000000000081f08       0x14 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
+                0x0000000000081f08                UDD_Stall
  .text.UDD_FifoByteCount
-                0x0000000000081ef8       0x14 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
-                0x0000000000081ef8                UDD_FifoByteCount
+                0x0000000000081f1c       0x14 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
+                0x0000000000081f1c                UDD_FifoByteCount
  .text.UDD_ReleaseRX
-                0x0000000000081f0c       0x28 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
-                0x0000000000081f0c                UDD_ReleaseRX
+                0x0000000000081f30       0x28 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
+                0x0000000000081f30                UDD_ReleaseRX
  .text.UDD_ReleaseTX
-                0x0000000000081f34       0x28 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
-                0x0000000000081f34                UDD_ReleaseTX
+                0x0000000000081f58       0x28 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
+                0x0000000000081f58                UDD_ReleaseTX
  .text.UDD_SetAddress
-                0x0000000000081f5c       0x20 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
-                0x0000000000081f5c                UDD_SetAddress
+                0x0000000000081f80       0x20 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
+                0x0000000000081f80                UDD_SetAddress
  .text.TimeTick_Increment
-                0x0000000000081f7c       0x10 build-arduino_due_x_dbg/libcore.a(timetick.c.o)
-                0x0000000000081f7c                TimeTick_Increment
+                0x0000000000081fa0       0x10 build-arduino_due_x_dbg/libcore.a(timetick.c.o)
+                0x0000000000081fa0                TimeTick_Increment
  .text.GetTickCount
-                0x0000000000081f8c        0xc build-arduino_due_x_dbg/libcore.a(timetick.c.o)
-                0x0000000000081f8c                GetTickCount
- .text.delay    0x0000000000081f98       0x1c build-arduino_due_x_dbg/libcore.a(wiring.c.o)
-                0x0000000000081f98                delay
- .text.__empty  0x0000000000081fb4        0x2 build-arduino_due_x_dbg/libcore.a(hooks.c.o)
-                0x0000000000081fb4                yield
- .text.__false  0x0000000000081fb6        0x4 build-arduino_due_x_dbg/libcore.a(hooks.c.o)
-                0x0000000000081fb6                sysTickHook
- .text.__halt   0x0000000000081fba        0x2 build-arduino_due_x_dbg/libcore.a(hooks.c.o)
-                0x0000000000081fba                pendSVHook
-                0x0000000000081fba                svcHook
+                0x0000000000081fb0        0xc build-arduino_due_x_dbg/libcore.a(timetick.c.o)
+                0x0000000000081fb0                GetTickCount
+ .text.delay    0x0000000000081fbc       0x1c build-arduino_due_x_dbg/libcore.a(wiring.c.o)
+                0x0000000000081fbc                delay
+ .text.__empty  0x0000000000081fd8        0x2 build-arduino_due_x_dbg/libcore.a(hooks.c.o)
+                0x0000000000081fd8                yield
+ .text.__false  0x0000000000081fda        0x4 build-arduino_due_x_dbg/libcore.a(hooks.c.o)
+                0x0000000000081fda                sysTickHook
+ .text.__halt   0x0000000000081fde        0x2 build-arduino_due_x_dbg/libcore.a(hooks.c.o)
+                0x0000000000081fde                pendSVHook
+                0x0000000000081fde                svcHook
  .text._ZN5Print5writeEPKhj
-                0x0000000000081fbc       0x22 build-arduino_due_x_dbg/libcore.a(Print.cpp.o)
-                0x0000000000081fbc                Print::write(unsigned char const*, unsigned int)
- *fill*         0x0000000000081fde        0x2 
+                0x0000000000081fe0       0x22 build-arduino_due_x_dbg/libcore.a(Print.cpp.o)
+                0x0000000000081fe0                Print::write(unsigned char const*, unsigned int)
+ *fill*         0x0000000000082002        0x2 
  .text._watchdogDefaultSetup
-                0x0000000000081fe0        0xc build-arduino_due_x_dbg/libcore.a(watchdog.cpp.o)
-                0x0000000000081fe0                watchdogSetup()
-                0x0000000000081fe0                _watchdogDefaultSetup
+                0x0000000000082004        0xc build-arduino_due_x_dbg/libcore.a(watchdog.cpp.o)
+                0x0000000000082004                watchdogSetup()
+                0x0000000000082004                _watchdogDefaultSetup
  .text.WDT_Disable
-                0x0000000000081fec        0x8 build-arduino_due_x_dbg/libcore.a(wdt.c.o)
-                0x0000000000081fec                WDT_Disable
- .text          0x0000000000081ff4      0x370 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/libgcc.a(_arm_addsubdf3.o)
-                0x0000000000081ff4                __aeabi_drsub
-                0x0000000000081ffc                __aeabi_dsub
-                0x0000000000081ffc                __subdf3
-                0x0000000000082000                __adddf3
-                0x0000000000082000                __aeabi_dadd
-                0x0000000000082278                __aeabi_ui2d
-                0x0000000000082278                __floatunsidf
-                0x0000000000082298                __floatsidf
-                0x0000000000082298                __aeabi_i2d
-                0x00000000000822bc                __extendsfdf2
-                0x00000000000822bc                __aeabi_f2d
-                0x00000000000822f8                __aeabi_ul2d
-                0x00000000000822f8                __floatundidf
-                0x0000000000082308                __floatdidf
-                0x0000000000082308                __aeabi_l2d
- .text          0x0000000000082364      0x424 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/libgcc.a(_arm_muldivdf3.o)
-                0x0000000000082364                __aeabi_dmul
-                0x0000000000082364                __muldf3
-                0x00000000000825b8                __aeabi_ddiv
-                0x00000000000825b8                __divdf3
- .text          0x0000000000082788       0x40 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/libgcc.a(_arm_fixunsdfsi.o)
-                0x0000000000082788                __fixunsdfsi
-                0x0000000000082788                __aeabi_d2uiz
- .text          0x00000000000827c8      0x21c /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/libgcc.a(_arm_addsubsf3.o)
-                0x00000000000827c8                __aeabi_frsub
-                0x00000000000827d0                __subsf3
-                0x00000000000827d0                __aeabi_fsub
-                0x00000000000827d4                __aeabi_fadd
-                0x00000000000827d4                __addsf3
-                0x0000000000082934                __aeabi_ui2f
-                0x0000000000082934                __floatunsisf
-                0x000000000008293c                __aeabi_i2f
-                0x000000000008293c                __floatsisf
-                0x0000000000082958                __floatundisf
-                0x0000000000082958                __aeabi_ul2f
-                0x0000000000082968                __floatdisf
-                0x0000000000082968                __aeabi_l2f
- .text          0x00000000000829e4      0x2a0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/libgcc.a(_arm_muldivsf3.o)
-                0x00000000000829e4                __mulsf3
-                0x00000000000829e4                __aeabi_fmul
-                0x0000000000082b4c                __divsf3
-                0x0000000000082b4c                __aeabi_fdiv
- .text          0x0000000000082c84       0xec /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/libgcc.a(_arm_cmpsf2.o)
-                0x0000000000082c84                __gtsf2
-                0x0000000000082c84                __gesf2
-                0x0000000000082c8c                __lesf2
-                0x0000000000082c8c                __ltsf2
-                0x0000000000082c94                __nesf2
-                0x0000000000082c94                __eqsf2
-                0x0000000000082c94                __cmpsf2
-                0x0000000000082cf4                __aeabi_cfrcmple
-                0x0000000000082cfc                __aeabi_cfcmple
-                0x0000000000082cfc                __aeabi_cfcmpeq
-                0x0000000000082d0c                __aeabi_fcmpeq
-                0x0000000000082d20                __aeabi_fcmplt
-                0x0000000000082d34                __aeabi_fcmple
-                0x0000000000082d48                __aeabi_fcmpge
-                0x0000000000082d5c                __aeabi_fcmpgt
+                0x0000000000082010        0x8 build-arduino_due_x_dbg/libcore.a(wdt.c.o)
+                0x0000000000082010                WDT_Disable
+ .text          0x0000000000082018      0x370 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/libgcc.a(_arm_addsubdf3.o)
+                0x0000000000082018                __aeabi_drsub
+                0x0000000000082020                __aeabi_dsub
+                0x0000000000082020                __subdf3
+                0x0000000000082024                __adddf3
+                0x0000000000082024                __aeabi_dadd
+                0x000000000008229c                __aeabi_ui2d
+                0x000000000008229c                __floatunsidf
+                0x00000000000822bc                __floatsidf
+                0x00000000000822bc                __aeabi_i2d
+                0x00000000000822e0                __extendsfdf2
+                0x00000000000822e0                __aeabi_f2d
+                0x000000000008231c                __aeabi_ul2d
+                0x000000000008231c                __floatundidf
+                0x000000000008232c                __floatdidf
+                0x000000000008232c                __aeabi_l2d
+ .text          0x0000000000082388      0x424 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/libgcc.a(_arm_muldivdf3.o)
+                0x0000000000082388                __aeabi_dmul
+                0x0000000000082388                __muldf3
+                0x00000000000825dc                __aeabi_ddiv
+                0x00000000000825dc                __divdf3
+ .text          0x00000000000827ac       0x40 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/libgcc.a(_arm_fixunsdfsi.o)
+                0x00000000000827ac                __fixunsdfsi
+                0x00000000000827ac                __aeabi_d2uiz
+ .text          0x00000000000827ec      0x21c /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/libgcc.a(_arm_addsubsf3.o)
+                0x00000000000827ec                __aeabi_frsub
+                0x00000000000827f4                __subsf3
+                0x00000000000827f4                __aeabi_fsub
+                0x00000000000827f8                __aeabi_fadd
+                0x00000000000827f8                __addsf3
+                0x0000000000082958                __aeabi_ui2f
+                0x0000000000082958                __floatunsisf
+                0x0000000000082960                __aeabi_i2f
+                0x0000000000082960                __floatsisf
+                0x000000000008297c                __floatundisf
+                0x000000000008297c                __aeabi_ul2f
+                0x000000000008298c                __floatdisf
+                0x000000000008298c                __aeabi_l2f
+ .text          0x0000000000082a08      0x2a0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/libgcc.a(_arm_muldivsf3.o)
+                0x0000000000082a08                __mulsf3
+                0x0000000000082a08                __aeabi_fmul
+                0x0000000000082b70                __divsf3
+                0x0000000000082b70                __aeabi_fdiv
+ .text          0x0000000000082ca8       0xec /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/libgcc.a(_arm_cmpsf2.o)
+                0x0000000000082ca8                __gtsf2
+                0x0000000000082ca8                __gesf2
+                0x0000000000082cb0                __lesf2
+                0x0000000000082cb0                __ltsf2
+                0x0000000000082cb8                __nesf2
+                0x0000000000082cb8                __eqsf2
+                0x0000000000082cb8                __cmpsf2
+                0x0000000000082d18                __aeabi_cfrcmple
+                0x0000000000082d20                __aeabi_cfcmple
+                0x0000000000082d20                __aeabi_cfcmpeq
+                0x0000000000082d30                __aeabi_fcmpeq
+                0x0000000000082d44                __aeabi_fcmplt
+                0x0000000000082d58                __aeabi_fcmple
+                0x0000000000082d6c                __aeabi_fcmpge
+                0x0000000000082d80                __aeabi_fcmpgt
+ .text.__aeabi_atexit
+                0x0000000000082d94        0xc /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-aeabi_atexit.o)
+                0x0000000000082d94                __aeabi_atexit
+ .text.__cxa_atexit
+                0x0000000000082da0       0x14 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-cxa_atexit.o)
+                0x0000000000082da0                __cxa_atexit
  .text.__libc_init_array
-                0x0000000000082d70       0x50 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
-                0x0000000000082d70                __libc_init_array
- .text.memset   0x0000000000082dc0       0x94 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-memset.o)
-                0x0000000000082dc0                memset
- .text.strlen   0x0000000000082e54       0x60 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strlen.o)
-                0x0000000000082e54                strlen
- .text.kill     0x0000000000082eb4       0x10 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-syskill.o)
-                0x0000000000082eb4                kill
- .text.startup.register_fini
-                0x0000000000082ec4       0x14 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
- .text.atexit   0x0000000000082ed8        0xc /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
-                0x0000000000082ed8                atexit
- .text.__libc_fini_array
-                0x0000000000082ee4       0x30 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fini.o)
-                0x0000000000082ee4                __libc_fini_array
- .text._kill_r  0x0000000000082f14       0x28 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-signalr.o)
-                0x0000000000082f14                _kill_r
+                0x0000000000082db4       0x50 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
+                0x0000000000082db4                __libc_init_array
+ .text.memset   0x0000000000082e04       0x94 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-memset.o)
+                0x0000000000082e04                memset
+ .text.strlen   0x0000000000082e98       0x60 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strlen.o)
+                0x0000000000082e98                strlen
+ .text.kill     0x0000000000082ef8       0x10 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-syskill.o)
+                0x0000000000082ef8                kill
  .text.__register_exitproc
-                0x0000000000082f3c       0xa8 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
-                0x0000000000082f3c                __register_exitproc
+                0x0000000000082f08       0xa8 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
+                0x0000000000082f08                __register_exitproc
+ .text.startup.register_fini
+                0x0000000000082fb0       0x14 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
+ .text.atexit   0x0000000000082fc4        0xc /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
+                0x0000000000082fc4                atexit
+ .text.__libc_fini_array
+                0x0000000000082fd0       0x30 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fini.o)
+                0x0000000000082fd0                __libc_fini_array
+ .text._kill_r  0x0000000000083000       0x28 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-signalr.o)
+                0x0000000000083000                _kill_r
  *(.glue_7t)
  .glue_7t       0x0000000000000000        0x0 linker stubs
  *(.glue_7)
  .glue_7        0x0000000000000000        0x0 linker stubs
  *(.rodata .rodata* .gnu.linkonce.r.*)
  .rodata.g_APinDescription
-                0x0000000000082fe4      0xa2c build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
-                0x0000000000082fe4                g_APinDescription
- .rodata        0x0000000000083a10       0x40 build-arduino_due_x_dbg/libcore.a(adc.c.o)
+                0x0000000000083028      0xa2c build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
+                0x0000000000083028                g_APinDescription
+ .rodata        0x0000000000083a54       0x40 build-arduino_due_x_dbg/libcore.a(adc.c.o)
+ *fill*         0x0000000000083a94        0x4 
  .rodata._ZTV10USARTClass
-                0x0000000000083a50       0x30 build-arduino_due_x_dbg/libcore.a(USARTClass.cpp.o)
-                0x0000000000083a50                vtable for USARTClass
+                0x0000000000083a98       0x30 build-arduino_due_x_dbg/libcore.a(USARTClass.cpp.o)
+                0x0000000000083a98                vtable for USARTClass
  .rodata._ZTV9UARTClass
-                0x0000000000083a80       0x30 build-arduino_due_x_dbg/libcore.a(UARTClass.cpp.o)
-                0x0000000000083a80                vtable for UARTClass
+                0x0000000000083ac8       0x30 build-arduino_due_x_dbg/libcore.a(UARTClass.cpp.o)
+                0x0000000000083ac8                vtable for UARTClass
  .rodata.STRING_PRODUCT
-                0x0000000000083ab0        0xc build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
-                0x0000000000083ab0                STRING_PRODUCT
+                0x0000000000083af8        0xc build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x0000000000083af8                STRING_PRODUCT
  .rodata.USB_DeviceDescriptor
-                0x0000000000083abc       0x12 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
-                0x0000000000083abc                USB_DeviceDescriptor
+                0x0000000000083b04       0x12 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x0000000000083b04                USB_DeviceDescriptor
  .rodata.STRING_LANGUAGE
-                0x0000000000083ace        0x4 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
-                0x0000000000083ace                STRING_LANGUAGE
+                0x0000000000083b16        0x4 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x0000000000083b16                STRING_LANGUAGE
  .rodata._ZL18test_packet_buffer
-                0x0000000000083ad2       0x35 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x0000000000083b1a       0x35 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
  .rodata.STRING_MANUFACTURER
-                0x0000000000083b07        0xc build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
-                0x0000000000083b07                STRING_MANUFACTURER
+                0x0000000000083b4f        0xc build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x0000000000083b4f                STRING_MANUFACTURER
  .rodata.USB_DeviceDescriptorA
-                0x0000000000083b13       0x12 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
-                0x0000000000083b13                USB_DeviceDescriptorA
+                0x0000000000083b5b       0x12 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x0000000000083b5b                USB_DeviceDescriptorA
  .rodata._ZL19USB_DeviceQualifier
-                0x0000000000083b25        0x9 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
- *fill*         0x0000000000083b2e        0x2 
+                0x0000000000083b6d        0x9 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+ *fill*         0x0000000000083b76        0x2 
  .rodata._ZTV7Serial_
-                0x0000000000083b30       0x28 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
-                0x0000000000083b30                vtable for Serial_
+                0x0000000000083b78       0x28 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
+                0x0000000000083b78                vtable for Serial_
  .rodata._ZL18_cdcOtherInterface
-                0x0000000000083b58       0x42 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
+                0x0000000000083ba0       0x42 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
  .rodata._ZL13_cdcInterface
-                0x0000000000083b9a       0x42 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
+                0x0000000000083be2       0x42 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
  .rodata.str1.4
-                0x0000000000083bdc        0x4 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
+                0x0000000000083c24        0x4 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
  .rodata._global_impure_ptr
-                0x0000000000083be0        0x4 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
-                0x0000000000083be0                _global_impure_ptr
+                0x0000000000083c28        0x4 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
+                0x0000000000083c28                _global_impure_ptr
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000000083be4                . = ALIGN (0x4)
+                0x0000000000083c2c                . = ALIGN (0x4)
  *(.init)
- .init          0x0000000000083be4        0x4 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crti.o
-                0x0000000000083be4                _init
- .init          0x0000000000083be8        0x8 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtn.o
-                0x0000000000083bf0                . = ALIGN (0x4)
-                0x0000000000083bf0                __preinit_array_start = .
+ .init          0x0000000000083c2c        0x4 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crti.o
+                0x0000000000083c2c                _init
+ .init          0x0000000000083c30        0x8 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtn.o
+                0x0000000000083c38                . = ALIGN (0x4)
+                0x0000000000083c38                __preinit_array_start = .
  *(.preinit_array)
-                0x0000000000083bf0                __preinit_array_end = .
-                0x0000000000083bf0                . = ALIGN (0x4)
-                0x0000000000083bf0                __init_array_start = .
+                0x0000000000083c38                __preinit_array_end = .
+                0x0000000000083c38                . = ALIGN (0x4)
+                0x0000000000083c38                __init_array_start = .
  *(SORT(.init_array.*))
  .init_array.00000
-                0x0000000000083bf0        0x4 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
+                0x0000000000083c38        0x4 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
  *(.init_array)
- .init_array    0x0000000000083bf4        0x4 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
- .init_array    0x0000000000083bf8        0x4 build-arduino_due_x_dbg/tests.ino.o
- .init_array    0x0000000000083bfc        0x4 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
- .init_array    0x0000000000083c00        0x4 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
- .init_array    0x0000000000083c04        0x4 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
-                0x0000000000083c08                __init_array_end = .
-                0x0000000000083c08                . = ALIGN (0x4)
+ .init_array    0x0000000000083c3c        0x4 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
+ .init_array    0x0000000000083c40        0x4 build-arduino_due_x_dbg/tests.ino.o
+ .init_array    0x0000000000083c44        0x4 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
+ .init_array    0x0000000000083c48        0x4 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+ .init_array    0x0000000000083c4c        0x4 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
+                0x0000000000083c50                __init_array_end = .
+                0x0000000000083c50                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *crtend.o(.ctors)
-                0x0000000000083c08                . = ALIGN (0x4)
+                0x0000000000083c50                . = ALIGN (0x4)
  *(.fini)
- .fini          0x0000000000083c08        0x4 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crti.o
-                0x0000000000083c08                _fini
- .fini          0x0000000000083c0c        0x8 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtn.o
-                0x0000000000083c14                . = ALIGN (0x4)
-                0x0000000000083c14                __fini_array_start = .
+ .fini          0x0000000000083c50        0x4 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crti.o
+                0x0000000000083c50                _fini
+ .fini          0x0000000000083c54        0x8 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtn.o
+                0x0000000000083c5c                . = ALIGN (0x4)
+                0x0000000000083c5c                __fini_array_start = .
  *(.fini_array)
- .fini_array    0x0000000000083c14        0x4 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
+ .fini_array    0x0000000000083c5c        0x4 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
  *(SORT(.fini_array.*))
-                0x0000000000083c18                __fini_array_end = .
+                0x0000000000083c60                __fini_array_end = .
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
-                0x0000000000083c18                . = ALIGN (0x4)
-                0x0000000000083c18                _efixed = .
-                0x0000000000083c18                PROVIDE (__exidx_start, .)
+                0x0000000000083c60                . = ALIGN (0x4)
+                0x0000000000083c60                _efixed = .
+                0x0000000000083c60                PROVIDE (__exidx_start, .)
 
-.vfp11_veneer   0x0000000000083c18        0x0
+.vfp11_veneer   0x0000000000083c60        0x0
  .vfp11_veneer  0x0000000000000000        0x0 linker stubs
 
-.v4_bx          0x0000000000083c18        0x0
+.v4_bx          0x0000000000083c60        0x0
  .v4_bx         0x0000000000000000        0x0 linker stubs
 
-.iplt           0x0000000000083c18        0x0
+.iplt           0x0000000000083c60        0x0
  .iplt          0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
 
-.eh_frame       0x0000000000083c18        0x0
- .eh_frame      0x0000000000083c18        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
+.eh_frame       0x0000000000083c60        0x0
+ .eh_frame      0x0000000000083c60        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
 
-.rel.dyn        0x0000000000083c18        0x0
+.rel.dyn        0x0000000000083c60        0x0
  .rel.iplt      0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
 
-.jcr            0x0000000000083c18        0x0
- .jcr           0x0000000000083c18        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
+.jcr            0x0000000000083c60        0x0
+ .jcr           0x0000000000083c60        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
 
-.igot.plt       0x0000000000083c18        0x0
+.igot.plt       0x0000000000083c60        0x0
  .igot.plt      0x0000000000000000        0x0 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x0000000000083c18                PROVIDE (__exidx_end, .)
-                0x0000000000083c18                . = ALIGN (0x4)
-                0x0000000000083c18                _etext = .
+                0x0000000000083c60                PROVIDE (__exidx_end, .)
+                0x0000000000083c60                . = ALIGN (0x4)
+                0x0000000000083c60                _etext = .
 
-.relocate       0x0000000020070000      0x59c load address 0x0000000000083c18
+.relocate       0x0000000020070000      0x5a4 load address 0x0000000000083c60
                 0x0000000020070000                . = ALIGN (0x4)
                 0x0000000020070000                _srelocate = .
  *(.ramfunc .ramfunc.*)
  .ramfunc       0x0000000020070000       0x2c build-arduino_due_x_dbg/libcore.a(Reset.cpp.o)
                 0x0000000020070000                banzai
  *(.data .data.*)
- .data.MotorPinGroups
-                0x000000002007002c       0x10 build-arduino_due_x_dbg/tests.ino.o
-                0x000000002007002c                MotorPinGroups
- .data.actFuncs
-                0x000000002007003c        0xc build-arduino_due_x_dbg/tests.ino.o
-                0x000000002007003c                actFuncs
- .data.tractionMotor1
-                0x0000000020070048        0x1 build-arduino_due_x_dbg/tests.ino.o
-                0x0000000020070048                tractionMotor1
- *fill*         0x0000000020070049        0x3 
- .data.uRef     0x000000002007004c        0x4 build-arduino_due_x_dbg/tests.ino.o
-                0x000000002007004c                uRef
- .data.ADC_Resolution
-                0x0000000020070050        0x4 build-arduino_due_x_dbg/tests.ino.o
-                0x0000000020070050                ADC_Resolution
- .data.b3       0x0000000020070054        0x4 build-arduino_due_x_dbg/tests.ino.o
-                0x0000000020070054                b3
- .data.PWMFreq  0x0000000020070058        0x1 build-arduino_due_x_dbg/tests.ino.o
-                0x0000000020070058                PWMFreq
- .data.sensor2  0x0000000020070059        0x1 build-arduino_due_x_dbg/tests.ino.o
-                0x0000000020070059                sensor2
- .data.tractionMotor2
-                0x000000002007005a        0x1 build-arduino_due_x_dbg/tests.ino.o
-                0x000000002007005a                tractionMotor2
- .data.sensor3  0x000000002007005b        0x1 build-arduino_due_x_dbg/tests.ino.o
-                0x000000002007005b                sensor3
- .data.directionMotorPWM
-                0x000000002007005c        0x1 build-arduino_due_x_dbg/tests.ino.o
-                0x000000002007005c                directionMotorPWM
- .data.nInputs  0x000000002007005d        0x3 build-arduino_due_x_dbg/tests.ino.o
-                0x000000002007005d                nInputs
- .data.sensor4  0x0000000020070060        0x1 build-arduino_due_x_dbg/tests.ino.o
-                0x0000000020070060                sensor4
- *fill*         0x0000000020070061        0x3 
- .data.b1       0x0000000020070064       0x14 build-arduino_due_x_dbg/tests.ino.o
-                0x0000000020070064                b1
- .data.b2       0x0000000020070078        0xc build-arduino_due_x_dbg/tests.ino.o
-                0x0000000020070078                b2
- .data.tractionMotorPWM
-                0x0000000020070084        0x1 build-arduino_due_x_dbg/tests.ino.o
-                0x0000000020070084                tractionMotorPWM
- *fill*         0x0000000020070085        0x3 
- .data.w1       0x0000000020070088       0x3c build-arduino_due_x_dbg/tests.ino.o
-                0x0000000020070088                w1
- .data.w2       0x00000000200700c4       0x3c build-arduino_due_x_dbg/tests.ino.o
-                0x00000000200700c4                w2
- .data.w3       0x0000000020070100        0xc build-arduino_due_x_dbg/tests.ino.o
-                0x0000000020070100                w3
- .data.weights  0x000000002007010c        0xc build-arduino_due_x_dbg/tests.ino.o
-                0x000000002007010c                weights
+ .data          0x000000002007002c        0x4 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
+                0x000000002007002c                __dso_handle
+ .data.MotorPins
+                0x0000000020070030       0x10 build-arduino_due_x_dbg/tests.ino.o
+                0x0000000020070030                MotorPins
+ .data.w1       0x0000000020070040       0x3c build-arduino_due_x_dbg/tests.ino.o
+                0x0000000020070040                w1
+ .data.w2       0x000000002007007c       0x3c build-arduino_due_x_dbg/tests.ino.o
+                0x000000002007007c                w2
+ .data.w3       0x00000000200700b8        0xc build-arduino_due_x_dbg/tests.ino.o
+                0x00000000200700b8                w3
  .data.nOutputs
-                0x0000000020070118        0x3 build-arduino_due_x_dbg/tests.ino.o
-                0x0000000020070118                nOutputs
- .data.directionMotor1
-                0x000000002007011b        0x1 build-arduino_due_x_dbg/tests.ino.o
-                0x000000002007011b                directionMotor1
- .data.directionMotor2
-                0x000000002007011c        0x1 build-arduino_due_x_dbg/tests.ino.o
-                0x000000002007011c                directionMotor2
- *fill*         0x000000002007011d        0x3 
- .data.biases   0x0000000020070120        0xc build-arduino_due_x_dbg/tests.ino.o
-                0x0000000020070120                biases
+                0x00000000200700c4        0x3 build-arduino_due_x_dbg/tests.ino.o
+                0x00000000200700c4                nOutputs
+ *fill*         0x00000000200700c7        0x1 
+ .data.b1       0x00000000200700c8       0x14 build-arduino_due_x_dbg/tests.ino.o
+                0x00000000200700c8                b1
+ .data.pwmMotors
+                0x00000000200700dc        0x4 build-arduino_due_x_dbg/tests.ino.o
+                0x00000000200700dc                pwmMotors
+ .data.b2       0x00000000200700e0        0xc build-arduino_due_x_dbg/tests.ino.o
+                0x00000000200700e0                b2
+ .data.biases   0x00000000200700ec        0xc build-arduino_due_x_dbg/tests.ino.o
+                0x00000000200700ec                biases
+ .data.weights  0x00000000200700f8        0xc build-arduino_due_x_dbg/tests.ino.o
+                0x00000000200700f8                weights
+ .data.PWMFreq  0x0000000020070104        0x1 build-arduino_due_x_dbg/tests.ino.o
+                0x0000000020070104                PWMFreq
  .data.EnableInterrupts
-                0x000000002007012c        0x1 build-arduino_due_x_dbg/tests.ino.o
-                0x000000002007012c                EnableInterrupts
- *fill*         0x000000002007012d        0x3 
+                0x0000000020070105        0x1 build-arduino_due_x_dbg/tests.ino.o
+                0x0000000020070105                EnableInterrupts
+ *fill*         0x0000000020070106        0x2 
+ .data.MotorPinGroups
+                0x0000000020070108       0x10 build-arduino_due_x_dbg/tests.ino.o
+                0x0000000020070108                MotorPinGroups
+ .data.b3       0x0000000020070118        0x4 build-arduino_due_x_dbg/tests.ino.o
+                0x0000000020070118                b3
+ .data.actFuncs
+                0x000000002007011c        0xc build-arduino_due_x_dbg/tests.ino.o
+                0x000000002007011c                actFuncs
+ .data.sensors  0x0000000020070128        0x6 build-arduino_due_x_dbg/tests.ino.o
+                0x0000000020070128                sensors
+ .data.nInputs  0x000000002007012e        0x3 build-arduino_due_x_dbg/tests.ino.o
+                0x000000002007012e                nInputs
+ *fill*         0x0000000020070131        0x3 
  .data.SystemCoreClock
-                0x0000000020070130        0x4 build-arduino_due_x_dbg/libcore.a(system_sam3xa.c.o)
-                0x0000000020070130                SystemCoreClock
+                0x0000000020070134        0x4 build-arduino_due_x_dbg/libcore.a(system_sam3xa.c.o)
+                0x0000000020070134                SystemCoreClock
  .data._ZL5ticks
-                0x0000000020070134        0x4 build-arduino_due_x_dbg/libcore.a(Reset.cpp.o)
+                0x0000000020070138        0x4 build-arduino_due_x_dbg/libcore.a(Reset.cpp.o)
  .data.EndPoints
-                0x0000000020070138       0x28 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
-                0x0000000020070138                EndPoints
+                0x000000002007013c       0x28 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x000000002007013c                EndPoints
  .data._ZL10breakValue
-                0x0000000020070160        0x4 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
+                0x0000000020070164        0x4 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
  .data._ZL12_usbLineInfo
-                0x0000000020070164        0x8 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
+                0x0000000020070168        0x8 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
  .data.g_interrupt_enabled
-                0x000000002007016c        0x4 build-arduino_due_x_dbg/libcore.a(interrupt_sam_nvic.c.o)
-                0x000000002007016c                g_interrupt_enabled
+                0x0000000020070170        0x4 build-arduino_due_x_dbg/libcore.a(interrupt_sam_nvic.c.o)
+                0x0000000020070170                g_interrupt_enabled
+ *fill*         0x0000000020070174        0x4 
  .data.impure_data
-                0x0000000020070170      0x428 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
+                0x0000000020070178      0x428 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
  .data._impure_ptr
-                0x0000000020070598        0x4 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
-                0x0000000020070598                _impure_ptr
-                0x000000002007059c                . = ALIGN (0x4)
-                0x000000002007059c                _erelocate = .
+                0x00000000200705a0        0x4 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
+                0x00000000200705a0                _impure_ptr
+                0x00000000200705a4                . = ALIGN (0x4)
+                0x00000000200705a4                _erelocate = .
 
-.bss            0x000000002007059c      0xa20 load address 0x00000000000841b4
-                0x000000002007059c                . = ALIGN (0x4)
-                0x000000002007059c                _sbss = .
-                0x000000002007059c                _szero = .
+.bss            0x00000000200705a4      0xa0c load address 0x0000000000084204
+                0x00000000200705a4                . = ALIGN (0x4)
+                0x00000000200705a4                _sbss = .
+                0x00000000200705a4                _szero = .
  *(.bss .bss.*)
- .bss           0x000000002007059c       0x1c /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
- .bss.sensors   0x00000000200705b8        0x6 build-arduino_due_x_dbg/tests.ino.o
-                0x00000000200705b8                sensors
- .bss.dAdc      0x00000000200705be        0x2 build-arduino_due_x_dbg/tests.ino.o
-                0x00000000200705be                dAdc
- .bss.pwmMotors
-                0x00000000200705c0        0x4 build-arduino_due_x_dbg/tests.ino.o
-                0x00000000200705c0                pwmMotors
- .bss.MotorPins
-                0x00000000200705c4       0x10 build-arduino_due_x_dbg/tests.ino.o
-                0x00000000200705c4                MotorPins
+ .bss           0x00000000200705a4       0x1c /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
+ .bss.adc       0x00000000200705c0        0x1 build-arduino_due_x_dbg/tests.ino.o
+                0x00000000200705c0                adc
+ *fill*         0x00000000200705c1        0x3 
+ .bss.uIn       0x00000000200705c4        0xc build-arduino_due_x_dbg/tests.ino.o
+                0x00000000200705c4                uIn
+ .bss.dAdc      0x00000000200705d0        0x2 build-arduino_due_x_dbg/tests.ino.o
+                0x00000000200705d0                dAdc
+ .bss.pio       0x00000000200705d2        0x1 build-arduino_due_x_dbg/tests.ino.o
+                0x00000000200705d2                pio
+ .bss.pwm       0x00000000200705d3        0x1 build-arduino_due_x_dbg/tests.ino.o
+                0x00000000200705d3                pwm
  .bss.flag      0x00000000200705d4        0x1 build-arduino_due_x_dbg/tests.ino.o
                 0x00000000200705d4                flag
  *fill*         0x00000000200705d5        0x3 
- .bss.uIn       0x00000000200705d8        0xc build-arduino_due_x_dbg/tests.ino.o
-                0x00000000200705d8                uIn
- .bss.gpf_isr   0x00000000200705e4        0x4 /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/variants/arduino_due_x/libsam_sam3x8e_gcc_rel.a(uotghs.o)
-                0x00000000200705e4                gpf_isr
+ .bss.gpf_isr   0x00000000200705d8        0x4 /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/variants/arduino_due_x/libsam_sam3x8e_gcc_rel.a(uotghs.o)
+                0x00000000200705d8                gpf_isr
  .bss.tx_buffer2
-                0x00000000200705e8       0x88 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
-                0x00000000200705e8                tx_buffer2
+                0x00000000200705dc       0x88 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
+                0x00000000200705dc                tx_buffer2
  .bss.tx_buffer1
-                0x0000000020070670       0x88 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
-                0x0000000020070670                tx_buffer1
- .bss.Serial    0x00000000200706f8       0x24 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
-                0x00000000200706f8                Serial
+                0x0000000020070664       0x88 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
+                0x0000000020070664                tx_buffer1
+ .bss.Serial    0x00000000200706ec       0x24 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
+                0x00000000200706ec                Serial
  .bss.rx_buffer1
-                0x000000002007071c       0x88 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
-                0x000000002007071c                rx_buffer1
- .bss.Serial1   0x00000000200707a4       0x28 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
-                0x00000000200707a4                Serial1
- .bss.Serial2   0x00000000200707cc       0x28 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
-                0x00000000200707cc                Serial2
- .bss.Serial3   0x00000000200707f4       0x28 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
-                0x00000000200707f4                Serial3
+                0x0000000020070710       0x88 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
+                0x0000000020070710                rx_buffer1
+ .bss.Serial1   0x0000000020070798       0x28 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
+                0x0000000020070798                Serial1
+ .bss.Serial2   0x00000000200707c0       0x28 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
+                0x00000000200707c0                Serial2
+ .bss.Serial3   0x00000000200707e8       0x28 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
+                0x00000000200707e8                Serial3
  .bss.tx_buffer3
-                0x000000002007081c       0x88 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
-                0x000000002007081c                tx_buffer3
+                0x0000000020070810       0x88 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
+                0x0000000020070810                tx_buffer3
  .bss.tx_buffer4
-                0x00000000200708a4       0x88 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
-                0x00000000200708a4                tx_buffer4
+                0x0000000020070898       0x88 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
+                0x0000000020070898                tx_buffer4
  .bss.g_pinStatus
-                0x000000002007092c       0x4f build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
-                0x000000002007092c                g_pinStatus
- *fill*         0x000000002007097b        0x1 
+                0x0000000020070920       0x4f build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
+                0x0000000020070920                g_pinStatus
+ *fill*         0x000000002007096f        0x1 
  .bss.rx_buffer2
-                0x000000002007097c       0x88 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
-                0x000000002007097c                rx_buffer2
+                0x0000000020070970       0x88 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
+                0x0000000020070970                rx_buffer2
  .bss.rx_buffer3
-                0x0000000020070a04       0x88 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
-                0x0000000020070a04                rx_buffer3
+                0x00000000200709f8       0x88 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
+                0x00000000200709f8                rx_buffer3
  .bss.rx_buffer4
-                0x0000000020070a8c       0x88 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
-                0x0000000020070a8c                rx_buffer4
+                0x0000000020070a80       0x88 build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
+                0x0000000020070a80                rx_buffer4
  .bss.callbacksPioA
-                0x0000000020070b14       0x80 build-arduino_due_x_dbg/libcore.a(WInterrupts.c.o)
+                0x0000000020070b08       0x80 build-arduino_due_x_dbg/libcore.a(WInterrupts.c.o)
  .bss.callbacksPioB
-                0x0000000020070b94       0x80 build-arduino_due_x_dbg/libcore.a(WInterrupts.c.o)
+                0x0000000020070b88       0x80 build-arduino_due_x_dbg/libcore.a(WInterrupts.c.o)
  .bss.callbacksPioC
-                0x0000000020070c14       0x80 build-arduino_due_x_dbg/libcore.a(WInterrupts.c.o)
+                0x0000000020070c08       0x80 build-arduino_due_x_dbg/libcore.a(WInterrupts.c.o)
  .bss.callbacksPioD
-                0x0000000020070c94       0x80 build-arduino_due_x_dbg/libcore.a(WInterrupts.c.o)
+                0x0000000020070c88       0x80 build-arduino_due_x_dbg/libcore.a(WInterrupts.c.o)
  .bss.heap.6420
-                0x0000000020070d14        0x4 build-arduino_due_x_dbg/libcore.a(syscalls_sam3.c.o)
- .bss._cmark    0x0000000020070d18        0x2 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
-                0x0000000020070d18                _cmark
+                0x0000000020070d08        0x4 build-arduino_due_x_dbg/libcore.a(syscalls_sam3.c.o)
+ .bss._cmark    0x0000000020070d0c        0x2 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x0000000020070d0c                _cmark
  .bss._ZL14isEndpointHalt
-                0x0000000020070d1a        0x1 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
- *fill*         0x0000000020070d1b        0x1 
+                0x0000000020070d0e        0x1 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+ *fill*         0x0000000020070d0f        0x1 
  .bss._cdcComposite
-                0x0000000020070d1c        0x4 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
-                0x0000000020070d1c                _cdcComposite
+                0x0000000020070d10        0x4 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x0000000020070d10                _cdcComposite
  .bss._ZL21isRemoteWakeUpEnabled
-                0x0000000020070d20        0x1 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
- *fill*         0x0000000020070d21        0x3 
+                0x0000000020070d14        0x1 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+ *fill*         0x0000000020070d15        0x3 
  .bss._usbInitialized
-                0x0000000020070d24        0x4 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
-                0x0000000020070d24                _usbInitialized
+                0x0000000020070d18        0x4 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x0000000020070d18                _usbInitialized
  .bss.USBDevice
-                0x0000000020070d28        0x1 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
-                0x0000000020070d28                USBDevice
- *fill*         0x0000000020070d29        0x3 
+                0x0000000020070d1c        0x1 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x0000000020070d1c                USBDevice
+ *fill*         0x0000000020070d1d        0x3 
  .bss._usbSetInterface
-                0x0000000020070d2c        0x4 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
-                0x0000000020070d2c                _usbSetInterface
- .bss._cend     0x0000000020070d30        0x2 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
-                0x0000000020070d30                _cend
- *fill*         0x0000000020070d32        0x2 
+                0x0000000020070d20        0x4 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x0000000020070d20                _usbSetInterface
+ .bss._cend     0x0000000020070d24        0x2 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x0000000020070d24                _cend
+ *fill*         0x0000000020070d26        0x2 
  .bss._usbConfiguration
-                0x0000000020070d34        0x4 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
-                0x0000000020070d34                _usbConfiguration
+                0x0000000020070d28        0x4 build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
+                0x0000000020070d28                _usbConfiguration
  .bss._ZZ12PluggableUSBvE3obj
-                0x0000000020070d38        0x8 build-arduino_due_x_dbg/libcore.a(PluggableUSB.cpp.o)
+                0x0000000020070d2c        0x8 build-arduino_due_x_dbg/libcore.a(PluggableUSB.cpp.o)
  .bss._ZGVZ12PluggableUSBvE3obj
-                0x0000000020070d40        0x4 build-arduino_due_x_dbg/libcore.a(PluggableUSB.cpp.o)
+                0x0000000020070d34        0x4 build-arduino_due_x_dbg/libcore.a(PluggableUSB.cpp.o)
  .bss.cdc_rx_buffer
-                0x0000000020070d44      0x208 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
-                0x0000000020070d44                cdc_rx_buffer
+                0x0000000020070d38      0x208 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
+                0x0000000020070d38                cdc_rx_buffer
  .bss._ZZN7Serial_6acceptEvE5guard
-                0x0000000020070f4c        0x4 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
+                0x0000000020070f40        0x4 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
  .bss.SerialUSB
-                0x0000000020070f50       0x14 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
-                0x0000000020070f50                SerialUSB
+                0x0000000020070f44       0x14 build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
+                0x0000000020070f44                SerialUSB
  .bss.ul_recv_fifo_ptr
-                0x0000000020070f64       0x28 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
+                0x0000000020070f58       0x28 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
  .bss.ul_send_fifo_ptr
-                0x0000000020070f8c       0x28 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
+                0x0000000020070f80       0x28 build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
  .bss._dwTickCount
-                0x0000000020070fb4        0x4 build-arduino_due_x_dbg/libcore.a(timetick.c.o)
+                0x0000000020070fa8        0x4 build-arduino_due_x_dbg/libcore.a(timetick.c.o)
  *(COMMON)
- COMMON         0x0000000020070fb8        0x4 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-reent.o)
-                0x0000000020070fb8                errno
-                0x0000000020070fbc                . = ALIGN (0x4)
-                0x0000000020070fbc                _ebss = .
-                0x0000000020070fbc                _ezero = .
-                0x0000000020070fbc                . = ALIGN (0x4)
-                0x0000000020070fbc                _end = .
+ COMMON         0x0000000020070fac        0x4 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-reent.o)
+                0x0000000020070fac                errno
+                0x0000000020070fb0                . = ALIGN (0x4)
+                0x0000000020070fb0                _ebss = .
+                0x0000000020070fb0                _ezero = .
+                0x0000000020070fb0                . = ALIGN (0x4)
+                0x0000000020070fb0                _end = .
 
-.stack_dummy    0x0000000020070fbc        0x0
+.stack_dummy    0x0000000020070fb0        0x0
  *(.stack*)
                 0x0000000020088000                __StackTop = (ORIGIN (ram) + 0x18000)
                 0x0000000020088000                __StackLimit = (__StackTop - SIZEOF (.stack_dummy))
@@ -2536,29 +2548,33 @@ OUTPUT(build-arduino_due_x_dbg/tests.elf elf32-littlearm)
  .ARM.attributes
                 0x0000000000000807       0x1d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/libgcc.a(_arm_cmpsf2.o)
  .ARM.attributes
-                0x0000000000000824       0x2d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
+                0x0000000000000824       0x2d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-aeabi_atexit.o)
  .ARM.attributes
-                0x0000000000000851       0x2d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
+                0x0000000000000851       0x2d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-cxa_atexit.o)
  .ARM.attributes
-                0x000000000000087e       0x2d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-memset.o)
+                0x000000000000087e       0x2d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
  .ARM.attributes
-                0x00000000000008ab       0x2d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strlen.o)
+                0x00000000000008ab       0x2d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
  .ARM.attributes
-                0x00000000000008d8       0x2d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-syskill.o)
+                0x00000000000008d8       0x2d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-memset.o)
  .ARM.attributes
-                0x0000000000000905       0x2d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
+                0x0000000000000905       0x2d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strlen.o)
  .ARM.attributes
-                0x0000000000000932       0x2d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
+                0x0000000000000932       0x2d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-syskill.o)
  .ARM.attributes
-                0x000000000000095f       0x2d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fini.o)
+                0x000000000000095f       0x2d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
  .ARM.attributes
-                0x000000000000098c       0x2d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-signalr.o)
+                0x000000000000098c       0x2d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
  .ARM.attributes
-                0x00000000000009b9       0x2d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
+                0x00000000000009b9       0x2d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
  .ARM.attributes
-                0x00000000000009e6       0x2d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-reent.o)
+                0x00000000000009e6       0x2d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fini.o)
  .ARM.attributes
-                0x0000000000000a13       0x1d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtn.o
+                0x0000000000000a13       0x2d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-signalr.o)
+ .ARM.attributes
+                0x0000000000000a40       0x2d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-reent.o)
+ .ARM.attributes
+                0x0000000000000a6d       0x1d /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtn.o
 
 .comment        0x0000000000000000       0xf0
  .comment       0x0000000000000000       0x80 build-arduino_due_x_dbg/adc.cpp.o
@@ -2600,30 +2616,25 @@ OUTPUT(build-arduino_due_x_dbg/tests.elf elf32-littlearm)
  .comment       0x0000000000000000       0x81 build-arduino_due_x_dbg/libcore.a(watchdog.cpp.o)
  .comment       0x0000000000000000       0x81 build-arduino_due_x_dbg/libcore.a(wdt.c.o)
 
-.debug_frame    0x0000000000000000      0x1e0
- .debug_frame   0x0000000000000000       0x2c /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
- .debug_frame   0x000000000000002c       0x2c /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-memset.o)
- .debug_frame   0x0000000000000058       0x20 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strlen.o)
- .debug_frame   0x0000000000000078       0x20 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-syskill.o)
- .debug_frame   0x0000000000000098       0x48 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
- .debug_frame   0x00000000000000e0       0x20 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
- .debug_frame   0x0000000000000100       0x2c /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fini.o)
- .debug_frame   0x000000000000012c       0x3c /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-signalr.o)
- .debug_frame   0x0000000000000168       0x30 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
- .debug_frame   0x0000000000000198       0x48 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-reent.o)
+.debug_frame    0x0000000000000000      0x228
+ .debug_frame   0x0000000000000000       0x20 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-aeabi_atexit.o)
+ .debug_frame   0x0000000000000020       0x28 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-cxa_atexit.o)
+ .debug_frame   0x0000000000000048       0x2c /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
+ .debug_frame   0x0000000000000074       0x2c /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-memset.o)
+ .debug_frame   0x00000000000000a0       0x20 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strlen.o)
+ .debug_frame   0x00000000000000c0       0x20 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-syskill.o)
+ .debug_frame   0x00000000000000e0       0x30 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
+ .debug_frame   0x0000000000000110       0x48 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x0000000000000158       0x20 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
+ .debug_frame   0x0000000000000178       0x2c /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fini.o)
+ .debug_frame   0x00000000000001a4       0x3c /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-signalr.o)
+ .debug_frame   0x00000000000001e0       0x48 /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-reent.o)
 
 Cross Reference Table
 
 Symbol                                            File
-ADCWriteProtect(unsigned char)                    build-arduino_due_x_dbg/adc.cpp.o
-ADC_Config(bool, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char) build-arduino_due_x_dbg/adc.cpp.o
-ADC_Control(unsigned char, unsigned char)         build-arduino_due_x_dbg/adc.cpp.o
 ADC_Handler                                       build-arduino_due_x_dbg/tests.ino.o
                                                   /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/variants/arduino_due_x/libsam_sam3x8e_gcc_rel.a(startup_sam3xa.o)
-ADC_Resolution                                    build-arduino_due_x_dbg/tests.ino.o
-ActivatePeripheralControl(unsigned long*, unsigned char, Pio**) build-arduino_due_x_dbg/pios.cpp.o
-                                                  build-arduino_due_x_dbg/pwm.cpp.o
-                                                  build-arduino_due_x_dbg/adc.cpp.o
 BusFault_Handler                                  build-arduino_due_x_dbg/libcore.a(cortex_handlers.c.o)
                                                   /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/variants/arduino_due_x/libsam_sam3x8e_gcc_rel.a(startup_sam3xa.o)
 CAN0_Handler                                      build-arduino_due_x_dbg/libcore.a(cortex_handlers.c.o)
@@ -2636,40 +2647,74 @@ CDC_GetOtherInterface(unsigned char*)             build-arduino_due_x_dbg/libcor
                                                   build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
 CDC_Setup(USBSetup&)                              build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
                                                   build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
-ChangePeripheral(unsigned long*, unsigned char, Pio**) build-arduino_due_x_dbg/pios.cpp.o
-                                                  build-arduino_due_x_dbg/pwm.cpp.o
-CheckWriteProtectStatus(unsigned char)            build-arduino_due_x_dbg/pwm.cpp.o
-ComparisonMode(unsigned long, unsigned char)      build-arduino_due_x_dbg/pwm.cpp.o
 ConfigMainOSC(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char) build-arduino_due_x_dbg/pmc.cpp.o
+CustomADC::ADCConfig(bool, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char) build-arduino_due_x_dbg/adc.cpp.o
+CustomADC::ADCControl(unsigned char, unsigned char) build-arduino_due_x_dbg/adc.cpp.o
+CustomADC::ADCWriteProtect(unsigned char)         build-arduino_due_x_dbg/adc.cpp.o
+CustomADC::CustomADC(unsigned short*, unsigned char, bool, CustomPIO) build-arduino_due_x_dbg/adc.cpp.o
+                                                  build-arduino_due_x_dbg/tests.ino.o
+CustomADC::CustomADC(unsigned short*, unsigned char, bool, CustomPIO) build-arduino_due_x_dbg/adc.cpp.o
+CustomADC::DisableEOCInterrupts(unsigned short*, unsigned char) build-arduino_due_x_dbg/adc.cpp.o
+CustomADC::DisableUnusedChannels()                build-arduino_due_x_dbg/adc.cpp.o
+CustomADC::EnableChannels(unsigned short*, unsigned char) build-arduino_due_x_dbg/adc.cpp.o
+CustomADC::EnableEOCInterrupts(unsigned short*, unsigned char) build-arduino_due_x_dbg/adc.cpp.o
+CustomADC::GetPin(unsigned short, unsigned long&, Pio*&) build-arduino_due_x_dbg/adc.cpp.o
+CustomADC::LastChannelData(unsigned char)         build-arduino_due_x_dbg/adc.cpp.o
+                                                  build-arduino_due_x_dbg/tests.ino.o
+CustomADC::LastConvertedData()                    build-arduino_due_x_dbg/adc.cpp.o
+CustomADC::~CustomADC()                           build-arduino_due_x_dbg/adc.cpp.o
+CustomADC::~CustomADC()                           build-arduino_due_x_dbg/adc.cpp.o
+                                                  build-arduino_due_x_dbg/tests.ino.o
+CustomPIO::ActivatePeripheralControl(unsigned long*, unsigned char, Pio**) build-arduino_due_x_dbg/pios.cpp.o
+                                                  build-arduino_due_x_dbg/pwm.cpp.o
+                                                  build-arduino_due_x_dbg/adc.cpp.o
+CustomPIO::ChangePeripheral(unsigned long*, unsigned char, Pio**) build-arduino_due_x_dbg/pios.cpp.o
+                                                  build-arduino_due_x_dbg/pwm.cpp.o
+CustomPIO::CustomPIO(unsigned long*, unsigned char, Pio**) build-arduino_due_x_dbg/pios.cpp.o
+                                                  build-arduino_due_x_dbg/tests.ino.o
+CustomPIO::CustomPIO(unsigned long*, unsigned char, Pio**) build-arduino_due_x_dbg/pios.cpp.o
+CustomPIO::DeactivatePeripheralControl(unsigned long*, unsigned char, Pio**) build-arduino_due_x_dbg/pios.cpp.o
+CustomPIO::EnableWriteProtection(unsigned char, Pio*) build-arduino_due_x_dbg/pios.cpp.o
+CustomPIO::SetOutputPins(unsigned long*, unsigned char, Pio**) build-arduino_due_x_dbg/pios.cpp.o
+CustomPIO::SetOutputsHigh(unsigned long, Pio*)    build-arduino_due_x_dbg/pios.cpp.o
+CustomPIO::SetOutputsLow(unsigned long, Pio*)     build-arduino_due_x_dbg/pios.cpp.o
+CustomPIO::~CustomPIO()                           build-arduino_due_x_dbg/pios.cpp.o
+                                                  build-arduino_due_x_dbg/tests.ino.o
+CustomPIO::~CustomPIO()                           build-arduino_due_x_dbg/pios.cpp.o
+CustomPWM::CheckWriteProtectStatus(unsigned char) build-arduino_due_x_dbg/pwm.cpp.o
+CustomPWM::ComparisonMode(unsigned long, unsigned char) build-arduino_due_x_dbg/pwm.cpp.o
+CustomPWM::CustomPWM(unsigned short*, unsigned char, bool, unsigned char, CustomPIO) build-arduino_due_x_dbg/pwm.cpp.o
+                                                  build-arduino_due_x_dbg/tests.ino.o
+CustomPWM::CustomPWM(unsigned short*, unsigned char, bool, unsigned char, CustomPIO) build-arduino_due_x_dbg/pwm.cpp.o
+CustomPWM::DisableUnusedPWMChannels()             build-arduino_due_x_dbg/pwm.cpp.o
+CustomPWM::EnableComparisonOnLine(unsigned char, unsigned char) build-arduino_due_x_dbg/pwm.cpp.o
+CustomPWM::EnablePWMChannels(unsigned short*, unsigned char) build-arduino_due_x_dbg/pwm.cpp.o
+CustomPWM::GetPin(unsigned char, unsigned long&, Pio*&) build-arduino_due_x_dbg/pwm.cpp.o
+CustomPWM::PWMClockGenerator(unsigned char, unsigned char, unsigned char, unsigned char) build-arduino_due_x_dbg/pwm.cpp.o
+CustomPWM::SetCPRD(unsigned short, unsigned char) build-arduino_due_x_dbg/pwm.cpp.o
+CustomPWM::SetDuty(float, unsigned char)          build-arduino_due_x_dbg/pwm.cpp.o
+CustomPWM::SetupChannelMode(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char) build-arduino_due_x_dbg/pwm.cpp.o
+CustomPWM::~CustomPWM()                           build-arduino_due_x_dbg/pwm.cpp.o
+                                                  build-arduino_due_x_dbg/tests.ino.o
+CustomPWM::~CustomPWM()                           build-arduino_due_x_dbg/pwm.cpp.o
 DACC_Handler                                      build-arduino_due_x_dbg/libcore.a(cortex_handlers.c.o)
                                                   /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/variants/arduino_due_x/libsam_sam3x8e_gcc_rel.a(startup_sam3xa.o)
 DMAC_Handler                                      build-arduino_due_x_dbg/libcore.a(cortex_handlers.c.o)
                                                   /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/variants/arduino_due_x/libsam_sam3x8e_gcc_rel.a(startup_sam3xa.o)
-DeactivatePeripheralControl(unsigned long*, unsigned char, Pio**) build-arduino_due_x_dbg/pios.cpp.o
 DebugMon_Handler                                  build-arduino_due_x_dbg/libcore.a(cortex_handlers.c.o)
                                                   /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/variants/arduino_due_x/libsam_sam3x8e_gcc_rel.a(startup_sam3xa.o)
-DisableEOCInterrupts(unsigned short*, unsigned char) build-arduino_due_x_dbg/adc.cpp.o
-DisableUnusedChannels()                           build-arduino_due_x_dbg/adc.cpp.o
-DisableUnusedPWMChannels()                        build-arduino_due_x_dbg/pwm.cpp.o
 EFC0_Handler                                      build-arduino_due_x_dbg/libcore.a(cortex_handlers.c.o)
                                                   /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/variants/arduino_due_x/libsam_sam3x8e_gcc_rel.a(startup_sam3xa.o)
 EFC1_Handler                                      build-arduino_due_x_dbg/libcore.a(cortex_handlers.c.o)
                                                   /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/variants/arduino_due_x/libsam_sam3x8e_gcc_rel.a(startup_sam3xa.o)
 EMAC_Handler                                      build-arduino_due_x_dbg/libcore.a(cortex_handlers.c.o)
                                                   /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/variants/arduino_due_x/libsam_sam3x8e_gcc_rel.a(startup_sam3xa.o)
-EnableChannels(unsigned short*, unsigned char)    build-arduino_due_x_dbg/adc.cpp.o
-EnableComparisonOnLine(unsigned char, unsigned char) build-arduino_due_x_dbg/pwm.cpp.o
-EnableEOCInterrupts(unsigned short*, unsigned char) build-arduino_due_x_dbg/adc.cpp.o
 EnableInterrupts                                  build-arduino_due_x_dbg/tests.ino.o
-EnablePWMChannels(unsigned short*, unsigned char) build-arduino_due_x_dbg/pwm.cpp.o
 EnablePeripheralClock(unsigned char)              build-arduino_due_x_dbg/pmc.cpp.o
                                                   build-arduino_due_x_dbg/pwm.cpp.o
                                                   build-arduino_due_x_dbg/adc.cpp.o
-EnableWriteProtection(unsigned char, Pio*)        build-arduino_due_x_dbg/pios.cpp.o
 EndPoints                                         build-arduino_due_x_dbg/libcore.a(USBCore.cpp.o)
                                                   build-arduino_due_x_dbg/libcore.a(PluggableUSB.cpp.o)
-GetPin(unsigned char, unsigned long&, Pio*&)      build-arduino_due_x_dbg/pwm.cpp.o
-GetPin(unsigned short, unsigned long&, Pio*&)     build-arduino_due_x_dbg/adc.cpp.o
 GetTickCount                                      build-arduino_due_x_dbg/libcore.a(timetick.c.o)
                                                   build-arduino_due_x_dbg/libcore.a(wiring.c.o)
 HSMCI_Handler                                     build-arduino_due_x_dbg/libcore.a(cortex_handlers.c.o)
@@ -2678,9 +2723,6 @@ HardFault_Handler                                 build-arduino_due_x_dbg/libcor
                                                   /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/variants/arduino_due_x/libsam_sam3x8e_gcc_rel.a(startup_sam3xa.o)
 Identity(float)                                   build-arduino_due_x_dbg/actfunctions.cpp.o
                                                   build-arduino_due_x_dbg/tests.ino.o
-LastChannelData(unsigned char)                    build-arduino_due_x_dbg/adc.cpp.o
-                                                  build-arduino_due_x_dbg/tests.ino.o
-LastConvertedData()                               build-arduino_due_x_dbg/adc.cpp.o
 Layer::ComputeLayer(float*, float*)               build-arduino_due_x_dbg/layer.cpp.o
                                                   build-arduino_due_x_dbg/NN.cpp.o
 Layer::GetNInputs()                               build-arduino_due_x_dbg/layer.cpp.o
@@ -2699,8 +2741,6 @@ MemManage_Handler                                 build-arduino_due_x_dbg/libcor
                                                   /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/variants/arduino_due_x/libsam_sam3x8e_gcc_rel.a(startup_sam3xa.o)
 MotorPinGroups                                    build-arduino_due_x_dbg/tests.ino.o
 MotorPins                                         build-arduino_due_x_dbg/tests.ino.o
-MoveClockwise(unsigned char, unsigned char, Pio*, Pio*) build-arduino_due_x_dbg/tests.ino.o
-MoveCounterClockwise(unsigned char, unsigned char, Pio*, Pio*) build-arduino_due_x_dbg/tests.ino.o
 NMI_Handler                                       build-arduino_due_x_dbg/libcore.a(cortex_handlers.c.o)
                                                   /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/variants/arduino_due_x/libsam_sam3x8e_gcc_rel.a(startup_sam3xa.o)
 NN::AddLayers(Layer*, unsigned char)              build-arduino_due_x_dbg/NN.cpp.o
@@ -2711,7 +2751,6 @@ NN::Predict(float*, float*)                       build-arduino_due_x_dbg/NN.cpp
 NN::~NN()                                         build-arduino_due_x_dbg/NN.cpp.o
 NN::~NN()                                         build-arduino_due_x_dbg/NN.cpp.o
                                                   build-arduino_due_x_dbg/tests.ino.o
-Off(unsigned char, unsigned char, Pio*, Pio*)     build-arduino_due_x_dbg/tests.ino.o
 PIOA_Handler                                      build-arduino_due_x_dbg/libcore.a(WInterrupts.c.o)
                                                   /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/variants/arduino_due_x/libsam_sam3x8e_gcc_rel.a(startup_sam3xa.o)
 PIOB_Handler                                      build-arduino_due_x_dbg/libcore.a(WInterrupts.c.o)
@@ -2771,7 +2810,6 @@ PWMC_SetPeriod                                    build-arduino_due_x_dbg/libcor
 PWMC_SetSyncChannelUpdatePeriod                   build-arduino_due_x_dbg/libcore.a(pwmc.c.o)
 PWMC_SetSyncChannelUpdateUnlock                   build-arduino_due_x_dbg/libcore.a(pwmc.c.o)
 PWMC_WriteBuffer                                  build-arduino_due_x_dbg/libcore.a(pwmc.c.o)
-PWMClockGenerator(unsigned char, unsigned char, unsigned char, unsigned char) build-arduino_due_x_dbg/pwm.cpp.o
 PWMFreq                                           build-arduino_due_x_dbg/tests.ino.o
 PWM_Handler                                       build-arduino_due_x_dbg/libcore.a(cortex_handlers.c.o)
                                                   /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/variants/arduino_due_x/libsam_sam3x8e_gcc_rel.a(startup_sam3xa.o)
@@ -2874,14 +2912,6 @@ Serial_::rts()                                    build-arduino_due_x_dbg/libcor
 Serial_::stopbits()                               build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
 Serial_::write(unsigned char const*, unsigned int) build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
 Serial_::write(unsigned char)                     build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)
-SetCPRD(unsigned short, unsigned char)            build-arduino_due_x_dbg/pwm.cpp.o
-SetDuty(float, unsigned char)                     build-arduino_due_x_dbg/pwm.cpp.o
-SetOutputPins(unsigned long*, unsigned char, Pio**) build-arduino_due_x_dbg/pios.cpp.o
-SetOutputsHigh(unsigned long, Pio*)               build-arduino_due_x_dbg/pios.cpp.o
-                                                  build-arduino_due_x_dbg/tests.ino.o
-SetOutputsLow(unsigned long, Pio*)                build-arduino_due_x_dbg/pios.cpp.o
-                                                  build-arduino_due_x_dbg/tests.ino.o
-SetupChannelMode(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char) build-arduino_due_x_dbg/pwm.cpp.o
 Sigmoid(float)                                    build-arduino_due_x_dbg/actfunctions.cpp.o
 Sleep                                             build-arduino_due_x_dbg/libcore.a(timetick.c.o)
 SysTick_Handler                                   build-arduino_due_x_dbg/libcore.a(cortex_handlers.c.o)
@@ -3073,6 +3103,8 @@ _Jv_RegisterClasses                               /home/david/.arduino15/package
 _PathLocale                                       /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-locale.o)
 __adddf3                                          /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/libgcc.a(_arm_addsubdf3.o)
 __addsf3                                          /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/libgcc.a(_arm_addsubsf3.o)
+__aeabi_atexit                                    /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-aeabi_atexit.o)
+                                                  build-arduino_due_x_dbg/tests.ino.o
 __aeabi_cdcmpeq                                   /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/libgcc.a(_arm_cmpdf2.o)
 __aeabi_cdcmple                                   /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/libgcc.a(_arm_cmpdf2.o)
 __aeabi_cdrcmple                                  /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/libgcc.a(_arm_cmpdf2.o)
@@ -3163,6 +3195,8 @@ __call_exitprocs                                  /home/david/.arduino15/package
                                                   /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-exit.o)
 __cmpdf2                                          /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/libgcc.a(_arm_cmpdf2.o)
 __cmpsf2                                          /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/libgcc.a(_arm_cmpsf2.o)
+__cxa_atexit                                      /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-cxa_atexit.o)
+                                                  /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-aeabi_atexit.o)
 __cxa_deleted_virtual                             build-arduino_due_x_dbg/libcore.a(abi.cpp.o)
 __cxa_pure_virtual                                build-arduino_due_x_dbg/libcore.a(abi.cpp.o)
                                                   build-arduino_due_x_dbg/libcore.a(Print.cpp.o)
@@ -3173,6 +3207,7 @@ __divdi3                                          /home/david/.arduino15/package
                                                   /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/libgcc.a(bpabi.o)
 __divsf3                                          /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/libgcc.a(_arm_muldivsf3.o)
 __dso_handle                                      /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
+                                                  build-arduino_due_x_dbg/tests.ino.o
 __eqdf2                                           /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/libgcc.a(_arm_cmpdf2.o)
 __eqsf2                                           /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/libgcc.a(_arm_cmpsf2.o)
 __errno                                           /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-errno.o)
@@ -3258,6 +3293,7 @@ __preinit_array_end                               /home/david/.arduino15/package
 __preinit_array_start                             /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
 __register_exitproc                               /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
                                                   /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
+                                                  /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-cxa_atexit.o)
 __register_frame_info                             /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
 __sclose                                          /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-stdio.o)
                                                   /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-findfp.o)
@@ -3357,10 +3393,10 @@ _getpid                                           build-arduino_due_x_dbg/libcor
 _getpid_r                                         /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-signalr.o)
                                                   /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-signal.o)
 _global_impure_ptr                                /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
-                                                  /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
                                                   /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-findfp.o)
                                                   /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fflush.o)
                                                   /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
+                                                  /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
                                                   /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-exit.o)
 _impure_ptr                                       /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
                                                   /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-reent.o)
@@ -3440,6 +3476,7 @@ _write_r                                          /home/david/.arduino15/package
 abort                                             /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-abort.o)
                                                   /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-assert.o)
 actFuncs                                          build-arduino_due_x_dbg/tests.ino.o
+adc                                               build-arduino_due_x_dbg/tests.ino.o
 adc_configure_power_save                          build-arduino_due_x_dbg/libcore.a(adc.c.o)
 adc_configure_sequence                            build-arduino_due_x_dbg/libcore.a(adc.c.o)
 adc_configure_timing                              build-arduino_due_x_dbg/libcore.a(adc.c.o)
@@ -3490,8 +3527,6 @@ adc_set_comparison_mode                           build-arduino_due_x_dbg/libcor
 adc_set_comparison_window                         build-arduino_due_x_dbg/libcore.a(adc.c.o)
 adc_set_resolution                                build-arduino_due_x_dbg/libcore.a(adc.c.o)
 adc_set_writeprotect                              build-arduino_due_x_dbg/libcore.a(adc.c.o)
-adc_setup(unsigned short*, unsigned char, bool)   build-arduino_due_x_dbg/adc.cpp.o
-                                                  build-arduino_due_x_dbg/tests.ino.o
 adc_start                                         build-arduino_due_x_dbg/libcore.a(adc.c.o)
                                                   build-arduino_due_x_dbg/libcore.a(wiring_analog.c.o)
 adc_start_sequencer                               build-arduino_due_x_dbg/libcore.a(adc.c.o)
@@ -3559,9 +3594,6 @@ digitalRead                                       build-arduino_due_x_dbg/libcor
 digitalWrite                                      build-arduino_due_x_dbg/libcore.a(wiring_digital.c.o)
                                                   build-arduino_due_x_dbg/libcore.a(wiring_analog.c.o)
                                                   build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
-directionMotor1                                   build-arduino_due_x_dbg/tests.ino.o
-directionMotor2                                   build-arduino_due_x_dbg/tests.ino.o
-directionMotorPWM                                 build-arduino_due_x_dbg/tests.ino.o
 errno                                             /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-reent.o)
                                                   /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-readr.o)
                                                   /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-lseekr.o)
@@ -3637,8 +3669,7 @@ pendSVHook                                        build-arduino_due_x_dbg/libcor
                                                   build-arduino_due_x_dbg/libcore.a(cortex_handlers.c.o)
 pinMode                                           build-arduino_due_x_dbg/libcore.a(wiring_digital.c.o)
                                                   build-arduino_due_x_dbg/libcore.a(wiring_analog.c.o)
-pio_setup(unsigned long*, unsigned char, Pio**)   build-arduino_due_x_dbg/pios.cpp.o
-                                                  build-arduino_due_x_dbg/tests.ino.o
+pio                                               build-arduino_due_x_dbg/tests.ino.o
 pmc_clr_fast_startup_input                        build-arduino_due_x_dbg/libcore.a(pmc.c.o)
 pmc_disable_all_pck                               build-arduino_due_x_dbg/libcore.a(pmc.c.o)
 pmc_disable_all_periph_clk                        build-arduino_due_x_dbg/libcore.a(pmc.c.o)
@@ -3701,18 +3732,14 @@ pmc_switch_sclk_to_32kxtal                        build-arduino_due_x_dbg/libcor
 pmc_switch_udpck_to_pllack                        build-arduino_due_x_dbg/libcore.a(pmc.c.o)
 pmc_switch_udpck_to_upllck                        build-arduino_due_x_dbg/libcore.a(pmc.c.o)
                                                   build-arduino_due_x_dbg/libcore.a(uotghs_device.c.o)
+pwm                                               build-arduino_due_x_dbg/tests.ino.o
 pwmMotors                                         build-arduino_due_x_dbg/tests.ino.o
-pwm_setup(unsigned short*, unsigned char, bool, unsigned char) build-arduino_due_x_dbg/pwm.cpp.o
-                                                  build-arduino_due_x_dbg/tests.ino.o
 raise                                             /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-signal.o)
                                                   /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-abort.o)
 rx_buffer1                                        build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
 rx_buffer2                                        build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
 rx_buffer3                                        build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
 rx_buffer4                                        build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
-sensor2                                           build-arduino_due_x_dbg/tests.ino.o
-sensor3                                           build-arduino_due_x_dbg/tests.ino.o
-sensor4                                           build-arduino_due_x_dbg/tests.ino.o
 sensors                                           build-arduino_due_x_dbg/tests.ino.o
 serialEvent()                                     build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
 serialEvent1()                                    build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
@@ -3738,15 +3765,11 @@ sysTickHook                                       build-arduino_due_x_dbg/libcor
 system_init_flash                                 build-arduino_due_x_dbg/libcore.a(system_sam3xa.c.o)
 tickReset                                         build-arduino_due_x_dbg/libcore.a(Reset.cpp.o)
                                                   build-arduino_due_x_dbg/libcore.a(cortex_handlers.c.o)
-tractionMotor1                                    build-arduino_due_x_dbg/tests.ino.o
-tractionMotor2                                    build-arduino_due_x_dbg/tests.ino.o
-tractionMotorPWM                                  build-arduino_due_x_dbg/tests.ino.o
 tx_buffer1                                        build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
 tx_buffer2                                        build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
 tx_buffer3                                        build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
 tx_buffer4                                        build-arduino_due_x_dbg/libcore.a(variant.cpp.o)
 uIn                                               build-arduino_due_x_dbg/tests.ino.o
-uRef                                              build-arduino_due_x_dbg/tests.ino.o
 vfiprintf                                         /home/david/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-vfiprintf.o)
 vtable for Print                                  build-arduino_due_x_dbg/libcore.a(Print.cpp.o)
 vtable for Serial_                                build-arduino_due_x_dbg/libcore.a(CDC.cpp.o)

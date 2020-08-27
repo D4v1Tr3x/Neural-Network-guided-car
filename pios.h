@@ -3,21 +3,27 @@
 
 #include "Arduino.h"
 
-void pio_setup(uint32_t* digitalPins, uint8_t len, Pio** pinGroups);
+class CustomPIO
+{
+  public:
+    
+    CustomPIO(uint32_t* digitalPins, uint8_t len, Pio** pinGroups);
 
-void DeactivatePeripheralControl(uint32_t* pins, uint8_t len, Pio** pinGroup);
+    ~CustomPIO();
 
-void ActivatePeripheralControl(uint32_t* pins, uint8_t len, Pio** pioGroup);
+    void DeactivatePeripheralControl(uint32_t* pins, uint8_t len, Pio** pinGroup);
 
-void SetOutputPins(uint32_t* pins, uint8_t len, Pio** pioGroup);
+    void ActivatePeripheralControl(uint32_t* pins, uint8_t len, Pio** pioGroup);
 
-void SetOutputsHigh(uint32_t pins, Pio* pioGroup);
+    void SetOutputPins(uint32_t* pins, uint8_t len, Pio** pioGroup);
 
-void SetOutputsLow(uint32_t pins, Pio* pioGroup);
+    void SetOutputsHigh(uint32_t pins, Pio* pioGroup);
 
-void EnableWriteProtection(uint8_t enable, Pio* pioGroup);
+    void SetOutputsLow(uint32_t pins, Pio* pioGroup);
 
-void ChangePeripheral(uint32_t* pins, uint8_t len, Pio** pioGroup);
+    void EnableWriteProtection(uint8_t enable, Pio* pioGroup);
 
+    void ChangePeripheral(uint32_t* pins, uint8_t len, Pio** pioGroup);
 
+};
 #endif

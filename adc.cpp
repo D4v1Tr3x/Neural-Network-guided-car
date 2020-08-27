@@ -1,7 +1,8 @@
 #include "adc.h"
 
 
-void adc_setup(uint16_t* adcChannels, uint8_t pinsUsed, bool EnableADCInterrupts)
+CustomADC::CustomADC(uint16_t* adcChannels, uint8_t pinsUsed, 
+                     bool EnableADCInterrupts, CustomPIO pio)
 {
   //Gets the pins corresponding to each channel
   uint32_t adcPins[pinsUsed];
@@ -12,14 +13,14 @@ void adc_setup(uint16_t* adcChannels, uint8_t pinsUsed, bool EnableADCInterrupts
   }
   //Activates peripheral control of the ADC pins by disabling the PIO control
   //register
-  ActivatePeripheralControl(adcPins, pinsUsed, pinGroups);
+  pio.ActivatePeripheralControl(adcPins, pinsUsed, pinGroups);
 
   EnablePeripheralClock(ADC_ID);
   
   //Starts the ADC and sets its trigger to fire whenever the PWM event line
   //sends a pulse if the interrupts are enabled
-  ADC_Control(1, 0);
-  ADC_Config(EnableADCInterrupts);
+  ADCControl(1, 0);
+  ADCConfig(EnableADCInterrupts);
   
   //Enables the specified channels and then disables the unused ones 
   EnableChannels(adcChannels, pinsUsed);  
@@ -33,9 +34,13 @@ void adc_setup(uint16_t* adcChannels, uint8_t pinsUsed, bool EnableADCInterrupts
   }  
 }
 
-void ADC_Config(bool PWMConfig, uint8_t hardwareTriggers, uint8_t trigger,
-                uint8_t lowRes, uint8_t sleepMode, uint8_t fastWKUP,
-                uint8_t freeRun)
+CustomADC::~CustomADC()
+{
+}
+
+void CustomADC::ADCConfig(bool PWMConfig, uint8_t hardwareTriggers, 
+                          uint8_t trigger, uint8_t lowRes, uint8_t sleepMode, 
+                          uint8_t fastWKUP, uint8_t freeRun)
 {
   if(PWMConfig)
   {
@@ -50,61 +55,61 @@ void ADC_Config(bool PWMConfig, uint8_t hardwareTriggers, uint8_t trigger,
     }
     configRegister |= (freeRun << 7) + (fastWKUP << 6) + (sleepMode << 5) + (lowRes << 4);
   }
-};
+}
 
-void ADC_Control(uint8_t reset, uint8_t start)
+void CustomADC::ADCControl(uint8_t reset, uint8_t start)
 {
   ADC->ADC_CR = (start << 1) + reset;
-};
+}
 
-void ADCWriteProtect(uint8_t enable)
+void CustomADC::ADCWriteProtect(uint8_t enable)
 {
   ADC->ADC_WPMR = 0x04144430 | enable;
-};
+}
 
-void EnableChannels(uint16_t* channels, uint8_t len)
+void CustomADC::EnableChannels(uint16_t* channels, uint8_t len)
 {
   for(uint8_t i = 0; i < len; i++)
   {
     ADC->ADC_CHER |= channels[i];
   }
   DisableUnusedChannels();
-};
+}
 
-void DisableUnusedChannels()
+void CustomADC::DisableUnusedChannels()
 {
   uint16_t unusedChannels = !ADC->ADC_CHSR;
   ADC->ADC_CHSR = unusedChannels;
   
-};
+}
 
-uint16_t LastChannelData(uint8_t channel)
+uint16_t CustomADC::LastChannelData(uint8_t channel)
 {
   return ADC->ADC_CDR[channel];
 }
 
-uint16_t LastConvertedData()
+uint16_t CustomADC::LastConvertedData()
 {
   return ADC->ADC_LCDR;
-};
+}
 
-void EnableEOCInterrupts(uint16_t* channels, uint8_t len)
+void CustomADC::EnableEOCInterrupts(uint16_t* channels, uint8_t len)
 {
   for(uint8_t i = 0; i < len; i++)
   {
     ADC->ADC_IER |= channels[i];
   }
-};
+}
 
-void DisableEOCInterrupts(uint16_t* channels, uint8_t len)
+void CustomADC::DisableEOCInterrupts(uint16_t* channels, uint8_t len)
 {
   for(uint8_t i = 0; i < len; i++)
   {
     ADC->ADC_IDR &= channels[i];
   }
-};
+}
 
-void GetPin(uint16_t channel, uint32_t &pin, Pio* &pinGroup)
+void CustomADC::GetPin(uint16_t channel, uint32_t &pin, Pio* &pinGroup)
 {
   switch(channel)
   {
