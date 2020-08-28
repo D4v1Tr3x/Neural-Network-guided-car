@@ -11,7 +11,7 @@ class CustomADC
   public:
   
     CustomADC(uint16_t* adcChannels, uint8_t pinsUsed, 
-              bool EnableADCInterrupts, CustomPIO pio, CustomPMC pmc);
+              bool EnableADCInterrupts, CustomPIO* pio, CustomPMC* pmc);
     
     ~CustomADC(void);
 
@@ -26,8 +26,6 @@ class CustomADC
     void EnableChannels(uint16_t* channel, uint8_t len);
 
     void DisableUnusedChannels(void);
-  
-    uint16_t LastChannelData(uint8_t channel);
 
     uint16_t LastConvertedData(void);
 
@@ -36,7 +34,8 @@ class CustomADC
     void DisableEOCInterrupts(uint16_t* channels, uint8_t len);
 
     void GetPin(uint16_t channel, uint32_t &pin, Pio* &pinGroup);
-
+    
+    uint16_t LastChannelData(uint8_t channel);
 };
 
 #endif

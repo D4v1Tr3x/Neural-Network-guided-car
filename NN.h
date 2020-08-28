@@ -20,7 +20,7 @@ class NN
   void AddLayers(Layer *layer, uint8_t n);       //Adds layers with them inputs,
                                                  //outputs and weights.
 
-  int8_t Predict(float* inputs, float* outputs); //Predicts the result given
+  float Predict(float* inputs, float* outputs); //Predicts the result given
                                                  //the inputs.
 };
 

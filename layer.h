@@ -1,8 +1,11 @@
 #ifndef LAYER_H_
 #define LAYER_H_
 
+
+#define MAT_2_ARR(i, j, n) (j + n*i)
 #include <cstdint>
 #include "actfunctions.h"
+#include "Arduino.h"
 
 typedef float(*actFunc_t)(float);
 
@@ -15,6 +18,9 @@ class Layer{
   float* Weights;
   actFunc_t ActFunction;
   float* Bias;
+  float* inputData;
+  float* outputData;
+  
 
  public:
   //Constructor
@@ -27,12 +33,15 @@ class Layer{
   void Init(uint8_t inputs, uint8_t outputs, float* arr, float* arr2, 
             actFunc_t ActFunc);
 
-  float* ComputeLayer(float* inputs, float* outputs);
+  void ComputeLayer(float* input, float* output);
 
   //Getters
   uint8_t GetNInputs();
   uint8_t GetNOutputs();
-
+  float* GetWeights();
+  float* GetInputArray();
+  float* GetOutputArray();
+  
 };
 
 #endif

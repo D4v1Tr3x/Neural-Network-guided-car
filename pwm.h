@@ -10,7 +10,7 @@ class CustomPWM
 {
   public:
     CustomPWM(uint16_t* channels, uint8_t len, bool EnableComparison, 
-              uint8_t clockFreq, CustomPIO pio, CustomPMC pmc);
+              uint8_t clockFreq, CustomPIO* pio, CustomPMC* pmc);
 
     ~CustomPWM(void);
 

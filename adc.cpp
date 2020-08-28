@@ -2,8 +2,8 @@
 
 
 CustomADC::CustomADC(uint16_t* adcChannels, uint8_t pinsUsed, 
-                     bool EnableADCInterrupts, CustomPIO pio,
-                     CustomPMC pmc)
+                     bool EnableADCInterrupts, CustomPIO* pio,
+                     CustomPMC* pmc)
 {
   //Gets the pins corresponding to each channel
   uint32_t adcPins[pinsUsed];
@@ -12,17 +12,17 @@ CustomADC::CustomADC(uint16_t* adcChannels, uint8_t pinsUsed,
   {
     GetPin(adcChannels[i], adcPins[i], pinGroups[i]);
   }
+
   //Activates peripheral control of the ADC pins by disabling the PIO control
   //register
-  pio.ActivatePeripheralControl(adcPins, pinsUsed, pinGroups);
-
-  pmc.EnablePeripheralClock(ADC_ID);
+  pio->ActivatePeripheralControl(adcPins, pinsUsed, pinGroups);
   
+
+  pmc->EnablePeripheralClock(ADC_ID);
   //Starts the ADC and sets its trigger to fire whenever the PWM event line
   //sends a pulse if the interrupts are enabled
   Control(1, 0);
   Config(EnableADCInterrupts);
-  
   //Enables the specified channels and then disables the unused ones 
   EnableChannels(adcChannels, pinsUsed);  
 
@@ -79,14 +79,7 @@ void CustomADC::EnableChannels(uint16_t* channels, uint8_t len)
 
 void CustomADC::DisableUnusedChannels()
 {
-  uint16_t unusedChannels = !ADC->ADC_CHSR;
-  ADC->ADC_CHSR = unusedChannels;
-  
-}
-
-uint16_t CustomADC::LastChannelData(uint8_t channel)
-{
-  return ADC->ADC_CDR[channel];
+  ADC->ADC_CHDR = !ADC->ADC_CHSR;  
 }
 
 uint16_t CustomADC::LastConvertedData()
@@ -139,4 +132,9 @@ void CustomADC::GetPin(uint16_t channel, uint32_t &pin, Pio* &pinGroup)
       pinGroup = PIOA;
       break;
   }
+}
+
+uint16_t CustomADC::LastChannelData(uint8_t channel)
+{
+  return ADC->ADC_CDR[channel];
 }

@@ -1,5 +1,6 @@
 #ifndef NNPARAMETERS_H_
 #define NNPARAMETERS_H_
+#include "NN.h"
 
 const uint8_t nLayers = 3;
 
@@ -28,6 +29,5 @@ float b3[] = { 1.62};
 
 float *weights[nLayers] = {w1, w2, w3};
 float *biases[nLayers] = {b1, b2, b3};
-
 
 #endif

@@ -1,7 +1,7 @@
 #include "pwm.h"
 
 CustomPWM::CustomPWM(uint16_t* channels, uint8_t len, bool EnableComparison, 
-                     uint8_t clockFreq, CustomPIO pio, CustomPMC pmc)
+                     uint8_t clockFreq, CustomPIO* pio, CustomPMC* pmc)
 { 
   //Calculates the degree of precision that the PWM will have based on the
   //desired frecuency that we want as clock for all the channels.
@@ -16,11 +16,11 @@ CustomPWM::CustomPWM(uint16_t* channels, uint8_t len, bool EnableComparison,
   }
   
   //Activates the PWM on those pins
-  pio.ActivatePeripheralControl(pins, len, pinGroups);
-  pio.ChangePeripheral(pins, len, pinGroups);
+  pio->ActivatePeripheralControl(pins, len, pinGroups);
+  pio->ChangePeripheral(pins, len, pinGroups);
   
   //Enables the PWM to work on the designated channels
-  pmc.EnablePeripheralClock(PWM_ID);
+  pmc->EnablePeripheralClock(PWM_ID);
   EnableChannels(channels, len);
    
   for(uint8_t i = 0; i < len; i++)
@@ -35,7 +35,7 @@ CustomPWM::CustomPWM(uint16_t* channels, uint8_t len, bool EnableComparison,
   {
     PWM->PWM_CMP[0].PWM_CMPM = 0x401;
 
-    PWM->PWM_CMP[0].PWM_CMPV = 1750;
+    PWM->PWM_CMP[0].PWM_CMPV = CPRD;
   
     PWM->PWM_ELMR[0] = 0x1;
   

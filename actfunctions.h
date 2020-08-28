@@ -4,8 +4,8 @@
 #include <cmath>
 
 //Activation Functions
-float ReLU(float input);
-float Sigmoid(float input);
-float Identity(float input);
+extern float ReLU(float input);
+extern float Sigmoid(float input);
+extern float Identity(float input);
 
 #endif
