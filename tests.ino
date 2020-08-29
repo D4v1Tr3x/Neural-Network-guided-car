@@ -28,14 +28,14 @@ void ADC_Handler()
 void setup()
 {
   Serial.begin(115200); 
-
+  
   pmc = new CustomPMC;
   pio = new CustomPIO(MotorPins, nMotors*2, MotorPinGroups);
   adc = new CustomADC(sensors, sensorsUsed, EnableInterrupts, pio, pmc);
   pwm = new CustomPWM(pwmMotors, nMotors, EnableInterrupts, PWMFreq, pio, pmc);
   myNN = new NN(nLayers, nInputs, nOutputs, weights, biases, actFuncs);  
   
-  
+  pwm->SetDuty(1, 1);
 }
 
 
@@ -44,15 +44,21 @@ void loop()
   myNN->Predict(uIn, prediction);
   Serial.println("\n");
 
-  /*
-  if(prediction == 1)
+  
+  
+  
+  if((prediction[0] > 0.5) && (prediction[0] < 1.9))
   {
-    MoveCounterClockwise(MotorPins[2], MotorPins[3], MotorPinGroups[2], MotorPinGroups[3]);
+    MoveCounterClockwise(MotorPins[2], MotorPins[3], MotorPinGroups[2], MotorPinGroups[3], pio);
   }
   
-  else if(prediction == -1)
+  else if(prediction[0] < -0.5)
   {
-    MoveClockwise(MotorPins[2], MotorPins[3], MotorPinGroups[2], MotorPinGroups[3]);
+    MoveClockwise(MotorPins[2], MotorPins[3], MotorPinGroups[2], MotorPinGroups[3], pio);
   }
-  */ 
+  else
+  {
+    Off(MotorPins[2], MotorPins[3], MotorPinGroups[2], MotorPinGroups[3], pio);
+  }
+  
 }

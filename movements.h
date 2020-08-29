@@ -4,12 +4,12 @@
 #include "pios.h"
 
 extern void Off(uint8_t in1, uint8_t in2, Pio* pinGroup1, Pio* pinGroup2,
-                CustomPIO pio);
+                CustomPIO* pio);
 
 extern void MoveClockwise(uint8_t in1, uint8_t in2, Pio* pinGroup1, 
-                          Pio* pinGroup2, CustomPIO pio);
+                          Pio* pinGroup2, CustomPIO* pio);
 
 extern void MoveCounterClockwise(uint8_t in1, uint8_t in2, Pio* pinGroup1, 
-                                 Pio* pinGroup2, CustomPIO pio);
+                                 Pio* pinGroup2, CustomPIO* pio);
 
 #endif

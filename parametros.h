@@ -45,7 +45,7 @@ const float ADC_Resolution = 4095.0;
 
 float tension;
 float uIn[sensorsUsed];
-float* prediction = new float[1];
+float prediction[1];
 uint16_t dAdc;
 
 #endif
