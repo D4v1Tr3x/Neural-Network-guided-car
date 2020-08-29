@@ -43,9 +43,9 @@ Pio* MotorPinGroups[nMotors*2] = {PIOD, PIOD, PIOD, PIOD};
 const float uRef = 3.3;
 const float ADC_Resolution = 4095.0;
 
+float tension;
 float uIn[sensorsUsed];
-float prediction[1];
+float* prediction = new float[1];
 uint16_t dAdc;
-bool flag = false;
 
 #endif

@@ -8,7 +8,7 @@ class NN
  private:
 
   uint8_t nLayers;
-  Layer *Layers;                                 //Stores layer data.
+  Layer **Layers;                                 //Stores layer data.
   
  public:
 
@@ -17,11 +17,13 @@ class NN
                                                  //Constructor
   ~NN(void);                                     //Destructor
 
-  void AddLayers(Layer *layer, uint8_t n);       //Adds layers with them inputs,
+  void AddLayers(Layer **layer, uint8_t n);       //Adds layers with them inputs,
                                                  //outputs and weights.
 
-  float Predict(float* inputs, float* outputs); //Predicts the result given
+  void Predict(float* inputs, float* outputs); //Predicts the result given
                                                  //the inputs.
+
+  float GetLayers();
 };
 
 #endif

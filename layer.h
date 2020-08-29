@@ -19,7 +19,6 @@ class Layer{
   actFunc_t ActFunction;
   float* Bias;
   float* inputData;
-  float* outputData;
   
 
  public:
@@ -39,8 +38,7 @@ class Layer{
   uint8_t GetNInputs();
   uint8_t GetNOutputs();
   float* GetWeights();
-  float* GetInputArray();
-  float* GetOutputArray();
+  float* GetData();
   
 };
 

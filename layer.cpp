@@ -20,7 +20,6 @@ void Layer::Init(uint8_t inputs, uint8_t outputs, float* arr, float* arr2,
   Weights = arr;
   Bias = arr2;
   inputData = new float[NInputs];
-  outputData = new float[NOutputs];
 }
 
 void Layer::ComputeLayer(float* input, float* output)
@@ -52,12 +51,7 @@ float* Layer::GetWeights()
   return Weights;
 }
 
-float* Layer::GetInputArray()
+float* Layer::GetData()
 {
   return inputData;
-}
-
-float* Layer::GetOutputArray()
-{
-  return outputData;
 }
