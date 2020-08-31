@@ -135,6 +135,6 @@ void CustomADC::GetPin(uint16_t channel, uint32_t &pin, Pio* &pinGroup)
 }
 
 uint16_t CustomADC::LastChannelData(uint8_t channel)
-{
+{ 
   return ADC->ADC_CDR[channel];
 }

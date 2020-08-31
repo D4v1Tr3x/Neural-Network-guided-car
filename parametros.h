@@ -48,4 +48,6 @@ float uIn[sensorsUsed];
 float prediction[1];
 uint16_t dAdc;
 
+uint8_t lastMov;
+
 #endif

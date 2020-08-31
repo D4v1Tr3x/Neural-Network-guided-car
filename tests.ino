@@ -38,27 +38,36 @@ void setup()
   pwm->SetDuty(1, 1);
 }
 
-
 void loop()
 { 
   myNN->Predict(uIn, prediction);
   Serial.println("\n");
 
   
-  
-  
   if((prediction[0] > 0.5) && (prediction[0] < 1.9))
   {
     MoveCounterClockwise(MotorPins[2], MotorPins[3], MotorPinGroups[2], MotorPinGroups[3], pio);
+    if(lastMov != 1)
+    {
+      lastMov = 1;
+    }
   }
   
   else if(prediction[0] < -0.5)
   {
     MoveClockwise(MotorPins[2], MotorPins[3], MotorPinGroups[2], MotorPinGroups[3], pio);
+    if(lastMov != -1)
+    {
+      lastMov = -1;
+    }
   }
   else
   {
-    Off(MotorPins[2], MotorPins[3], MotorPinGroups[2], MotorPinGroups[3], pio);
+    Off(MotorPins[2], MotorPins[3], MotorPinGroups[2], MotorPinGroups[3], pio, lastMov);
+    if(lastMov != 0)
+    {
+      lastMov = 0;
+    }
   }
   
 }
