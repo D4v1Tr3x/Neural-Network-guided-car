@@ -49,5 +49,6 @@ float prediction[1];
 uint16_t dAdc;
 
 uint8_t lastMov;
+bool motorFlag = false;
 
 #endif
