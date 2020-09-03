@@ -28,15 +28,15 @@ void ADC_Handler()
 void setup()
 {
   Serial.begin(115200); 
-  
   pmc = new CustomPMC;
   pio = new CustomPIO(MotorPins, nMotors*2, MotorPinGroups);
   adc = new CustomADC(sensors, sensorsUsed, EnableInterrupts, pio, pmc);
   pwm = new CustomPWM(pwmMotors, nMotors, EnableInterrupts, PWMFreq, pio, pmc);
   myNN = new NN(nLayers, nInputs, nOutputs, weights, biases, actFuncs);  
-
-  pwm->SetDuty(0.6, 0);
-  pwm->SetDuty(1, 1);
+  
+  
+  pwm->SetDuty(0.65, 0);
+  pwm->SetDuty(0.9, 1);
 }
 
 void loop()
@@ -47,14 +47,15 @@ void loop()
   }
   myNN->Predict(uIn, prediction);
   Serial.println("\n");
-  if((prediction[0] < 0.2) && (prediction[0] > -0.2))
+  if(prediction[0] == 0.00)
   {
+    pwm->SetDuty(0.65, 0);
     if(motorFlag != true)
     {
       motorFlag = true;
     }
   }
-  else if(prediction[0] > 1.9)
+  else if(prediction[0] == 2.00)
   {
     if(motorFlag != false)
     {
@@ -71,18 +72,22 @@ void loop()
     Off(MotorPins[0], MotorPins[1], MotorPinGroups[0], MotorPinGroups[1], pio, 0);
   }
   
-  if((prediction[0] > 0.5) && (prediction[0] < 1.9))
+  if(prediction[0] == 1.00)
   {
     MoveCounterClockwise(MotorPins[2], MotorPins[3], MotorPinGroups[2], MotorPinGroups[3], pio);
+    pwm->SetDuty(0.8, 0);
+    MoveClockwise(MotorPins[0], MotorPins[1], MotorPinGroups[0], MotorPinGroups[1], pio);
     if(lastMov != 1)
     {
       lastMov = 1;
     }
   }
   
-  else if(prediction[0] < -0.5)
+  else if(prediction[0] == -1.00)
   {
     MoveClockwise(MotorPins[2], MotorPins[3], MotorPinGroups[2], MotorPinGroups[3], pio);
+    pwm->SetDuty(0.8, 0);
+    MoveClockwise(MotorPins[0], MotorPins[1], MotorPinGroups[0], MotorPinGroups[1], pio);
     if(lastMov != -1)
     {
       lastMov = -1;

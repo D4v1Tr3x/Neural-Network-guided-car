@@ -4,15 +4,15 @@
 #include "pios.h"
 
 //ADC
-const uint8_t sensorsUsed = 3;
+const uint8_t sensorsUsed = 5;
 
-const uint8_t offset = 1;
-
+const uint8_t sensor1 = 0x01;
 const uint8_t sensor2 = 0x02;
 const uint8_t sensor3 = 0x04;
 const uint8_t sensor4 = 0x08;
+const uint8_t sensor5 = 0x10;
 
-uint16_t sensors[sensorsUsed] = {sensor2, sensor3, sensor4};
+uint16_t sensors[sensorsUsed] = {sensor1, sensor2, sensor3, sensor4, sensor5};
 
 bool EnableInterrupts = true;
 
