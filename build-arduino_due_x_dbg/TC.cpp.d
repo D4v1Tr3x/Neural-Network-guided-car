@@ -1,4 +1,4 @@
-build-arduino_due_x_dbg/NN.cpp.o: NN.cpp NN.h layer.h actfunctions.h \
+build-arduino_due_x_dbg/TC.cpp.o: TC.cpp TC.h pios.h pmc.h \
  /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/cores/arduino/Arduino.h \
  /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/cores/arduino/avr/pgmspace.h \
  /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/cores/arduino/avr/interrupt.h \
@@ -134,4 +134,4 @@ build-arduino_due_x_dbg/NN.cpp.o: NN.cpp NN.h layer.h actfunctions.h \
  /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/cores/arduino/USB/USBAPI.h \
  /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/cores/arduino/RingBuffer.h \
  /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/cores/arduino/Stream.h \
- functions.h
+ /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_tc.h

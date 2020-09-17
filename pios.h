@@ -1,13 +1,13 @@
 #ifndef PIOS_H_
 #define PIOS_H_
 
-#include "Arduino.h"
+#include "pmc.h"
 
 class CustomPIO
 {
   public:
     
-    CustomPIO(uint32_t* digitalPins, uint8_t len, Pio** pinGroups);
+    CustomPIO();
 
     ~CustomPIO();
 
@@ -24,6 +24,11 @@ class CustomPIO
     void EnableWriteProtection(uint8_t enable, Pio* pioGroup);
 
     void ChangePeripheral(uint32_t* pins, uint8_t len, Pio** pioGroup);
+    
+    bool ReadInputPinStatus(uint32_t pin ,Pio* pioGroup);
 
+    void EnableInterrupts(uint32_t* pins, uint8_t len, Pio** pinGroups,
+                          bool* additionalInterrupts, bool* useHigh,
+                          CustomPMC* pmc);
 };
 #endif

@@ -1,4 +1,4 @@
-build-arduino_due_x_dbg/adc.cpp.o: adc.cpp adc.h pios.h \
+build-arduino_due_x_dbg/adc.cpp.o: adc.cpp adc.h pios.h pmc.h \
  /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/cores/arduino/Arduino.h \
  /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/cores/arduino/avr/pgmspace.h \
  /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/cores/arduino/avr/interrupt.h \
@@ -133,5 +133,4 @@ build-arduino_due_x_dbg/adc.cpp.o: adc.cpp adc.h pios.h \
  /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/cores/arduino/USB/USBCore.h \
  /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/cores/arduino/USB/USBAPI.h \
  /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/cores/arduino/RingBuffer.h \
- /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/cores/arduino/Stream.h \
- pmc.h
+ /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/cores/arduino/Stream.h

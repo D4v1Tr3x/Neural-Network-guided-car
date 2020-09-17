@@ -1,4 +1,5 @@
 build-arduino_due_x_dbg/movements.cpp.o: movements.cpp movements.h pios.h \
+ pmc.h \
  /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/cores/arduino/Arduino.h \
  /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/cores/arduino/avr/pgmspace.h \
  /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/cores/arduino/avr/interrupt.h \
