@@ -6,6 +6,8 @@
 //Components imports
 #include "Arduino.h"
 
+#include "/home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_wdt.h"
+
 #include "pios.h"
 #include "pwm.h"
 #include "adc.h"

@@ -14,15 +14,17 @@ uint32_t status;
 uint32_t uStat;
 uint32_t counter;
 float timeConst = 0.024;
-float distance;
-
+float distance = 0;
+float y;
+float b = 0.949;
 
 void PIOC_Handler()
 {
   status = PIOC->PIO_ISR;
   uStat = PIOC->PIO_PDSR;
   counter = TC2->TC_CHANNEL[0].TC_CV;
-  distance = (counter*timeConst)/58;
+  y = (((counter*timeConst)-10)/58);
+  distance = b*distance + (1-b)*y;
   
   PIOCflag = true;
 }
@@ -45,9 +47,16 @@ void ADC_Handler()
   }
 }
 */
+void WDT_Init(void)
+{
+}
+
 void setup()
 {
   Serial.begin(115200); 
+
+  WDT->WDT_MR = 0x0FFF6500;
+  
   
   pmc = new CustomPMC;
   pio = new CustomPIO;
@@ -80,7 +89,14 @@ void setup()
   Serial.println(PIOC->PIO_ELSR);
   Serial.println(PIOC->PIO_FRLHSR);
 
+  PIOC->PIO_PDR |= 0x80;
+  PIOC->PIO_ABSR |= 0x80;
   
+  pmc->EnablePeripheralClock(36);
+  PWM->PWM_CH_NUM[2].PWM_CMR = 0x100;
+  PWM->PWM_CH_NUM[2].PWM_CPRD = 1750;
+  PWM->PWM_CH_NUM[2].PWM_CDTY = (1-0.76) * 1750;
+  PWM->PWM_ENA = 0x4;
   Serial.println("TC");
   //tc = new CustomTC(TcChannels, TcLength, groups, numbers, peripherals, pmc, pio);
 
@@ -100,13 +116,15 @@ void setup()
 
 void loop()
 {
+  WDT->WDT_CR = 0xA5000001;
   //Serial.println(TC2->TC_CHANNEL[0].TC_CV);
   //Serial.println("HIGH");
-  pio->SetOutputsHigh(outPins[0], outPio[0]);
-  delay(1);
+  //pio->SetOutputsHigh(outPins[0], outPio[0]);
   //Serial.println("LOW");
-  pio->SetOutputsLow(outPins[0], outPio[0]);
-  delayMicroseconds(10);
+  //pio->SetOutputsLow(outPins[0], outPio[0]);
+  //delayMicroseconds(10);
+  
+  
   if(PIOCflag)
   {
     PIOCflag = false;
