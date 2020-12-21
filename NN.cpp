@@ -54,9 +54,10 @@ void NN::Predict(float* inputs, float* outputs)
    ReadArray(outputs, nIn);
 }
 
-//Ignora este metodo era de debug
+/*Ignora este metodo era de debug
 float NN::GetLayers()
 {
   
   return this->Layers[nLayers]->GetData()[0];
 }
+*/

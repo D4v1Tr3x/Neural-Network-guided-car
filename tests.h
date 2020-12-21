@@ -23,6 +23,7 @@
 //Motor movements
 #include "movements.h"
 
-
+//Modules
+#include "modules.h"
 
 #endif

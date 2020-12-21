@@ -1,38 +1,9 @@
 #include "adc.h"
 
 
-CustomADC::CustomADC(uint16_t* adcChannels, uint8_t pinsUsed, 
-                     bool EnableADCInterrupts, CustomPIO* pio,
-                     CustomPMC* pmc)
+CustomADC::CustomADC(CustomPMC* pmc)
 {
-  //Gets the pins corresponding to each channel
-  uint32_t adcPins[pinsUsed];
-  Pio* pinGroups[pinsUsed];
-  for(uint8_t i = 0; i < pinsUsed; i++)
-  {
-    GetPin(adcChannels[i], adcPins[i], pinGroups[i]);
-  }
-
-  //Activates peripheral control of the ADC pins by disabling the PIO control
-  //register
-  pio->ActivatePeripheralControl(adcPins, pinsUsed, pinGroups);
-  
-
   pmc->EnablePeripheralClock(ADC_ID);
-  //Starts the ADC and sets its trigger to fire whenever the PWM event line
-  //sends a pulse if the interrupts are enabled
-  Control(1, 0);
-  Config(EnableADCInterrupts);
-  //Enables the specified channels and then disables the unused ones 
-  EnableChannels(adcChannels, pinsUsed);  
-
-  //Enables the ADC EOC interrupt for all the used ADC channels 
-  if(EnableADCInterrupts)
-  {
-    NVIC_EnableIRQ(ADC_IRQn);
-    NVIC_SetPriority(ADC_IRQn, 15);
-    EnableEOCInterrupts(adcChannels, pinsUsed);
-  }  
 }
 
 CustomADC::~CustomADC()
@@ -68,13 +39,9 @@ void CustomADC::WriteProtect(uint8_t enable)
   ADC->ADC_WPMR = 0x04144430 | enable;
 }
 
-void CustomADC::EnableChannels(uint16_t* channels, uint8_t len)
-{
-  for(uint8_t i = 0; i < len; i++)
-  {
-    ADC->ADC_CHER |= channels[i];
-  }
-  DisableUnusedChannels();
+void CustomADC::EnableChannel(uint8_t channel)
+{  
+  ADC->ADC_CHER |= 1 << channel;
 }
 
 void CustomADC::DisableUnusedChannels()
@@ -87,12 +54,9 @@ uint16_t CustomADC::LastConvertedData()
   return ADC->ADC_LCDR;
 }
 
-void CustomADC::EnableEOCInterrupts(uint16_t* channels, uint8_t len)
+void CustomADC::EnableEOCInterrupts(uint8_t channel)
 {
-  for(uint8_t i = 0; i < len; i++)
-  {
-    ADC->ADC_IER |= channels[i];
-  }
+    ADC->ADC_IER |= 1 << channel;
 }
 
 void CustomADC::DisableEOCInterrupts(uint16_t* channels, uint8_t len)

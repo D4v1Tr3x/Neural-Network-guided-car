@@ -4,43 +4,9 @@
 #include "pios.h"
 #include "TC.h"
 
-//ADC
-const uint8_t sensorsUsed = 5;
-
-const uint8_t sensor1 = 0x01;
-const uint8_t sensor2 = 0x02;
-const uint8_t sensor3 = 0x04;
-const uint8_t sensor4 = 0x08;
-const uint8_t sensor5 = 0x10;
-
-uint16_t sensors[sensorsUsed] = {sensor1, sensor2, sensor3, sensor4, sensor5};
-
-bool EnableInterrupts = true;
-
-//PWM
-const uint8_t nMotors = 2;
-
-const uint8_t tractionMotorPWM = 0x01;
-const uint8_t directionMotorPWM = 0x02;
-uint16_t pwmMotors[nMotors] = {tractionMotorPWM, directionMotorPWM};
-
-uint8_t PWMFreq = 24; //in kHz
-
-//PIO Motors
-const uint8_t tractionMotor1 = 0x02;
-const uint8_t tractionMotor2 = 0x04;
-
-const uint8_t directionMotor1 = 0x08;
-const uint8_t directionMotor2 = 0x40;
-
-uint32_t MotorPins[nMotors*2] = {tractionMotor1, tractionMotor2, 
-                                 directionMotor1, directionMotor2};
-
-Pio* MotorPinGroups[nMotors*2] = {PIOD, PIOD, PIOD, PIOD};
-
-
 //ADC_Handler
 
+const uint8_t sensorsUsed = 5;
 const float uRef = 3.3;
 const float ADC_Resolution = 4095.0;
 
@@ -52,35 +18,26 @@ uint16_t dAdc;
 uint8_t lastMov;
 bool motorFlag = false;
 
-//PIO Digital Pins
-const uint8_t nDigitalPins = 3;
-const uint8_t nInterruptPins = 2;
-const uint8_t outputPins = 1;
-
-uint32_t d7 = 0x800000;
-uint32_t d6 = 0x1000000;
-
-uint32_t digitalPins[nDigitalPins] = {d6, d7};
-Pio* digitalPinsGroups[nDigitalPins] = {PIOC, PIOC};
-
-uint32_t outPins[outputPins] = {d6};
-Pio* outPio[outputPins] = {PIOC};
-
-uint32_t interruptPins[nInterruptPins] = {d7};
-Pio* interruptsPinGroups[nInterruptPins] = {PIOC};
-
-bool additionalInterrupts[nInterruptPins] = {true};
-bool useHigh[nInterruptPins] = {false};
+//UltraSounds
+uint8_t USPins[]     = {7, 25, 23};
+Pio* USPinGroups[]   = {PIOC, PIOC, PIOC};
+uint8_t USChannels[] = {2, 0};
 
 
-//TC
+//Motor Parameters
+uint8_t frequency = 24; //In kHz
 
-const uint8_t TcLength = 1;
-uint8_t TcChannels[TcLength] = {0};
+uint8_t motorPins[] = {1, 2, 3, 6};
+Pio* motorGroups[] = {PIOD, PIOD, PIOD, PIOD};
 
-Pio* groups[TcLength] = {A6_PIO};
-uint8_t numbers[TcLength] = {A6_Pin};
-bool peripherals[TcLength] = {A6_Per};
 
+uint8_t PWMChannels[] = {0, 1};
+uint8_t PWMPins[] = {3, 5};
+Pio* PWMGroups[] = {PIOC, PIOC};
+
+//IR Parameters
+uint8_t ADCChannels[] = {0, 1, 2, 3, 4};
+uint8_t ADCPins[] = {16, 24, 23, 22, 6};
+Pio* ADCPinGroups[] = {PIOA, PIOA, PIOA, PIOA, PIOA};
 
 #endif

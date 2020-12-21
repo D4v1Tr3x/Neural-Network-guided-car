@@ -6,6 +6,7 @@
 
 #include "pios.h"
 #include "pmc.h"
+#include "pwm.h"
 #include "/home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_tc.h"
 
 #define A0_PIO PIOB
@@ -46,14 +47,14 @@ class CustomTC
   private:
     CustomPMC* MyPMC = nullptr;
     CustomPIO* MyPIO = nullptr; 
+    CustomPWM* MyPWM = nullptr;
   public:
-    CustomTC(uint8_t* channels, uint8_t len, Pio** groups, uint8_t* numbers, 
-             bool* peripherals, CustomPMC* pmc=nullptr, CustomPIO* pio=nullptr);
+    CustomTC();
 
     ~CustomTC(void);
 
     void ConfigureChannel(Tc* instance, uint8_t channel, Pio* group, uint8_t number, 
-                          bool peripheral, bool interrupt=1, bool mode=0);
+                          bool peripheral, bool interrupt=0, bool mode=0);
   
     void CaptureModeConfig(Tc* instance, uint8_t channel, uint8_t edgeSel=3, 
                            bool trigSel=0, uint8_t clock=0);

@@ -1,6 +1,8 @@
 #include "tests.h"
 
 
+//----Instance declaration----
+Modules *modules;
 CustomPMC *pmc;
 CustomPIO *pio;
 CustomADC *adc;
@@ -9,7 +11,6 @@ CustomTC *tc;
 NN *myNN;
 
 
-bool PIOCflag = false;
 uint32_t status;
 uint32_t uStat;
 uint32_t counter;
@@ -17,6 +18,7 @@ float timeConst = 0.024;
 float distance = 0;
 float y;
 float b = 0.949;
+bool danger = false;
 
 void PIOC_Handler()
 {
@@ -25,117 +27,78 @@ void PIOC_Handler()
   counter = TC2->TC_CHANNEL[0].TC_CV;
   y = (((counter*timeConst)-10)/58);
   distance = b*distance + (1-b)*y;
-  
-  PIOCflag = true;
+  if(distance <= 20)
+  {
+    danger = true;
+  }
+  else
+  {
+    danger = false;
+  }
 }
 
 
-/*
+
 void ADC_Handler()
 { 
-  for(uint8_t i = offset; i < sensorsUsed+offset; i++)
+  for(uint8_t i = 0; i < 5; i++)
   {
     dAdc = adc->LastChannelData(i);
     tension = (uRef*dAdc)/ADC_Resolution;
     if(tension <= 1.9)
     {
-      uIn[i-offset] = 0.0;
+      uIn[i] = 0.0;
     }
     else{
-      uIn[i-offset] = 1.0;
+      uIn[i] = 1.0;
     }
   }
 }
-*/
+
 void WDT_Init(void)
 {
 }
 
 void setup()
 {
+  //Serial init
   Serial.begin(115200); 
-
+  
+  //WatchDog Timer config (once per processor reset)
   WDT->WDT_MR = 0x0FFF6500;
   
-  
+  //-------------PERIPHERAL INIT----------------
   pmc = new CustomPMC;
   pio = new CustomPIO;
-  //adc = new CustomADC(sensors, sensorsUsed, EnableInterrupts, pio, pmc);
-  //pwm = new CustomPWM(pwmMotors, nMotors, EnableInterrupts, PWMFreq, pio, pmc);
-  //myNN = new NN(nLayers, nInputs, nOutputs, weights, biases, actFuncs);  
+  pwm = new CustomPWM(pmc);
+  adc = new CustomADC(pmc);
+  tc = new CustomTC;
 
-  //Motors Init
-  pio->DeactivatePeripheralControl(MotorPins, nMotors*2, MotorPinGroups);
-  pio->SetOutputPins(MotorPins, nMotors*2, MotorPinGroups);
-
-  //Ultrasounds init
-  pio->DeactivatePeripheralControl(digitalPins, nDigitalPins, digitalPinsGroups);
-  pio->SetOutputPins(outPins, outputPins, outPio);
-  pio->SetOutputsHigh(outPins[0], outPio[0]);
+  //---------------MODULES INIT----------------
+  modules = new Modules(pmc, pio, pwm, tc, adc);
   
-  Serial.println(PIOC->PIO_PSR); 
-  Serial.println(PIOC->PIO_OSR);
-  Serial.println(PIOC->PIO_ODSR);
+  modules->MotorsInit(frequency, motorPins, PWMChannels, PWMPins, 
+                      motorGroups, PWMGroups);
+  modules->IRInit(ADCChannels, ADCPins, ADCPinGroups);
+  modules->InitUltrasounds(USPins, USPinGroups, USChannels);
   
-  pio->EnableInterrupts(interruptPins, nInterruptPins, interruptsPinGroups, 
-                        additionalInterrupts, useHigh, pmc);
-  //PIOC->PIO_PUDR = 0xFFFFFFFF;
-  //PIOC->PIO_PUER = d6;
-  //Serial.println(PIOC->PIO_PUSR); 
-
-  Serial.println(PIOC->PIO_IMR);
-  
-  Serial.println(PIOC->PIO_AIMMR);
-  Serial.println(PIOC->PIO_ELSR);
-  Serial.println(PIOC->PIO_FRLHSR);
-
-  PIOC->PIO_PDR |= 0x80;
-  PIOC->PIO_ABSR |= 0x80;
-  
-  pmc->EnablePeripheralClock(36);
-  PWM->PWM_CH_NUM[2].PWM_CMR = 0x100;
-  PWM->PWM_CH_NUM[2].PWM_CPRD = 1750;
-  PWM->PWM_CH_NUM[2].PWM_CDTY = (1-0.76) * 1750;
-  PWM->PWM_ENA = 0x4;
-  Serial.println("TC");
-  //tc = new CustomTC(TcChannels, TcLength, groups, numbers, peripherals, pmc, pio);
-
-  pmc->EnablePeripheralClock(33);
-  TC2->TC_CHANNEL[0].TC_CMR = 0x0500;
-  //TC2->TC_CHANNEL[0].TC_RC = 42;
-  Serial.println(TC2->TC_CHANNEL[0].TC_SR);
-  TC2->TC_CHANNEL[0].TC_CCR = 0x1;
-  TC2->TC_CHANNEL[0].TC_CCR = 0x4;
-  Serial.println(TC2->TC_CHANNEL[0].TC_SR);
-  
-
-  
- // pwm->SetDuty(0.65, 0);
- // pwm->SetDuty(0.9, 1);
+  pwm->SetDuty(0.7, 0, 0);
+  pwm->SetDuty(0.9, 1, 0);
 }
 
 void loop()
 {
+  
   WDT->WDT_CR = 0xA5000001;
-  //Serial.println(TC2->TC_CHANNEL[0].TC_CV);
-  //Serial.println("HIGH");
-  //pio->SetOutputsHigh(outPins[0], outPio[0]);
-  //Serial.println("LOW");
-  //pio->SetOutputsLow(outPins[0], outPio[0]);
-  //delayMicroseconds(10);
-  
-  
-  if(PIOCflag)
+  Serial.println(danger);
+  if(danger)
   {
-    PIOCflag = false;
-    //Serial.println("INTERRUPT");
-    Serial.println(distance);
+    Off(motorPins[0], motorPins[1], motorGroups[0], motorGroups[1], pio, 0);
+  }
+  else{
+    MoveClockwise(motorPins[0], motorPins[1], motorGroups[0], motorGroups[1], pio);
   }
   /*
-  for(uint8_t i = 0; i < sensorsUsed; i++)
-  {
-    Serial.println(uIn[i]);
-  }
   myNN->Predict(uIn, prediction);
   Serial.println("\n");
   if(prediction[0] == 0.00)
@@ -156,18 +119,19 @@ void loop()
 
   if(motorFlag)
   {
-    MoveClockwise(MotorPins[0], MotorPins[1], MotorPinGroups[0], MotorPinGroups[1], pio);
+    MoveClockwise(motorPins[0], motorPins[1], motorGroups[0], motorGroups[1], pio);
   }
   else
   {
-    Off(MotorPins[0], MotorPins[1], MotorPinGroups[0], MotorPinGroups[1], pio, 0);
+    Off(motorPins[0], motorPins[1], motorGroups[0], motorGroups[1], pio, 0);
   }
   
   if(prediction[0] == 1.00)
   {
-    MoveCounterClockwise(MotorPins[2], MotorPins[3], MotorPinGroups[2], MotorPinGroups[3], pio);
+    MoveCounterClockwise(motorPins[2], motorPins[3], motorGroups[2], 
+                        motorGroups[3], pio);
     pwm->SetDuty(0.8, 0);
-    MoveClockwise(MotorPins[0], MotorPins[1], MotorPinGroups[0], MotorPinGroups[1], pio);
+    MoveClockwise(motorPins[0], motorPins[1], motorGroups[0], motorGroups[1], pio);
     if(lastMov != 1)
     {
       lastMov = 1;
@@ -176,9 +140,9 @@ void loop()
   
   else if(prediction[0] == -1.00)
   {
-    MoveClockwise(MotorPins[2], MotorPins[3], MotorPinGroups[2], MotorPinGroups[3], pio);
+    MoveClockwise(motorPins[2], motorPins[3], motorGroups[2], motorGroups[3], pio);
     pwm->SetDuty(0.8, 0);
-    MoveClockwise(MotorPins[0], MotorPins[1], MotorPinGroups[0], MotorPinGroups[1], pio);
+    MoveClockwise(motorPins[0], motorPins[1], motorGroups[0], motorGroups[1], pio);
     if(lastMov != -1)
     {
       lastMov = -1;
@@ -186,7 +150,7 @@ void loop()
   }
   else
   {
-    Off(MotorPins[2], MotorPins[3], MotorPinGroups[2], MotorPinGroups[3], pio, lastMov);
+    Off(motorPins[2], motorPins[3], motorGroups[2], motorGroups[3], pio, lastMov);
     if(lastMov != 0)
     {
       lastMov = 0;

@@ -1,46 +1,9 @@
 #include "pwm.h"
 
-CustomPWM::CustomPWM(uint16_t* channels, uint8_t len, bool EnableComparison, 
-                     uint8_t clockFreq, CustomPIO* pio, CustomPMC* pmc)
+
+CustomPWM::CustomPWM(CustomPMC* pmc)
 { 
-  //Calculates the degree of precision that the PWM will have based on the
-  //desired frecuency that we want as clock for all the channels.
-  const uint16_t CPRD = 84e3/(2*clockFreq);
-
-  //Gets the pins and its groups corresponding to each channel
-  uint32_t pins[len];
-  Pio* pinGroups[len];
-  for(uint8_t i = 0; i < len; i++)
-  {
-    GetPin(channels[i], pins[i], pinGroups[i]);
-  }
-  
-  //Activates the PWM on those pins
-  pio->ActivatePeripheralControl(pins, len, pinGroups);
-  pio->ChangePeripheral(pins, len, pinGroups);
-  
-  //Enables the PWM to work on the designated channels
   pmc->EnablePeripheralClock(PWM_ID);
-  EnableChannels(channels, len);
-   
-  for(uint8_t i = 0; i < len; i++)
-  {
-    SetCPRD(CPRD, i);
-  } 
-  
-  //Enables the comparison mode that will trigger the event line once the channel 
-  //counter reaches a certain value so it can send a pulse to the ADC in order 
-  //to start a new conversion
-  if(EnableComparison)
-  {
-    PWM->PWM_CMP[0].PWM_CMPM = 0x401;
-
-    PWM->PWM_CMP[0].PWM_CMPV = CPRD;
-  
-    PWM->PWM_ELMR[0] = 0x1;
-  
-    PWM->PWM_IER2 = 0x10100;
-  }
 }
 
 CustomPWM::~CustomPWM(){}
@@ -60,12 +23,19 @@ void CustomPWM::SetCPRD(uint16_t CPRD, uint8_t channel)
   }
 }
 
-void CustomPWM::SetDuty(float d, uint8_t channel)
+void CustomPWM::SetDuty(float d, uint8_t channel, bool init)
 {
   if(channel <= 7)
   {
     uint16_t CPRD = PWM->PWM_CH_NUM[channel].PWM_CPRD;
-    PWM->PWM_CH_NUM[channel].PWM_CDTYUPD = (1-d) * CPRD;
+    if(init)
+    {
+      PWM->PWM_CH_NUM[channel].PWM_CDTY = (1-d) * CPRD;
+    }
+    else
+    {
+      PWM->PWM_CH_NUM[channel].PWM_CDTYUPD = (1-d) * CPRD;
+    }
   } 
 }
 
@@ -75,13 +45,11 @@ void CustomPWM::ClockGenerator(uint8_t divA, uint8_t preA, uint8_t divB,
   PWM->PWM_CLK = (preB << 24) + (divB << 16) + (preA << 8) + divA;
 }
 
-void CustomPWM::EnableChannels(uint16_t* channels, uint8_t len)
+void CustomPWM::EnableChannel(uint8_t channel)
 {
-  for(uint8_t i = 0; i < len; i++)
-  {
-    PWM->PWM_ENA |= channels[i];
-  }
-  DisableUnusedChannels();
+
+    PWM->PWM_ENA |= 1 << channel;
+    DisableUnusedChannels();
 }
 
 void CustomPWM::DisableUnusedChannels()
@@ -100,14 +68,25 @@ void CustomPWM::SetupChannelMode(uint8_t channel, uint8_t CPRE, uint8_t CALG,
   PWM->PWM_CH_NUM[channel].PWM_CMR = reg;
 }
 
-void CustomPWM::EnableComparisonOnLine(uint8_t line, uint8_t channels)
+void CustomPWM::OpenEventLine(uint8_t line, uint8_t comparisonChannel)
 {
-  PWM->PWM_ELMR[line] = channels;
+  PWM->PWM_ELMR[line] |= 1 << comparisonChannel;
 }
 
-void CustomPWM::ComparisonMode(uint32_t config, uint8_t channel)
+void CustomPWM::ComparisonMode(uint8_t CEN, uint8_t CPR, uint8_t CTR, 
+                               uint8_t channel)
 {
-  PWM->PWM_CMP[channel].PWM_CMPM = config;
+  PWM->PWM_CMP[channel].PWM_CMPM = (CTR << 8) + (CPR << 4) + CEN;
+}
+
+void CustomPWM::EnableComparisonMatchInterrupt(uint8_t channel)
+{
+  PWM->PWM_IER2 = (1 << (16+channel)) + (1 << (8+channel));
+}
+
+void CustomPWM::SetComparisonValue(uint16_t val, uint8_t mode, uint8_t channel)
+{
+  PWM->PWM_CMP[channel].PWM_CMPV = val;
 }
 
 void CustomPWM::GetPin(uint8_t channel, uint32_t &pin, Pio* &pinGroup)
@@ -123,4 +102,9 @@ void CustomPWM::GetPin(uint8_t channel, uint32_t &pin, Pio* &pinGroup)
       pin = 0x20;
       pinGroup = PIOC;
   }
+}
+
+uint16_t CustomPWM::GetCPRD(uint8_t channel)
+{
+  return PWM->PWM_CH_NUM[channel].PWM_CPRD;
 }

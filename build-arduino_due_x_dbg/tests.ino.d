@@ -134,5 +134,9 @@ build-arduino_due_x_dbg/tests.ino.o: tests.ino \
  /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/cores/arduino/USB/USBAPI.h \
  /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/cores/arduino/RingBuffer.h \
  /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/cores/arduino/Stream.h \
- tests.h pios.h pmc.h pwm.h adc.h NN.h layer.h actfunctions.h \
- parametros.h nnparameters.h movements.h
+ tests.h \
+ /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_wdt.h \
+ pios.h pmc.h pwm.h adc.h TC.h \
+ /home/david/.arduino15/packages/arduino/hardware/sam/1.6.12/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_tc.h \
+ NN.h layer.h actfunctions.h parametros.h nnparameters.h movements.h \
+ modules.h

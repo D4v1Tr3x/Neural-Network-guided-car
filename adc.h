@@ -10,8 +10,7 @@ class CustomADC
 {
   public:
   
-    CustomADC(uint16_t* adcChannels, uint8_t pinsUsed, 
-              bool EnableADCInterrupts, CustomPIO* pio, CustomPMC* pmc);
+    CustomADC(CustomPMC* pmc);
     
     ~CustomADC(void);
 
@@ -23,13 +22,13 @@ class CustomADC
 
     void WriteProtect(uint8_t enable);
 
-    void EnableChannels(uint16_t* channel, uint8_t len);
+    void EnableChannel(uint8_t channel);
 
     void DisableUnusedChannels(void);
 
     uint16_t LastConvertedData(void);
 
-    void EnableEOCInterrupts(uint16_t* channels, uint8_t len);
+    void EnableEOCInterrupts(uint8_t channel);
 
     void DisableEOCInterrupts(uint16_t* channels, uint8_t len);
 

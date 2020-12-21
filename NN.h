@@ -23,7 +23,7 @@ class NN
   void Predict(float* inputs, float* outputs); //Predicts the result given
                                                  //the inputs.
 
-  float GetLayers();
+  //float GetLayers();
 };
 
 #endif

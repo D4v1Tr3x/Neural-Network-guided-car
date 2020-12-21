@@ -1,16 +1,7 @@
 #include "TC.h"
 
 
-CustomTC::CustomTC(uint8_t* channels, uint8_t len, Pio** groups, uint8_t* numbers, 
-                   bool* peripherals, CustomPMC* pmc, CustomPIO* pio)
-{
-  MyPMC = pmc;                        //PMC instance
-  MyPIO = pio;
-  for(uint8_t i = 0; i < len; i++)
-  {
-    ConfigureChannel(TC2, channels[i], groups[i], numbers[i], peripherals[i]);  //Configures all the selected channels
-  }
-}
+CustomTC::CustomTC(){}
 
 CustomTC::~CustomTC(){}
 
@@ -25,7 +16,7 @@ void CustomTC::ConfigureChannel(Tc* instance, uint8_t channel, Pio* group, uint8
   }
   else
   {
-    CaptureModeConfig(instance, channel, 2, 1); //FIXME: FIX YOUR SHIT no puedes usar el peripheral como parametro para el trigger selection 
+    CaptureModeConfig(instance, channel, 1, 1); //FIXME: FIX YOUR SHIT no puedes usar el peripheral como parametro para el trigger selection 
   }
 
   if(interrupt)
@@ -40,6 +31,8 @@ void CustomTC::CaptureModeConfig(Tc* instance, uint8_t channel, uint8_t edgeSel,
                                  bool trigSel, uint8_t clock)
 {
   instance->TC_CHANNEL[channel].TC_CMR = (trigSel << 10) | (edgeSel << 8) | clock;
+  instance->TC_CHANNEL[channel].TC_CCR = 0x1;
+  instance->TC_CHANNEL[channel].TC_CCR = 0x4;
 }
 
 void CustomTC::InterruptConfig(Tc* instance, uint8_t channel, bool externalTrig)
