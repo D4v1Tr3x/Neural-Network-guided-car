@@ -5,6 +5,7 @@ CustomTC::CustomTC(){}
 
 CustomTC::~CustomTC(){}
 
+/*
 void CustomTC::ConfigureChannel(Tc* instance, uint8_t channel, Pio* group, uint8_t number, 
                                 bool peripheral, bool interrupt, bool mode)
 {
@@ -26,7 +27,7 @@ void CustomTC::ConfigureChannel(Tc* instance, uint8_t channel, Pio* group, uint8
   TIOConfig(group, number, peripheral);  
 
 }
-
+*/
 void CustomTC::CaptureModeConfig(Tc* instance, uint8_t channel, uint8_t edgeSel, 
                                  bool trigSel, uint8_t clock)
 {
@@ -34,7 +35,7 @@ void CustomTC::CaptureModeConfig(Tc* instance, uint8_t channel, uint8_t edgeSel,
   instance->TC_CHANNEL[channel].TC_CCR = 0x1;
   instance->TC_CHANNEL[channel].TC_CCR = 0x4;
 }
-
+/*
 void CustomTC::InterruptConfig(Tc* instance, uint8_t channel, bool externalTrig)
 {
   if(externalTrig)
@@ -74,3 +75,4 @@ Tc* CustomTC::GetInstance(uint8_t channel)
     return TC2;
   }
 }
+*/

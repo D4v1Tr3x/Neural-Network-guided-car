@@ -67,37 +67,6 @@ void CustomADC::DisableEOCInterrupts(uint16_t* channels, uint8_t len)
   }
 }
 
-void CustomADC::GetPin(uint16_t channel, uint32_t &pin, Pio* &pinGroup)
-{
-  switch(channel)
-  {
-    case 0x01:
-      pin = 0x04;
-      pinGroup = PIOA; 
-      break;
-
-    case 0x02:
-      pin = 0x08;
-      pinGroup = PIOA;
-      break;
-
-    case 0x04:
-      pin = 0x10;
-      pinGroup = PIOA;
-      break;
-
-    case 0x08:
-      pin = 0x20;
-      pinGroup = PIOA;
-      break;
-
-    case 0x10:
-      pin = 0x400000;
-      pinGroup = PIOA;
-      break;
-  }
-}
-
 uint16_t CustomADC::LastChannelData(uint8_t channel)
 { 
   return ADC->ADC_CDR[channel];

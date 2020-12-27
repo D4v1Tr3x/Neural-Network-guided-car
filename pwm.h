@@ -38,8 +38,6 @@ class CustomPWM
     void EnableComparisonMatchInterrupt(uint8_t channel); 
 
     void SetComparisonValue(uint16_t val, uint8_t mode, uint8_t channel);
-
-    void GetPin(uint8_t channel, uint32_t &pin, Pio* &pinGroup);
     
     uint16_t GetCPRD(uint8_t channel);
 };

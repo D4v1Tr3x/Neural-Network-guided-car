@@ -31,9 +31,7 @@ class CustomADC
     void EnableEOCInterrupts(uint8_t channel);
 
     void DisableEOCInterrupts(uint16_t* channels, uint8_t len);
-
-    void GetPin(uint16_t channel, uint32_t &pin, Pio* &pinGroup);
-    
+   
     uint16_t LastChannelData(uint8_t channel);
 };
 

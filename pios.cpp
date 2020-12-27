@@ -49,14 +49,19 @@ void CustomPIO::EnableInterrupts(uint8_t pins, Pio* pinGroups,
                                  bool additionalInterrupts, bool useHigh,
                                  CustomPMC* pmc)
 {
+    
     pmc->EnablePeripheralClock(ID_PIOA);
     NVIC_EnableIRQ(PIOA_IRQn);
+    NVIC_SetPriority(PIOA_IRQn, 14);
     pmc->EnablePeripheralClock(ID_PIOB);
     NVIC_EnableIRQ(PIOB_IRQn);
+    NVIC_SetPriority(PIOB_IRQn, 14);
     pmc->EnablePeripheralClock(ID_PIOC);
     NVIC_EnableIRQ(PIOC_IRQn);
+    NVIC_SetPriority(PIOC_IRQn, 14);
     pmc->EnablePeripheralClock(ID_PIOD);
     NVIC_EnableIRQ(PIOD_IRQn);
+    NVIC_SetPriority(PIOC_IRQn, 14);
 
     pinGroups->PIO_IER |= 1 << pins;
     if(additionalInterrupts)

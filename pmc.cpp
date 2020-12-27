@@ -20,7 +20,7 @@ void CustomPMC::EnablePeripheralClock(uint8_t ID)
     REG_PMC_PCER1 |= 1 << (ID-32);
   }
 }
-
+/*
 void CustomPMC::ConfigMainOSC(uint8_t OSC, uint8_t failDetection, uint8_t bypass,
                    uint8_t RCFreq, uint8_t OSCXStartTime)
 {
@@ -51,3 +51,4 @@ void CustomPMC::ConfigMainOSC(uint8_t OSC, uint8_t failDetection, uint8_t bypass
       break;
   }
 }
+*/

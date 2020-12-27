@@ -15,6 +15,7 @@ void Off(uint8_t in1, uint8_t in2, Pio* pinGroup1, Pio* pinGroup2,
     MoveCounterClockwise(in1, in2, pinGroup1, pinGroup2, pio);
     delay(50);
   }
+  
   pio->SetOutputsLow(in1, pinGroup1);
   pio->SetOutputsLow(in2, pinGroup2);
 }

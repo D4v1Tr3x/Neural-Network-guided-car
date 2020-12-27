@@ -89,20 +89,6 @@ void CustomPWM::SetComparisonValue(uint16_t val, uint8_t mode, uint8_t channel)
   PWM->PWM_CMP[channel].PWM_CMPV = val;
 }
 
-void CustomPWM::GetPin(uint8_t channel, uint32_t &pin, Pio* &pinGroup)
-{
-  switch(channel)
-  {
-    case 0x01:
-      pin = 0x08;
-      pinGroup = PIOC;
-      break;
-
-    case 0x02:
-      pin = 0x20;
-      pinGroup = PIOC;
-  }
-}
 
 uint16_t CustomPWM::GetCPRD(uint8_t channel)
 {

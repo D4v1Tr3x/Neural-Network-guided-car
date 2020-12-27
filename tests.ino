@@ -11,22 +11,20 @@ CustomTC *tc;
 NN *myNN;
 
 
-uint32_t status;
-uint32_t uStat;
-uint32_t counter;
-float timeConst = 0.024;
-float distance = 0;
-float y;
-float b = 0.949;
-bool danger = false;
-
+bool flag = false;
+//----Handler Functions----
 void PIOC_Handler()
 {
+  //Clears bits
   status = PIOC->PIO_ISR;
   uStat = PIOC->PIO_PDSR;
+  
+  //Calculates the distance
   counter = TC2->TC_CHANNEL[0].TC_CV;
   y = (((counter*timeConst)-10)/58);
   distance = b*distance + (1-b)*y;
+
+  //Determines if is the distance is dangerous for the system
   if(distance <= 20)
   {
     danger = true;
@@ -38,13 +36,18 @@ void PIOC_Handler()
 }
 
 
-
 void ADC_Handler()
 { 
   for(uint8_t i = 0; i < 5; i++)
   {
+    //Stores the data
     dAdc = adc->LastChannelData(i);
+    
+    //Converts the data to voltage
     tension = (uRef*dAdc)/ADC_Resolution;
+    
+    //Determines if the read was from a black color or a white color
+    
     if(tension <= 1.9)
     {
       uIn[i] = 0.0;
@@ -52,13 +55,17 @@ void ADC_Handler()
     else{
       uIn[i] = 1.0;
     }
+    
   }
+  flag = true;
 }
 
 void WDT_Init(void)
 {
 }
 
+
+//Initial Setup
 void setup()
 {
   //Serial init
@@ -73,37 +80,40 @@ void setup()
   pwm = new CustomPWM(pmc);
   adc = new CustomADC(pmc);
   tc = new CustomTC;
+  myNN = new NN(nLayers, nInputs, nOutputs, weights, biases, actFuncs);
 
   //---------------MODULES INIT----------------
   modules = new Modules(pmc, pio, pwm, tc, adc);
   
   modules->MotorsInit(frequency, motorPins, PWMChannels, PWMPins, 
                       motorGroups, PWMGroups);
-  modules->IRInit(ADCChannels, ADCPins, ADCPinGroups);
-  modules->InitUltrasounds(USPins, USPinGroups, USChannels);
+  modules->IRInit(ADCChannels, ADCPins, ADCPinGroups, ADCPWMChannel);
+  modules->InitUltrasounds(PWMPinUS, PWMPinGroupUS, PWMChannelUS, TCPin,
+                           TCPinGroup, TCChannel, echoPin, echoPinGroup);
   
-  pwm->SetDuty(0.7, 0, 0);
+  //Updates the duty of the channels to a default value
+  pwm->SetDuty(0.8, 0, 0);
   pwm->SetDuty(0.9, 1, 0);
 }
 
+
+//----Execution loop----
 void loop()
 {
   
   WDT->WDT_CR = 0xA5000001;
-  Serial.println(danger);
-  if(danger)
+  if(danger != true)
   {
-    Off(motorPins[0], motorPins[1], motorGroups[0], motorGroups[1], pio, 0);
-  }
-  else{
-    MoveClockwise(motorPins[0], motorPins[1], motorGroups[0], motorGroups[1], pio);
-  }
-  /*
+    
+  if(flag == true)
+  {
+    flag = false;
+    
   myNN->Predict(uIn, prediction);
-  Serial.println("\n");
+  
   if(prediction[0] == 0.00)
   {
-    pwm->SetDuty(0.65, 0);
+    //pwm->SetDuty(0.8, 0, 0);
     if(motorFlag != true)
     {
       motorFlag = true;
@@ -128,9 +138,8 @@ void loop()
   
   if(prediction[0] == 1.00)
   {
-    MoveCounterClockwise(motorPins[2], motorPins[3], motorGroups[2], 
-                        motorGroups[3], pio);
-    pwm->SetDuty(0.8, 0);
+    MoveClockwise(motorPins[2], motorPins[3], motorGroups[2], motorGroups[3], pio);
+    //pwm->SetDuty(0.8, 0, 0);
     MoveClockwise(motorPins[0], motorPins[1], motorGroups[0], motorGroups[1], pio);
     if(lastMov != 1)
     {
@@ -140,8 +149,8 @@ void loop()
   
   else if(prediction[0] == -1.00)
   {
-    MoveClockwise(motorPins[2], motorPins[3], motorGroups[2], motorGroups[3], pio);
-    pwm->SetDuty(0.8, 0);
+    MoveCounterClockwise(motorPins[2], motorPins[3], motorGroups[2], motorGroups[3], pio);
+    //pwm->SetDuty(0.8, 0, 0);
     MoveClockwise(motorPins[0], motorPins[1], motorGroups[0], motorGroups[1], pio);
     if(lastMov != -1)
     {
@@ -155,6 +164,12 @@ void loop()
     {
       lastMov = 0;
     }
+    }
+    }
   }
-  */
+  else
+  {
+    Off(motorPins[0], motorPins[1], motorGroups[0], motorGroups[1], pio, 0);
+    Serial.println("Emergency stop");  
+  }
 }
