@@ -48,20 +48,8 @@ class CustomTC
     CustomTC();
 
     ~CustomTC(void);
-    
-    /*
-    void ConfigureChannel(Tc* instance, uint8_t channel, Pio* group, uint8_t number, 
-                          bool peripheral, bool interrupt=0, bool mode=0);
-    */ 
+
     void CaptureModeConfig(Tc* instance, uint8_t channel, uint8_t edgeSel=3, 
                            bool trigSel=0, uint8_t clock=0);
-  
-    //void InterruptConfig(Tc* instance, uint8_t channel, bool externalTrig=0);
-    
-    //void TIOConfig(Pio* pinGroup, uint8_t pinNumber, bool peripheral);
-  
-    //Tc* GetInstance(uint8_t channel);
-
-    //void WriteProtection(Tc* instance, bool enable);
 };  
 #endif
